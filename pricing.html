@@ -1,0 +1,728 @@
+
+<!--
+
+=========================================================
+
+PRICING.HTML — FINAL LOCKED VERSION
+
+=========================================================
+
+01. Document Head
+
+02. Global Header
+
+03. Full Screen Burger Menu
+
+04. Hero Section
+
+05. Main Pricing Body
+
+06. Introduction Section
+
+07. Pricing Cards
+
+08. Payment Strip
+
+09. Support Cards
+
+10. Global Footer
+
+11. Pricing Popups
+
+12. Floating Contact Buttons
+
+13. Scripts
+
+=========================================================
+
+-->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!-- =========================================================
+
+     01. DOCUMENT SETUP
+
+  ========================================================= -->
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pricing | Dr. Yasmine Soliman</title>
+
+  <!-- =========================================================
+
+     02. STYLESHEETS + FONT DATA
+
+  ========================================================= -->
+
+  <link rel="stylesheet" href="design-system.css?v=4">
+
+  <link rel="stylesheet" href="pricing.css?v=196">
+
+   <link rel="stylesheet" href="style.css?v=139"> 
+
+  <script src="site-data.js?v=10" defer></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="pricing-page">
+
+<!-- =========================================================
+
+   03. GLOBAL HEADER
+
+========================================================= -->
+
+<header class="site-header">
+
+  <div class="header-top">
+
+    <div class="header-doctor-name">Dr. Yasmine Soliman</div>
+
+    <div class="header-contact">
+
+      <a href="tel:+201280004688" class="header-phone-link" data-site-phone-link>
+
+        <i class="fa-solid fa-phone"></i>
+
+        <span data-site-phone>+20 128 000 4688</span>
+
+      </a>
+
+      <span>
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <span data-site-email>info@embraceorthodontic.com</span>
+
+      </span>
+
+      <a href="contact.html?v=3" class="header-consultation">Book a Consultation</a>
+
+    </div>
+
+  </div>
+
+  <div class="header-main">
+
+    <a href="index.html?v=3" class="site-logo" aria-label="Embrace Bespoke Orthodontic Home">
+
+     <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+
+    </a>
+
+    <button class="burger-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">
+
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+    </button>
+
+  </div>
+
+</header>
+
+<!-- =========================================================
+
+   04. FULL SCREEN BURGER MENU
+
+========================================================= -->
+
+<div class="menu-overlay" id="menuOverlay">
+
+  <div class="menu-orthodontic-line"></div>
+
+  <div class="menu-inner">
+
+    <div>
+
+      <a href="index.html?v=3" class="menu-logo">
+
+        <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+
+      </a>
+
+      <nav class="menu-nav">
+
+        <a href="index.html?v=3">Home</a>
+
+        <a href="about.html?v=3">About</a>
+
+        <a href="services.html?v=3">Services</a>
+
+        <a href="pricing.html?v=1">Pricing</a>
+
+        <a href="faq.html?v=60">FAQ</a>
+
+        <a href="contact.html?v=3">Contact</a>
+
+      </nav>
+
+    </div>
+
+    <div class="menu-bottom">
+
+      <div>
+
+        <strong>Contact</strong>
+
+        <p data-site-phone>+20 128 000 4688</p>
+
+        <p data-site-email>info@embraceorthodontic.com</p>
+
+        <p data-site-domain>embraceorthodontic.com</p>
+
+      </div>
+
+      <div>
+
+        <strong>Clinics</strong>
+
+        <p data-site-address>Twin Tower, Sheikh Zayed City, Cairo, Egypt</p>
+
+        <p>Polydent, Sheikh Zayed City, Cairo, Egypt</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- =========================================================
+
+   05. HERO SECTION
+
+========================================================= -->
+
+<section class="pricing-hero hero-reveal">
+
+  <div class="pricing-hero-content">
+
+    <p class="pricing-hero-script script-line">An Investment For Life</p>
+
+    <h1 class="hero-title hero-title-line">Your bespoke smile journey starts here</h1>
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+
+   06. MAIN PRICING BODY
+
+========================================================= -->
+
+<main class="pricing-main">
+
+  <!-- ================= INTRO SECTION ================= -->
+
+  <section class="pricing-intro-section">
+
+    <div class="pricing-section-heading">
+
+      <p class="pricing-main-script script-line">Cost Your Smile Journey</p>
+
+      <h2>Treatment fees and plans</h2>
+
+    </div>
+
+    <div class="pricing-intro-copy">
+
+      <p>
+
+        Every smile is unique, and so is every treatment journey. Orthodontic care is an investment in your child’s future, not only creating a confident smile, but also supporting long-term dental health for life. We take time to carefully plan each case, offering personalised treatment options designed around your needs, lifestyle, expectations, and the level of care required. From your first consultation to your final result, each step is carefully considered to ensure comfort, precision, and long-term success.
+
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- ================= MAIN PRICING CARDS ================= -->
+
+  <section class="pricing-cards-section">
+
+    <div class="pricing-cards-row">
+
+      <button class="price-card" onclick="openPricingPopup('consultationPopup')">
+
+        <h3>Consultation</h3>
+
+        <div class="price-box">
+
+          <span class="small-text">Start with us</span>
+
+          <strong>FREE</strong>
+
+          <span class="small-text">Initial consultation</span>
+
+        </div>
+
+        <span class="card-arrow"></span>
+
+      </button>
+
+      <button class="price-card" onclick="openPricingPopup('bracesPopup')">
+
+        <h3>Braces</h3>
+
+        <div class="price-box">
+
+          <span class="small-text">from</span>
+
+          <strong>EGP 2000</strong>
+
+          <span class="small-text">per month</span>
+
+        </div>
+
+        <span class="card-arrow"></span>
+
+      </button>
+
+      <button class="price-card" onclick="openPricingPopup('alignersPopup')">
+
+        <h3>Aligners</h3>
+
+        <div class="price-box">
+
+          <span class="small-text">from</span>
+
+          <strong>EGP 2500</strong>
+
+          <span class="small-text">per month</span>
+
+        </div>
+
+        <span class="card-arrow"></span>
+
+      </button>
+
+      <button class="price-card" onclick="openPricingPopup('aftercarePopup')">
+
+        <h3>Aftercare</h3>
+
+        <div class="price-box">
+
+          <span class="small-text">Included</span>
+
+          <strong>FREE</strong>
+
+          <span class="small-text">First year</span>
+
+        </div>
+
+        <span class="card-arrow"></span>
+
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- ================= PAYMENT STRIP ================= -->
+
+  <section class="payment-strip">
+
+    <div class="payment-left">
+
+      <h3>Flexible, Interest-Free Payment Plans</h3>
+
+      <p>
+
+        We believe quality orthodontic care should be accessible and stress-free.
+
+        Your treatment begins with a 25% deposit, followed by easy monthly instalments.
+
+      </p>
+
+    </div>
+
+    <div class="payment-right">
+
+      <p>25% deposit to begin</p>
+
+      <p>Monthly instalments</p>
+
+      <p>Interest-free</p>
+
+    </div>
+
+  </section>
+
+  <!-- ================= SUPPORT OFFERS ================= -->
+
+  <section class="support-section">
+
+    <div class="support-cards-row">
+
+      <div class="support-card">
+
+        <h3>Summer Break</h3>
+
+        <p>During July and August, enjoy 10% off the overall treatment.</p>
+
+      </div>
+
+      <div class="support-card">
+
+        <h3>Family Care</h3>
+
+        <p>A 10% discount for family siblings. Even if they start later.</p>
+
+      </div>
+
+      <div class="support-card">
+
+        <h3>Plan Ahead</h3>
+
+        <p>Enjoy a 10% discount when you pay for your whole treatment in advance.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<!-- =========================================================
+
+   07. GLOBAL FOOTER
+
+========================================================= -->
+
+<footer class="site-footer">
+
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+
+      <div class="footer-logo">
+
+        <img src="/dental-website-v2/embrace-clear.png" alt="Embrace Bespoke Orthodontic">
+
+      </div>
+
+      <p class="footer-question">Have a question about your smile journey?</p>
+
+      <p>We are here to help you understand your options and plan the right treatment path with care and precision.</p>
+
+      <a href="contact.html?v=3" class="footer-cta">Book your consultation</a>
+
+    </div>
+
+    <div class="footer-column">
+
+      <h3>Locations</h3>
+
+      <div class="footer-clinic">
+
+        <strong>Twin Towers</strong>
+
+        <p>Sheikh Zayed City, Cairo</p>
+
+        <a href="contact.html?v=3" class="footer-map">Get directions</a>
+
+      </div>
+
+      <div class="footer-clinic">
+
+        <strong>Polydent</strong>
+
+        <p>Sheikh Zayed City, Cairo</p>
+
+        <a href="contact.html?v=3" class="footer-map">Get directions</a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-column">
+
+      <h3>Contact</h3>
+
+      <p data-site-phone>+20 128 000 4688</p>
+
+      <p data-site-email>info@embraceorthodontic.com</p>
+
+      <p data-site-address>Sheikh Zayed City, Cairo</p>
+
+      <div class="footer-socials">
+
+        <a href="#" class="icon instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+
+        <a href="#" class="icon facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+
+        <a href="#" class="icon twitter" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+
+        <a href="#" class="icon youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    © 2026 Dr. Yasmine Soliman. All rights reserved.
+
+  </div>
+
+</footer>
+
+<!-- =========================================================
+
+   08. PRICING POPUPS
+
+========================================================= -->
+
+<div id="consultationPopup" class="pricing-popup">
+
+  <div class="pricing-popup-content">
+
+    <button onclick="closePricingPopup('consultationPopup')">×</button>
+
+    <h3>Consultation</h3>
+
+    <p>Your consultation includes a full clinical assessment, referral for digital scans and a panoramic X-ray, and a detailed evaluation of your teeth and bite.</p>
+
+    <p>Based on this, we create a personalised treatment plan outlining the most suitable options, expected timeline, overall approach, and cost.</p>
+
+    <p>Your initial consultation is free.</p>
+
+  </div>
+
+</div>
+
+<div id="bracesPopup" class="pricing-popup">
+
+  <div class="pricing-popup-content">
+
+    <button onclick="closePricingPopup('bracesPopup')">×</button>
+
+    <h3>Braces</h3>
+
+    <p>We use high-quality, clinically proven materials to ensure precise and reliable tooth movement throughout your treatment.</p>
+
+    <p>Braces treatment typically starts from around EGP 40,000 for metal braces, depending on the complexity of the case and the duration required.</p>
+
+    <p>An initial payment of 25% of the total fee is required to begin your treatment. The remaining balance is then divided into monthly payments, typically from around EGP 2000, depending on the overall plan and treatment duration.</p>
+
+    <p>Treatment usually lasts between 12 and 24 months, although more complex cases may take up to 30 months.</p>
+
+    <p>Ceramic braces are also available as a more discreet option and involve an additional cost.</p>
+
+    <p>Appointments are generally scheduled every 4 to 6 weeks to monitor progress and make the necessary adjustments.</p>
+
+  </div>
+
+</div>
+
+<div id="alignersPopup" class="pricing-popup">
+
+  <div class="pricing-popup-content">
+
+    <button onclick="closePricingPopup('alignersPopup')">×</button>
+
+    <h3>Aligners</h3>
+
+    <p>Clear aligners are a preferred option for those looking for a more discreet and comfortable treatment.</p>
+
+    <p>They are most suitable for mild to moderate cases and are designed to fit easily into your daily routine.</p>
+
+    <p>Treatment includes digital scanning and a series of custom-made aligners, planned step by step to gradually move your teeth into position.</p>
+
+    <p>Costs typically start from around EGP 50,000, depending on the complexity of the case.</p>
+
+    <p>An initial payment of 25% of the total fee is required to begin your treatment. The remaining balance is then divided into monthly payments, typically from around EGP 2500, depending on the overall plan and treatment duration.</p>
+
+    <p>Treatment duration is usually between 12 and 18 months.</p>
+
+  </div>
+
+</div>
+
+<div id="aftercarePopup" class="pricing-popup">
+
+  <div class="pricing-popup-content">
+
+    <button onclick="closePricingPopup('aftercarePopup')">×</button>
+
+    <h3>Aftercare</h3>
+
+    <p>After your treatment is complete, we provide the retainers required to keep your teeth in their new position.</p>
+
+    <p>We continue to monitor your progress and ensure everything remains stable over time.</p>
+
+    <p>Your plan includes two follow-up visits during the first year after completing treatment, allowing us to check alignment and make any necessary adjustments.</p>
+
+    <p>Ongoing guidance is provided to help you maintain your results long term.</p>
+
+  </div>
+
+</div>
+
+<!-- =========================================================
+
+   09. FLOATING CONTACT BUTTONS
+
+========================================================= -->
+
+<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" aria-label="WhatsApp" data-site-whatsapp-link>
+
+  <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call" data-site-phone-link>
+
+  <i class="fa-solid fa-phone"></i>
+
+</a>
+
+<!-- =========================================================
+
+   10. PAGE SCRIPTS
+
+========================================================= -->
+
+<script>
+
+function toggleMenu() {
+
+  const body = document.body;
+
+  const burger = document.querySelector(".burger-btn");
+
+  body.classList.toggle("menu-open");
+
+  const isOpen = body.classList.contains("menu-open");
+
+  if (burger) {
+
+    burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+  }
+
+}
+
+function openPricingPopup(id) {
+
+  document.getElementById(id).classList.add("show");
+
+}
+
+function closePricingPopup(id) {
+
+  document.getElementById(id).classList.remove("show");
+
+}
+
+window.addEventListener("scroll", function () {
+
+  if (window.scrollY > 20) {
+
+    document.body.classList.add("is-scrolled");
+
+  } else {
+
+    document.body.classList.remove("is-scrolled");
+
+  }
+
+});
+
+window.addEventListener("DOMContentLoaded", function () {
+
+  const hero = document.querySelector(".pricing-hero");
+
+  if (hero) {
+
+    setTimeout(function () {
+
+      hero.classList.add("animate");
+
+    }, 350);
+
+  }
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (typeof SITE_DATA === "undefined") return;
+
+  document.querySelectorAll("[data-site-email]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.email;
+
+    if (el.tagName.toLowerCase() === "a") {
+
+      el.href = "mailto:" + SITE_DATA.contact.email;
+
+    }
+
+  });
+
+  document.querySelectorAll("[data-site-phone]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.phoneDisplay;
+
+  });
+
+  document.querySelectorAll("[data-site-phone-link]").forEach(function (el) {
+
+    el.href = "tel:" + SITE_DATA.contact.phoneRaw;
+
+  });
+
+  document.querySelectorAll("[data-site-whatsapp-link]").forEach(function (el) {
+
+    el.href = SITE_DATA.contact.whatsappUrl;
+
+  });
+
+  document.querySelectorAll("[data-site-domain]").forEach(function (el) {
+
+    el.textContent = "www." + SITE_DATA.website.domain;
+
+  });
+
+  document.querySelectorAll("[data-site-address]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.location.fullAddress;
+
+  });
+
+  document.querySelectorAll("[data-site-footer]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.footer.copyrightText;
+
+  });
+
+});
+
+</script>
+
+</body>
+
+</html>
+

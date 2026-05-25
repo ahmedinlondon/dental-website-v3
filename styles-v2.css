@@ -1,0 +1,562 @@
+/* =========================================================
+
+   V2 GLOBAL STYLE SYSTEM INDEX
+ ( kodex newest version )
+=========================================================
+
+01. ROOT VARIABLES / GLOBAL COLOURS
+02. GLOBAL RESET
+03. BODY / BASE TYPOGRAPHY
+04. GLOBAL LINKS
+05. GLOBAL HEADER SYSTEM
+06. BURGER BUTTON
+07. FULL SCREEN MENU OVERLAY
+08. HERO TEXT ANIMATION SYSTEM
+09. FLOATING CONTACT BUTTONS
+10. GLOBAL FOOTER SYSTEM
+11. GLOBAL BUTTON SYSTEM
+12. RESPONSIVE SYSTEM
+
+========================================================= */
+
+/* =========================================================
+   01. ROOT VARIABLES / GLOBAL COLOURS
+========================================================= */
+
+:root {
+
+  --v2-white: #ffffff;
+  --v2-ivory: #fffaf2;
+  --v2-cream: #f5eee3;
+  --v2-soft-cream: #f8f2e8;
+  --v2-charcoal: #262321;
+  --v2-muted: #6f655c;
+  --v2-navy: #0f2f57;
+  --v2-gold: #b99657;
+  --v2-gold-soft: rgba(185, 150, 87, 0.42);
+  --v2-gold-faint: rgba(185, 150, 87, 0.18);
+  --v2-border: rgba(185, 150, 87, 0.24);
+  --v2-shadow: rgba(38, 35, 33, 0.12);
+  --v2-whatsapp: #25d366;
+  --v2-facebook: #1877f2;
+  --v2-youtube: #ff0000;
+  --v2-header-height: 78px;
+  --v2-header-compact-height: 64px;
+  --v2-ease-luxury: cubic-bezier(0.45, 0, 0.15, 1);
+
+}
+
+/* =========================================================
+   02. GLOBAL RESET
+========================================================= */
+
+*,
+*::before,
+*::after {
+
+  box-sizing: border-box;
+  border-radius: 0 !important;
+
+}
+
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+body {
+
+  margin: 0;
+  overflow-x: hidden;
+
+}
+
+/* =========================================================
+   03. BODY / BASE TYPOGRAPHY
+========================================================= */
+
+body {
+
+  font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+  background: var(--v2-ivory);
+  color: var(--v2-charcoal);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+
+  margin-top: 0;
+
+}
+
+img {
+
+  max-width: 100%;
+  display: block;
+
+}
+
+/* =========================================================
+   04. GLOBAL LINKS
+========================================================= */
+
+a {
+
+  color: inherit;
+  text-decoration: none;
+
+}
+
+a:hover {
+
+  text-decoration: none;
+
+}
+
+/* =========================================================
+   05. GLOBAL HEADER SYSTEM
+========================================================= */
+
+.site-header {
+
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+  background: var(--v2-white);
+  transition: all 0.45s ease;
+
+}
+
+.header-top {
+
+  width: 100%;
+  background: var(--v2-cream);
+  padding: 14px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 34px;
+  overflow: hidden;
+
+}
+
+.header-doctor-name {
+
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  color: var(--v2-charcoal);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+
+}
+
+.header-contact {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+  color: var(--v2-charcoal);
+  font-size: 11px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  text-align: right;
+
+}
+
+.header-contact span,
+.header-contact a {
+
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+
+}
+
+.header-contact i {
+
+  font-size: 10px;
+  color: var(--v2-gold);
+
+}
+
+.header-consultation {
+
+  margin-top: 4px;
+  border: 1px solid var(--v2-gold);
+  padding: 10px 28px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+}
+
+.header-consultation:hover {
+
+  background: var(--v2-gold);
+  color: var(--v2-white);
+
+}
+
+.header-main {
+
+  width: 100%;
+  height: 62px;
+  padding: 0 6%;
+  background: var(--v2-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.site-logo {
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+
+}
+
+.site-logo img {
+
+  width: auto;
+  height: 82px;
+  object-fit: contain;
+
+}
+
+body.is-scrolled .header-top {
+
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+
+}
+
+body.is-scrolled .header-main {
+
+  height: 58px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.055);
+
+}
+
+/* =========================================================
+   06. BURGER BUTTON
+========================================================= */
+
+.burger-btn {
+
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  z-index: 13000;
+
+}
+
+.burger-btn span {
+
+  display: block;
+  width: 38px !important;
+  height: 2px;
+  background: var(--v2-charcoal);
+  transition:
+    transform 0.35s ease,
+    opacity 0.3s ease,
+    background 0.3s ease;
+
+}
+
+body.menu-open .burger-btn span {
+
+  background: var(--v2-gold);
+
+}
+
+/* =========================================================
+   07. FULL SCREEN MENU OVERLAY
+========================================================= */
+
+.menu-overlay {
+
+  position: fixed;
+  inset: 0;
+  z-index: 12000;
+  background: var(--v2-cream);
+  transform: translateX(100%);
+  transition: transform 0.92s cubic-bezier(0.55, 0.02, 0.18, 1);
+  overflow: hidden;
+
+}
+
+body.menu-open {
+
+  overflow: hidden;
+
+}
+
+body.menu-open .menu-overlay {
+
+  transform: translateX(0);
+
+}
+
+.menu-overlay::before,
+.menu-overlay::after {
+
+  content: "";
+  position: absolute;
+  pointer-events: none;
+
+}
+
+.menu-overlay::before {
+
+  width: 420px;
+  height: 760px;
+  right: -95px;
+  top: 8%;
+  border-left: 10px solid rgba(255,255,255,0.72);
+  border-top: 10px solid rgba(255,255,255,0.72);
+  border-bottom: 10px solid rgba(185,150,87,0.11);
+
+}
+
+.menu-overlay::after {
+
+  width: 320px;
+  height: 320px;
+  right: -120px;
+  bottom: 13%;
+  border: 8px solid rgba(255,255,255,0.68);
+  transform: rotate(45deg);
+
+}
+
+.menu-inner {
+
+  position: relative;
+  z-index: 2;
+  min-height: 100%;
+  padding: 82px 7% 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.menu-logo img {
+
+  max-height: 68px;
+  width: auto;
+  margin-bottom: 58px;
+
+}
+
+.menu-nav {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 430px;
+
+}
+
+.menu-nav a {
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  color: var(--v2-charcoal);
+  font-size: clamp(23px, 2.6vw, 36px);
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(185,150,87,0.16);
+
+}
+
+.menu-nav a::after {
+
+  content: "→";
+  color: var(--v2-gold);
+  font-size: 25px;
+  transition: transform 0.35s ease;
+
+}
+
+.menu-nav a:hover::after {
+
+  transform: translateX(7px);
+
+}
+
+.menu-bottom {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 52px;
+  margin-top: 58px;
+  max-width: 760px;
+  color: var(--v2-muted);
+  font-size: 13px;
+  line-height: 1.48;
+
+}
+
+.menu-bottom strong {
+
+  display: block;
+  margin-bottom: 12px;
+  color: var(--v2-charcoal);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+}
+
+.menu-bottom p {
+
+  margin: 0 0 7px;
+
+}
+
+/* =========================================================
+   08. HERO TEXT ANIMATION SYSTEM
+========================================================= */
+
+.hero-reveal .script-line,
+.hero-reveal .hero-title,
+.hero-reveal .hero-subtitle,
+.hero-reveal .hero-copy,
+.hero-reveal .hero-button {
+
+  opacity: 0;
+
+}
+
+/* =========================================================
+   09. FLOATING CONTACT BUTTONS
+========================================================= */
+
+.floating-contact {
+
+  position: fixed;
+  right: 22px;
+  z-index: 9500;
+  width: 56px;
+  height: 56px;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* =========================================================
+   10. GLOBAL FOOTER SYSTEM
+========================================================= */
+
+.site-footer {
+
+  position: relative;
+  overflow: hidden;
+  background: #f6efe4;
+  color: #2d2a26;
+  padding: 44px 7% 24px;
+
+}
+
+/* =========================================================
+   11. GLOBAL BUTTON SYSTEM
+========================================================= */
+
+.btn,
+.global-btn {
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* =========================================================
+   12. RESPONSIVE SYSTEM
+========================================================= */
+
+@media (max-width: 1180px) {
+
+  .menu-inner {
+
+    padding: 72px 7% 42px;
+
+  }
+
+  .menu-bottom {
+
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .menu-inner {
+
+    padding: 58px 7% 36px;
+
+  }
+
+  .menu-logo img {
+
+    max-height: 46px;
+    margin-bottom: 44px;
+
+  }
+
+  .menu-nav a {
+
+    font-size: 24px;
+    padding: 13px 0;
+
+  }
+
+  .menu-bottom {
+
+    gap: 20px;
+    margin-top: 44px;
+    font-size: 12px;
+    line-height: 1.38;
+
+  }
+
+}
+

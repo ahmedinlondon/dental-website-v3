@@ -1,0 +1,1001 @@
+<!--
+
+=========================================================
+
+SERVICES.HTML — LOCKED GLOBAL DESIGN
+
+=========================================================
+
+01. Document Head
+
+02. Global Header - Burger menu - Floating buttons
+
+03. Hero Section
+
+04. Our Approach Section.
+
+05. Services Section
+
+06. Comparison Section
+
+07. Global Footer
+
+08. Services Popup Data + Functions
+
+09. Mobile Comparison Popup Data + Functions
+
+10. Page Scripts
+
+=========================================================
+
+-->
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Services | Dr. Yasmine Soliman</title>
+
+  <!-- ================= CSS FILES ================= -->
+
+  <link rel="stylesheet" href="design-system.css?v=4" />
+
+  <link rel="stylesheet" href="style.css?v=113" />
+
+  <link rel="stylesheet" href="services.css?v=207" />
+
+  <!-- ================= SITE DATA ================= -->
+  
+  <script src="site-data.js?v=6"></script>
+
+  <!-- ================= GOOGLE FONTS ================= -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ================= ICONS ================= -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+
+<!-- ================= 02. GLOBAL HEADER ================= -->
+
+<header class="site-header">
+
+  <div class="header-top">
+
+    <a href="index.html?v=3" class="header-doctor-name">Dr. Yasmine Soliman</a>
+
+    <div class="header-contact header-contact-stacked">
+
+     <a href="tel:+201280004688" class="header-phone-link" data-site-phone-link>
+
+  <i class="fa-solid fa-phone"></i>
+
+  <span data-site-phone>+20 128 000 4688</span>
+
+</a>
+
+      <span data-site-domain>WWW.EMBRACEORTHODONTIC.COM</span>
+
+      <a href="contact.html?v=3" class="header-consultation">BOOK YOUR CONSULTATION</a>
+
+    </div>
+
+  </div>
+
+  <div class="header-main">
+
+    <a href="index.html?v=3" class="site-logo" aria-label="Embrace Bespoke Orthodontic">
+
+      <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+
+    </a>
+
+    <button class="burger-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">
+
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+    </button>
+
+  </div>
+
+</header>
+
+<!-- =========================================================
+
+                 FULL SCREEN BURGER MENU
+
+========================================================= -->
+
+<div class="menu-overlay" id="menuOverlay">
+
+  <div class="menu-orthodontic-line"></div>
+
+  <div class="menu-inner">
+
+    <div>
+
+      <a href="index.html?v=3" class="menu-logo">
+
+       <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+
+      </a>
+
+      <nav class="menu-nav">
+
+        <a href="index.html?v=3">Home</a>
+
+        <a href="about.html?v=3">About</a>
+
+        <a href="services.html?v=3">Services</a>
+
+        <a href="pricing.html?v=1">Pricing</a>
+
+        <a href="faq.html?v=60">FAQ</a>
+
+        <a href="contact.html?v=3">Contact</a>
+
+      </nav>
+
+    </div>
+
+    <div class="menu-bottom">
+
+      <div>
+
+        <strong>Contact</strong>
+
+        <p data-site-phone>+20 128 000 4688</p>
+
+        <p data-site-email>info@embraceorthodontic.com</p>
+
+        <p data-site-domain>embraceorthodontic.com</p>
+
+      </div>
+
+      <div>
+
+        <strong>Clinics</strong>
+
+        <p data-site-address>Twin Tower, Sheikh Zayed City, Cairo, Egypt</p>
+
+        <p>Polydent, Sheikh Zayed City, Cairo, Egypt</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+  <!-- ================= FLOATING CONTACT BUTTONS ================= -->
+
+<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" aria-label="WhatsApp" data-site-whatsapp-link>
+
+  <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call" data-site-phone-link>
+
+  <i class="fa-solid fa-phone"></i>
+
+</a>
+
+<!-- ================= 03. HERO SECTION ================= -->
+
+<section class="services-hero hero-reveal">
+
+  <div class="services-hero-content">
+
+    <p class="services-hero-script script-line">For a Confident Smile</p>
+
+    <h1 class="hero-title hero-title-line">Advanced Orthodontic Care</h1>
+
+  </div>
+
+</section>
+
+  <!-- ================= 04.OUR APPROACH SECTION ================= -->
+
+<section class="services-approach-section">
+
+  <div class="services-approach-inner">
+
+    <p class="services-approach-script">Planned with Care</p>
+
+    <h2>Our Approach</h2>
+
+    <span class="services-approach-line"></span>
+
+    <p class="services-approach-text">
+
+      Orthodontic treatment is a carefully planned journey designed to create healthy, confident smiles at every age. At embrace, we provide a full range of bespoke orthodontic solutions tailored to your individual needs using advanced technology, clinically proven materials, and personalised care. From digital scanning and precision treatment planning to carefully monitored progress throughout your journey, every step is designed to achieve accurate, lasting, and natural-looking results. Explore our specialist orthodontic treatments to discover how each option can support your smile journey, with guidance and support from consultation through to your final result.
+
+    </p>
+
+  </div>
+
+</section>
+
+<!-- ================= 05. SERVICES SECTION ================= -->
+
+<section class="services-main">
+
+  <section class="services-grid-section">
+
+    <div class="services-section-heading">
+
+      <p>Our Services</p>
+
+      <h2>Personalised Care for Every Smile</h2>
+
+      <span class="services-heading-line"></span>
+
+    </div>
+
+    <div class="services-interactive">
+
+      <div class="services-grid" id="servicesGrid">
+
+        <button class="service-card" onclick="openService('consultation', event)">
+
+          <h3>Initial Consultation</h3>
+
+          <span aria-hidden="true"></span>
+
+        </button>
+
+        <button class="service-card" onclick="openService('smiledesign', event)">
+
+          <h3>Smile Design</h3>
+
+          <span aria-hidden="true"></span>
+
+        </button>
+
+        <button class="service-card" onclick="openService('metal', event)">
+
+          <h3>Metal Braces</h3>
+
+          <span aria-hidden="true"></span>
+
+        </button>
+
+        <button class="service-card" onclick="openService('ceramic', event)">
+
+          <h3>Ceramic Braces</h3>
+
+          <span aria-hidden="true"></span>
+
+        </button>
+
+        <button class="service-card" onclick="openService('aligners', event)">
+
+          <h3>Clear Aligners</h3>
+
+          <span aria-hidden="true"></span>
+
+        </button>
+
+        <button class="service-card" onclick="openService('retainers', event)">
+
+          <h3>Aftercare</h3>
+
+          <span aria-hidden="true"></span>
+
+        </button>
+
+      </div>
+
+      <div id="servicePanel" class="service-panel"></div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= 06. COMPARISON SECTION ================= -->
+
+  <section class="comparison-section">
+
+    <div class="comparison-title">
+
+      <p>Your Options at a Glance</p>
+
+      <h2>Braces vs Aligners</h2>
+
+      <span class="comparison-heading-line"></span>
+
+    </div>
+
+    <div class="mobile-comparison-cards">
+
+      <button class="mobile-comparison-card comparison-braces-card" onclick="openComparisonPopup('braces')">
+
+        <h3>Braces</h3>
+
+        <span aria-hidden="true"></span>
+
+      </button>
+
+      <button class="mobile-comparison-card comparison-aligners-card" onclick="openComparisonPopup('aligners')">
+
+        <h3>Aligners</h3>
+
+        <span aria-hidden="true"></span>
+
+      </button>
+
+    </div>
+
+    <div id="comparisonOverlay" class="comparison-overlay" onclick="closeComparisonPopup(event)">
+
+      <div id="comparisonPopup" class="comparison-popup" onclick="event.stopPropagation()"></div>
+
+    </div>
+
+  </section>
+
+</section><!-- ================= 07. GLOBAL FOOTER ================= -->
+
+<footer class="site-footer">
+
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+
+      <a href="index.html?v=3" class="footer-logo">
+
+        <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+
+      </a>
+
+      <p class="footer-question">Still Have Questions?</p>
+
+      <p>
+
+        Our team is happy to answer your questions and help you choose the right treatment for you or your child.
+
+      </p>
+
+      <a href="contact.html?v=3" class="footer-cta">BOOK YOUR CONSULTATION</a>
+
+    </div>
+
+    <div class="footer-column">
+
+      <h3>Clinics</h3>
+
+      <div class="footer-clinic">
+
+        <strong>Twin Tower</strong>
+
+        <p>Sheikh Zayed City, Cairo, Egypt</p>
+
+        <a href="contact.html?v=3" class="footer-map">Get Directions</a>
+
+      </div>
+
+      <div class="footer-clinic">
+
+        <strong>Polydent</strong>
+
+        <p>Sheikh Zayed City, Cairo, Egypt</p>
+
+        <a href="contact.html?v=3" class="footer-map">Get Directions</a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-column">
+
+      <h3>Contact</h3>
+
+      <p data-site-phone>+20 128 000 4688</p>
+
+      <p data-site-email>info@embraceorthodontic.com</p>
+
+      <p data-site-domain>embraceorthodontic.com</p>
+
+      <div class="footer-socials">
+
+        <a href="#" class="icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+        <a href="#" class="icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+        <a href="#" class="icon twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+
+        <a href="#" class="icon youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+
+   <span data-site-footer>© 2026 Embrace Bespoke Orthodontic. All rights reserved.</span>
+
+  </div>
+
+</footer>
+
+<!-- ================= 08. SERVICES POPUP DATA + FUNCTIONS ================= -->
+
+<script>
+
+const serviceData = {
+
+  consultation: `
+
+    <button class="service-close" onclick="closeService(event)">×</button>
+
+    <img src="consultation.png" alt="Initial orthodontic consultation">
+
+    <h2>Initial Consultation & Assessment</h2>
+
+    <p>Your orthodontic journey begins with a comprehensive consultation designed to fully understand your needs, expectations, and oral health.</p>
+
+    <p>During your visit, we carry out a detailed clinical examination of your teeth, bite, and jaw alignment. This is supported by advanced diagnostic tools including digital scans, clinical photography, and X-rays such as panoramic imaging where required.</p>
+
+    <p>These records allow us to build a complete picture of your case and assess the level of complexity involved.</p>
+
+    <ul>
+
+      <li>Analyse your smile, bite, and facial balance</li>
+
+      <li>Identify any dental issues that may need treatment before orthodontics</li>
+
+      <li>Discuss suitable options, including braces and clear aligners</li>
+
+      <li>Explain the advantages and limitations of each option</li>
+
+      <li>Estimate the expected treatment duration</li>
+
+      <li>Provide a clear and transparent cost overview</li>
+
+    </ul>
+
+    <p>Every treatment plan is fully personalised, ensuring the most effective and efficient path to achieving your ideal smile.</p>
+
+    <p>We take time to answer all your questions, so you feel confident, informed, and comfortable before starting treatment.</p>
+
+    <a href="contact.html?v=3" class="panel-button">BOOK A CONSULTATION</a>
+
+  `,
+
+  smiledesign: `
+
+    <button class="service-close" onclick="closeService(event)">×</button>
+
+    <img src="smiledesign.png" alt="Smile design">
+
+    <h2>Smile Design</h2>
+
+    <p>Creating a beautiful, confident smile is both a science and an art. Our smile design process allows us to carefully plan your treatment with precision while ensuring the final result complements your natural features.</p>
+
+    <p>Using advanced digital scans, clinical photography, and detailed analysis, we assess your teeth, facial proportions, and overall smile aesthetics.</p>
+
+    <ul>
+
+      <li>Tooth shape, size, and alignment</li>
+
+      <li>Smile line and lip dynamics</li>
+
+      <li>Facial balance and symmetry</li>
+
+      <li>Bite function and long-term stability</li>
+
+    </ul>
+
+    <h3>Personalised Planning</h3>
+
+    <p>Every smile is unique. Your treatment is fully tailored to your individual needs and goals.</p>
+
+    <p>We design a customised plan that balances aesthetics and function, selecting the most suitable option for you, including clear aligners, ceramic or metal braces, or combined techniques where required.</p>
+
+    <p>If additional treatments are needed, these can be incorporated into your overall plan to achieve the best possible result.</p>
+
+    <h3>A Predictable, Confident Outcome</h3>
+
+    <p>With careful planning and modern technology, we ensure a clear, structured path to your new smile.</p>
+
+    <p>Our goal is not just straight teeth, but a result that enhances your confidence and looks natural, balanced, and long-lasting.</p>
+
+    <a href="contact.html?v=3" class="panel-button">BOOK A CONSULTATION</a>
+
+  `,
+
+  metal: `
+
+    <button class="service-close" onclick="closeService(event)">×</button>
+
+    <img src="braces.png" alt="Metal braces">
+
+    <h2>Metal Braces</h2>
+
+    <p>Metal braces remain one of the most effective and reliable orthodontic treatments, particularly for cases that require precise control and complex tooth movement.</p>
+
+    <p>Using a system of high-quality brackets and wires, we are able to gradually guide your teeth into their ideal position with accuracy and predictability.</p>
+
+    <p>Modern braces are smaller, more comfortable, and more efficient than ever before.</p>
+
+    <h3>Precision & Control</h3>
+
+    <p>Metal braces allow us to treat a wide range of orthodontic issues, including:</p>
+
+    <ul>
+
+      <li>Crowding and spacing</li>
+
+      <li>Bite problems such as overbite, underbite, and crossbite</li>
+
+      <li>Rotated or severely misaligned teeth</li>
+
+      <li>Complex cases requiring detailed movement</li>
+
+    </ul>
+
+    <p>Because they are fixed appliances, they work continuously throughout the day, ensuring consistent progress.</p>
+
+    <h3>Reliable Results for All Ages</h3>
+
+    <p>Metal braces are suitable for both teenagers and adults, especially where more comprehensive correction is needed.</p>
+
+    <p>While newer options are available, metal braces remain the gold standard for achieving precise and stable results.</p>
+
+    <a href="contact.html?v=3" class="panel-button">BOOK A CONSULTATION</a>
+
+  `,
+
+  ceramic: `
+
+    <button class="service-close" onclick="closeService(event)">×</button>
+
+    <img src="ceramic.png" alt="Ceramic braces">
+
+    <h2>Ceramic Braces</h2>
+
+    <p>Ceramic braces offer the same effectiveness as traditional metal braces, with a more discreet and aesthetic appearance.</p>
+
+    <p>The brackets are tooth-coloured or clear, allowing them to blend naturally with your teeth, making them a popular choice for patients who prefer a less noticeable treatment.</p>
+
+    <h3>Discreet Yet Effective</h3>
+
+    <p>Ceramic braces are designed to deliver reliable results while maintaining a more subtle look.</p>
+
+    <ul>
+
+      <li>Crowding and spacing</li>
+
+      <li>Bite irregularities</li>
+
+      <li>Moderately complex orthodontic cases</li>
+
+    </ul>
+
+    <p>You benefit from the precision of fixed braces with a softer, more refined appearance.</p>
+
+    <h3>Aesthetic Confidence During Treatment</h3>
+
+    <p>Many adult patients choose ceramic braces as they provide a balance between performance and appearance.</p>
+
+    <p>Ceramic braces combine the strength of traditional orthodontics with improved aesthetics, delivering predictable and long-lasting results.</p>
+
+    <a href="contact.html?v=3" class="panel-button">BOOK A CONSULTATION</a>
+
+  `,
+
+  aligners: `
+
+    <button class="service-close" onclick="closeService(event)">×</button>
+
+    <img src="aligners.png" alt="Clear aligners">
+
+    <h2>Clear Aligners</h2>
+
+    <p>Clear aligners are a modern, discreet way to straighten your teeth using a series of custom-made, transparent trays.</p>
+
+    <p>Designed specifically for your smile, each aligner gently moves your teeth step by step into their ideal position.</p>
+
+    <p>They are virtually invisible, making them a popular choice for adults and professionals.</p>
+
+    <h3>Comfort & Convenience</h3>
+
+    <p>Aligners are removable, allowing you to maintain your normal daily routine with minimal disruption.</p>
+
+    <ul>
+
+      <li>Eat and drink without restrictions</li>
+
+      <li>Brush and floss easily</li>
+
+      <li>Remove aligners for important occasions if needed</li>
+
+    </ul>
+
+    <h3>Discreet and Effective</h3>
+
+    <p>Clear aligners are highly effective for many orthodontic cases, particularly mild to moderate alignment issues.</p>
+
+    <p>With advanced digital planning, your treatment is carefully mapped from start to finish and monitored to ensure optimal results.</p>
+
+    <a href="contact.html?v=3" class="panel-button">BOOK A CONSULTATION</a>
+
+  `,
+
+  retainers: `
+
+    <button class="service-close" onclick="closeService(event)">×</button>
+
+    <img src="retainers.png" alt="Aftercare and retainers">
+
+    <h2>Aftercare & Retainers</h2>
+
+    <p>Completing your orthodontic treatment is an important milestone, but maintaining your results is just as essential.</p>
+
+    <p>After your braces or aligners are removed, we provide custom retainers to keep your teeth in their new position and prevent unwanted movement.</p>
+
+    <h3>Retainers & Stability</h3>
+
+    <p>Teeth naturally tend to shift over time. Retainers are designed to stabilise your new smile and protect the result you have achieved.</p>
+
+    <p>We provide carefully fitted retainers and clear guidance on how and when to wear them to ensure long-term success.</p>
+
+    <h3>Ongoing Monitoring & Support</h3>
+
+    <p>Your care does not stop when treatment ends.</p>
+
+    <ul>
+
+      <li>Regular review of your retainer fit and condition</li>
+
+      <li>Monitoring of tooth position over time</li>
+
+      <li>At least two follow-up visits within the first 12 months after treatment</li>
+
+      <li>Guidance on long-term retainer use</li>
+
+    </ul>
+
+    <h3>Protecting Your Investment</h3>
+
+    <p>Orthodontic treatment is an investment in your health and confidence. Proper aftercare ensures that your results remain stable and long-lasting.</p>
+
+    <a href="contact.html?v=3" class="panel-button">BOOK A CONSULTATION</a>
+
+  `
+
+};
+
+function openService(service, event) {
+
+  const panel = document.getElementById("servicePanel");
+
+  const wrapper = document.querySelector(".services-interactive");
+
+  if (panel.dataset.open === service) {
+
+    closeServicePanel();
+
+    return;
+
+  }
+
+  panel.innerHTML = serviceData[service];
+
+  panel.style.display = "block";
+
+  panel.dataset.open = service;
+
+  wrapper.classList.add("panel-open");
+
+  if (window.innerWidth <= 700) {
+
+    panel.scrollTop = 0;
+
+  } else {
+
+    panel.scrollIntoView({ behavior: "smooth", block: "start" });
+
+  }
+
+}
+
+function closeService(event) {
+
+  if (event) {
+
+    event.stopPropagation();
+
+  }
+
+  closeServicePanel();
+
+}
+
+function closeServicePanel() {
+
+  const panel = document.getElementById("servicePanel");
+
+  const wrapper = document.querySelector(".services-interactive");
+
+  panel.style.display = "none";
+
+  panel.dataset.open = "";
+
+  wrapper.classList.remove("panel-open");
+
+}
+
+document.addEventListener("click", function(e) {
+
+  const panel = document.getElementById("servicePanel");
+
+  const grid = document.getElementById("servicesGrid");
+
+  if (panel && panel.style.display === "block") {
+
+    if (!panel.contains(e.target) && !grid.contains(e.target)) {
+
+      closeServicePanel();
+
+    }
+
+  }
+
+});
+
+function openServiceFromHash() {
+
+  const hash = window.location.hash.replace("#", "");
+
+  const hashMap = {
+
+    "smile-planning": "smiledesign",
+
+    "fixed-braces": "metal",
+
+    "clear-aligners": "aligners"
+
+  };
+
+  if (!hash || !hashMap[hash]) {
+
+    return;
+
+  }
+
+  setTimeout(function() {
+
+    openService(hashMap[hash]);
+
+  }, 500);
+
+}
+
+window.addEventListener("load", openServiceFromHash);
+  
+ 
+/* ================= 09. MOBILE COMPARISON POPUP DATA + FUNCTIONS ================= */
+
+  
+const comparisonData = {
+
+  braces: `
+
+    <button class="comparison-close" onclick="closeComparisonPopup(event)">×</button>
+
+    <h2>braces</h2>
+
+    <ul>
+
+      <li>Visible brackets and wires are noticeable during treatment</li>
+
+      <li>Fixed in place 24/7 for continuous, effective results</li>
+
+      <li>Ideal for complex cases and severe alignment issues</li>
+
+      <li>More precise control for predictable and detailed adjustments</li>
+
+      <li>More care needed with eating to avoid damaging brackets</li>
+
+      <li>More effort required for thorough cleaning around brackets</li>
+
+      <li>Adjustment visits every 4–8 weeks to monitor progress</li>
+
+      <li>Proven and reliable results for all types of orthodontic cases</li>
+
+    </ul>
+
+  `,
+
+  aligners: `
+
+    <button class="comparison-close" onclick="closeComparisonPopup(event)">×</button>
+
+    <h2>aligners</h2>
+
+    <ul>
+
+      <li>Virtually invisible trays for a discreet natural look</li>
+
+      <li>Removable for eating, drinking, brushing, and flossing</li>
+
+      <li>Ideal for mild to moderate cases and minor corrections</li>
+
+      <li>Gentle, consistent pressure for comfortable tooth movement</li>
+
+      <li>No food restrictions, eat and enjoy your favorite foods</li>
+
+      <li>Easier to clean, just remove and brush as usual</li>
+
+      <li>Check-ups every 6–10 weeks with fewer in-office visits</li>
+
+      <li>More comfortable and convenient for everyday lifestyle</li>
+
+    </ul>
+
+  `
+
+};
+
+function openComparisonPopup(type) {
+
+  const overlay = document.getElementById("comparisonOverlay");
+
+  const popup = document.getElementById("comparisonPopup");
+
+  popup.className = "comparison-popup " + type + "-popup";
+
+  popup.innerHTML = comparisonData[type];
+
+  overlay.style.display = "flex";
+
+  document.body.style.overflow = "hidden";
+
+}
+
+function closeComparisonPopup(event) {
+
+  if (event) {
+
+    event.stopPropagation();
+
+  }
+
+  const overlay = document.getElementById("comparisonOverlay");
+
+  overlay.style.display = "none";
+
+  document.body.style.overflow = "";
+
+}
+
+/* ================= 10. PAGE SCRIPTS ================= */
+
+function toggleMenu() {
+
+  const body = document.body;
+
+  const burger = document.querySelector(".burger-btn");
+
+  body.classList.toggle("menu-open");
+
+  const isOpen = body.classList.contains("menu-open");
+
+  if (burger) {
+
+    burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+  }
+
+}
+
+window.addEventListener("scroll", function() {
+
+  if (window.scrollY > 80) {
+
+    document.body.classList.add("is-scrolled");
+
+  } else {
+
+    document.body.classList.remove("is-scrolled");
+
+  }
+
+});
+
+window.addEventListener("load", function() {
+
+  const hero = document.querySelector(".hero-reveal");
+
+  if (hero) {
+
+    setTimeout(function() {
+
+      hero.classList.add("animate");
+
+    }, 300);
+
+  }
+
+});
+
+</script>
+
+
+<!-- ================= 11. SITE DATA ================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (typeof SITE_DATA === "undefined") return;
+
+  document.querySelectorAll("[data-site-email]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.email;
+
+    if (el.tagName.toLowerCase() === "a") {
+
+      el.href = "mailto:" + SITE_DATA.contact.email;
+
+    }
+
+  });
+
+  document.querySelectorAll("[data-site-phone]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.phoneDisplay;
+
+  });
+
+  document.querySelectorAll("[data-site-phone-link]").forEach(function (el) {
+
+    el.href = "tel:" + SITE_DATA.contact.phoneRaw;
+
+  });
+
+  document.querySelectorAll("[data-site-whatsapp-link]").forEach(function (el) {
+
+  el.href = SITE_DATA.contact.whatsappUrl;
+
+ });
+
+  document.querySelectorAll("[data-site-domain]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.website.domain;
+
+  });
+
+  document.querySelectorAll("[data-site-footer]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.footer.copyrightText;
+
+  });
+
+});
+
+</script>
+  
+</body>
+
+</html>

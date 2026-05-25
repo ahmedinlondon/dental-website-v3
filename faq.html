@@ -1,0 +1,809 @@
+<!--
+=========================================================
+FAQ.HTML — LOCKED GLOBAL DESIGN
+=========================================================
+
+01. Document Head
+02. Global Header - Burger Menu - Floating Buttons
+03. FAQ Hero
+04. FAQ Introduction
+05. FAQ Category Sections
+    05A. Pre-Treatment
+    05B. During Treatment
+    05C. Braces & Aligners
+    05D. Post-Treatment
+06. Global Footer
+07. FAQ Accordion Functions
+08. Page Scripts
+09. Site Data
+
+=========================================================
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FAQ | Embrace Bespoke Orthodontic</title>
+
+  <!-- ================= CSS FILES ================= -->
+
+  <link rel="stylesheet" href="design-system.css?v=4" />
+
+  <link rel="stylesheet" href="style.css?v=92" />
+
+  <link rel="stylesheet" href="faq.css?v=225" />
+
+  <!-- ================= SITE DATA ================= -->
+
+  <script src="site-data.js?v=8"></script>
+
+  <!-- ================= GOOGLE FONTS ================= -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ================= ICONS ================= -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body class="faq-page">
+
+<!-- ================= 02. GLOBAL HEADER ================= -->
+
+<header class="site-header">
+
+  <div class="header-top">
+
+    <div class="header-doctor-name">Dr. Yasmine Soliman</div>
+
+    <div class="header-contact header-contact-stacked">
+
+      <a href="tel:+201280004688" class="header-phone-link" data-site-phone-link>
+
+        <i class="fa-solid fa-phone"></i>
+
+        <span data-site-phone>+20 128 000 4688</span>
+
+      </a>
+
+      <span data-site-domain>www.embraceorthodontic.com</span>
+
+      <a href="contact.html?v=3" class="header-consultation">Book Your Consultation</a>
+
+    </div>
+
+  </div>
+
+  <div class="header-main">
+
+    <a href="index.html?v=3" class="site-logo" aria-label="Embrace Bespoke Orthodontic Home">
+
+      <img src="embrace-clear.png?v=2" alt="Embrace Bespoke Orthodontic">
+
+    </a>
+
+    <button class="burger-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">
+
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+    </button>
+
+  </div>
+
+</header>
+
+<!-- =========================================================
+                 FULL SCREEN BURGER MENU
+========================================================= -->
+
+<div class="menu-overlay" id="menuOverlay">
+
+  <div class="menu-orthodontic-line"></div>
+
+  <div class="menu-inner">
+
+    <div>
+
+      <a href="index.html?v=3" class="menu-logo">
+
+        <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+
+      </a>
+
+      <nav class="menu-nav">
+
+        <a href="index.html?v=3">Home</a>
+
+        <a href="about.html?v=3">About</a>
+
+        <a href="services.html?v=3">Services</a>
+
+        <a href="pricing.html?v=1">Pricing</a>
+
+        <a href="faq.html?v=60">FAQ</a>
+
+        <a href="contact.html?v=3">Contact</a>
+
+      </nav>
+
+    </div>
+
+    <div class="menu-bottom">
+
+      <div>
+
+        <strong>Contact</strong>
+
+        <p data-site-phone>+20 128 000 4688</p>
+
+        <p data-site-email>info@embraceorthodontic.com</p>
+
+        <p data-site-domain>embraceorthodontic.com</p>
+
+      </div>
+
+      <div>
+
+        <strong>Clinics</strong>
+
+        <p data-site-address>Twin Tower, Sheikh Zayed City, Cairo, Egypt</p>
+
+        <p>Polydent, Sheikh Zayed City, Cairo, Egypt</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ================= FLOATING CONTACT BUTTONS ================= -->
+
+<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" target="_blank" aria-label="WhatsApp" data-site-whatsapp-link>
+
+  <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call clinic" data-site-phone-link>
+
+  <i class="fa-solid fa-phone"></i>
+
+</a>
+
+<!-- ================= 03. FAQ HERO ================= -->
+
+<section class="faq-hero hero-reveal">
+
+  <div class="faq-hero-text">
+
+    <p class="script-line">Unlock their Potentials</p>
+
+    <h1 class="hero-title hero-title-line">
+
+      <span>We focus on their smile,</span>
+
+      <span>so they can focus on their future.</span>
+
+    </h1>
+
+  </div>
+
+</section>
+
+<!-- ================= 04. FAQ INTRODUCTION ================= -->
+
+<main class="faq-main">
+
+  <section class="faq-intro-section">
+
+    <div class="faq-main-heading">
+
+      <p class="faq-main-script">Simply Explained</p>
+
+      <h2 class="faq-title">You ask . We answer.</h2>
+
+    </div>
+
+    <div class="faq-intro-copy">
+
+      <p>
+
+        Orthodontic treatment is a carefully planned journey designed to create healthy, confident smiles at any age. Whether you are considering braces for yourself or your child, this guide answers the most common questions about the process.
+
+      </p>
+
+      <p>
+
+        From your first consultation to the final result, understanding each step helps you feel informed and confident in your decision. Below, we address key topics including treatment options, timelines, comfort, and aftercare so you know exactly what to expect throughout your orthodontic journey.
+
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- ================= 05. FAQ CATEGORY SECTIONS ================= -->
+
+  <section class="faq-categories">
+
+    <!-- ================= 05A. PRE-TREATMENT ================= -->
+
+    <section class="faq-category">
+
+      <h2 class="faq-category-title">Pre-Treatment</h2>
+
+      <div class="faq-category-line"></div>
+
+      <div class="faq-question-box">
+
+        <div class="faq-item">
+
+          <button class="faq-question">What is the difference between a dentist and an orthodontist? <span>→</span></button>
+
+          <div class="faq-answer">An orthodontist is a registered dentist who has completed additional specialist training dedicated specifically to moving teeth, correcting bite problems, and improving jaw alignment. While a general dentist looks after the overall health of your teeth and gums, an orthodontist focuses on the position of the teeth and the way the jaws fit together.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">What is the best age for a first orthodontic check-up? <span>→</span></button>
+
+          <div class="faq-answer">It is generally recommended that children have an initial orthodontic screening around the age of 7. At this stage, the orthodontist can monitor jaw growth, check how the permanent teeth are erupting, and identify whether early treatment may help prevent more complex problems later.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Am I too old for orthodontic treatment? <span>→</span></button>
+
+          <div class="faq-answer">No. Orthodontic treatment can be successful at almost any age, provided the teeth and gums are healthy. Many adults now choose discreet options such as clear aligners, ceramic braces, or other less visible appliances to improve their smile and bite.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">What happens during the initial orthodontic consultation? <span>→</span></button>
+
+          <div class="faq-answer">During your first visit, the orthodontist will examine your teeth and bite, discuss your concerns, and usually take digital scans or impressions, clinical photographs, and sometimes X-rays. This information is used to design a personalised treatment plan and explain the most suitable options for your case.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Why do I need a panoramic X-ray (OPG)? <span>→</span></button>
+
+          <div class="faq-answer">A panoramic X-ray gives a complete view of the teeth, roots, jawbone, and developing or impacted teeth that cannot be seen during a normal examination. It helps the orthodontist confirm that it is safe to move the teeth and plan treatment accurately.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Do I need to treat cavities or gum problems before braces? <span>→</span></button>
+
+          <div class="faq-answer">Yes. Your teeth and gums must be healthy before orthodontic treatment begins. Any cavities, gum inflammation, infections, or necessary dental work should be treated first by your general dentist, because orthodontic forces should only be applied to healthy and stable teeth.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">What if I have missing teeth? <span>→</span></button>
+
+          <div class="faq-answer">Orthodontic treatment can often help in cases of missing teeth. Depending on your situation, the orthodontist may close the gap or create the correct amount of space for a future implant, bridge, or other restorative treatment. This is usually planned together with your general dentist.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">How much does orthodontic treatment cost? <span>→</span></button>
+
+          <div class="faq-answer">The cost is bespoke and depends on the complexity of your case and the type of appliance used, such as metal braces, ceramic braces, lingual braces, or clear aligners. A fixed-fee quote is provided after your consultation so the total expected cost is clear before treatment begins.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">What is included in the total treatment price? <span>→</span></button>
+
+          <div class="faq-answer">Treatment fees usually include the fitting of the appliance, routine adjustment appointments, progress monitoring, and orthodontic care throughout treatment. Depending on your agreed plan, retainers and follow-up retention checks may also be included.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Are there any hidden costs I should know about? <span>→</span></button>
+
+          <div class="faq-answer">We aim to keep pricing transparent from the beginning. Additional costs may only apply if appliances are lost or damaged beyond normal use, or if additional dental treatment is needed outside the orthodontic plan, such as fillings, extractions, whitening, or gum treatment.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Do you offer payment plans? <span>→</span></button>
+
+          <div class="faq-answer">Yes. Many patients prefer to spread the cost over the treatment period. This can usually be arranged through an initial deposit followed by monthly instalments, depending on the treatment plan and clinic payment policy.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Is there a discount for paying in full? <span>→</span></button>
+
+          <div class="faq-answer">A paid-in-full discount may be available when the full treatment fee is settled at the start of treatment. This can be discussed at the consultation once the final treatment plan and fee are confirmed.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Are there family discounts? <span>→</span></button>
+
+          <div class="faq-answer">Family or sibling discounts may be available where more than one family member is undergoing treatment. This can be discussed during the consultation or when planning treatment for multiple family members.</div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ================= 05B. DURING TREATMENT ================= -->
+
+    <section class="faq-category">
+
+      <h2 class="faq-category-title">During Treatment</h2>
+
+      <div class="faq-category-line"></div>
+
+      <div class="faq-question-box">
+
+        <div class="faq-item">
+
+          <button class="faq-question">Does orthodontic treatment hurt? <span>→</span></button>
+
+          <div class="faq-answer">Orthodontic treatment is not usually painful, but mild discomfort or pressure is common for a few days after braces are fitted or adjusted, or when starting a new aligner. This is temporary and usually settles as your teeth begin to move.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">How long does orthodontic treatment usually take? <span>→</span></button>
+
+          <div class="faq-answer">Treatment time depends on the complexity of the case and the type of appliance used. Most standard orthodontic treatments last between 12 and 30 months, although simple aligner cases may be shorter and complex bite corrections may take longer.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">How often are follow-up appointments required? <span>→</span></button>
+
+          <div class="faq-answer">Follow-up appointments are usually scheduled every 6 to 8 weeks. These visits allow the orthodontist to check progress, make adjustments, change wires or elastics if needed, and ensure treatment is moving in the right direction.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Do I still need to see my regular dentist during orthodontic treatment? <span>→</span></button>
+
+          <div class="faq-answer">Yes. Orthodontic treatment does not replace routine dental care. You should continue regular check-ups and hygiene visits with your general dentist to make sure your teeth and gums remain healthy throughout treatment.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Are there food restrictions with fixed braces? <span>→</span></button>
+
+          <div class="faq-answer">Yes. With fixed braces, you should avoid hard, sticky, or chewy foods because they can break brackets, bend wires, or delay treatment. Examples include toffee, chewing gum, hard nuts, popcorn, and very crusty bread. Sugary and fizzy drinks should also be limited to reduce the risk of tooth decay.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Can I still play sports or musical instruments? <span>→</span></button>
+
+          <div class="faq-answer">Yes. Most patients continue sports and music normally. For contact sports, a protective mouthguard is strongly recommended. Wind instrument players may need a short adjustment period while they get used to the appliance.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">What should I do if a bracket breaks or a wire is poking? <span>→</span></button>
+
+          <div class="faq-answer">If a bracket breaks, a wire starts poking, or something feels uncomfortable, contact the clinic for advice. Some minor irritation can be managed temporarily with orthodontic wax, but broken appliances should be checked so treatment stays on track.</div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ================= 05C. BRACES & ALIGNERS ================= -->
+
+    <section class="faq-category">
+
+      <h2 class="faq-category-title">Braces & Aligners</h2>
+
+      <div class="faq-category-line"></div>
+
+      <div class="faq-question-box">
+
+        <div class="faq-item">
+
+          <button class="faq-question">Are clear aligners as effective as traditional braces? <span>→</span></button>
+
+          <div class="faq-answer">Clear aligners are very effective for mild to moderate alignment problems, such as small gaps or mild crowding. However, fixed braces are often better for severe crowding, complex bite problems, deep overbites, significant rotations, or cases that need very precise control of tooth movement.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Which option works faster: braces or aligners? <span>→</span></button>
+
+          <div class="faq-answer">It depends on the case. For simple tooth movements, aligners can sometimes be faster because the treatment is digitally planned. For complex cases, fixed braces may be more efficient because they apply continuous force and give the orthodontist greater control.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">How do lifestyle requirements differ between braces and aligners? <span>→</span></button>
+
+          <div class="faq-answer">Aligners require discipline because they must be worn for 20 to 22 hours per day and removed only for eating, drinking anything other than water, brushing, and flossing. Braces are fixed to the teeth, so they work continuously without needing to remember to put them back in.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Which is more comfortable: braces or aligners? <span>→</span></button>
+
+          <div class="faq-answer">Clear aligners are generally considered more comfortable because they are made from smooth plastic and have no brackets or wires. Braces may cause temporary rubbing or soreness, especially after fitting or adjustment, but most patients adapt quickly.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Can I eat whatever I want with both options? <span>→</span></button>
+
+          <div class="faq-answer">With aligners, you remove them before eating, so there are no major food restrictions. With fixed braces, you need to avoid hard, sticky, or chewy foods that may damage brackets and wires or make cleaning more difficult.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Which option is easier to keep clean? <span>→</span></button>
+
+          <div class="faq-answer">Aligners are usually easier to keep clean because they are removed for brushing and flossing. Braces require more careful cleaning around brackets and wires, often using interdental brushes, floss threaders, or special orthodontic cleaning aids.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Is there a price difference between braces and aligners? <span>→</span></button>
+
+          <div class="faq-answer">Traditional metal braces are often the most affordable option. Clear aligners may cost more because of digital planning, custom manufacturing, and laboratory fees, although the difference depends on the complexity of the case and the treatment provider.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">What is the main difference between ceramic and metal braces? <span>→</span></button>
+
+          <div class="faq-answer">The main difference is appearance. Ceramic braces use clear or tooth-coloured brackets, making them less noticeable than traditional metal braces. Metal braces are more visible but are very strong, reliable, and often more cost-effective.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Are ceramic braces less durable than metal braces? <span>→</span></button>
+
+          <div class="faq-answer">Ceramic braces are strong and effective, but the brackets are slightly more brittle than metal. They can occasionally chip or break if exposed to very hard foods or heavy biting forces. Metal braces are generally the most durable option for everyday wear.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Do ceramic braces stain? <span>→</span></button>
+
+          <div class="faq-answer">The ceramic brackets themselves do not usually stain. However, the clear elastic ties used around the brackets may discolour with coffee, tea, curry, or red wine. These elastics are normally replaced at adjustment visits.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">Is there a treatment time difference between ceramic and metal braces? <span>→</span></button>
+
+          <div class="faq-answer">For most cases, ceramic and metal braces are equally effective and treatment time is similar. The main differences are appearance, durability, and cost rather than speed of tooth movement.</div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ================= 05D. POST-TREATMENT ================= -->
+
+    <section class="faq-category">
+
+      <h2 class="faq-category-title">Post-Treatment</h2>
+
+      <div class="faq-category-line"></div>
+
+      <div class="faq-question-box">
+
+        <div class="faq-item">
+
+          <button class="faq-question">Why do I need to wear a retainer after treatment? <span>→</span></button>
+
+          <div class="faq-answer">Teeth naturally have a tendency to move after orthodontic treatment. Retainers are essential to hold the teeth in their new position and protect the result you have achieved. Without retainers, teeth may gradually shift back.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">What happens when my treatment is finalised? <span>→</span></button>
+
+          <div class="faq-answer">When active treatment is complete, your braces or aligners are removed and retainers are provided. We also include two follow-up check-up visits within 12 months after treatment to monitor stability and make sure your smile remains on track.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">How long do I need to wear retainers? <span>→</span></button>
+
+          <div class="faq-answer">Retainer wear is usually long-term. Many patients wear removable retainers full-time at first, then reduce to night-time wear as advised. The exact schedule depends on your case and the type of retainer provided.</div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">What is the difference between fixed and removable retainers? <span>→</span></button>
+
+          <div class="faq-answer">A fixed retainer is a thin wire bonded behind the teeth and stays in place permanently unless removed by a dentist. A removable retainer is worn over the teeth and can be taken out for eating and cleaning. Some patients benefit from both.</div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </section>
+
+</main>
+
+<!-- ================= 06. GLOBAL FOOTER ================= -->
+
+<footer class="site-footer">
+
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+
+      <a href="index.html?v=3" class="footer-logo">
+
+        <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+
+      </a>
+
+      <p class="footer-question">Still Have Questions?</p>
+
+      <p>
+
+        Our team is happy to answer your questions and help you choose the right treatment for you or your child.
+
+      </p>
+
+      <a href="contact.html?v=3" class="footer-cta">ASK A QUESTION</a>
+
+    </div>
+
+    <div class="footer-column">
+
+      <h3>Clinics</h3>
+
+      <div class="footer-clinic">
+
+        <strong>Twin Tower</strong>
+
+        <p>Sheikh Zayed City, Cairo, Egypt</p>
+
+        <a href="contact.html?v=3" class="footer-map">Get Directions</a>
+
+      </div>
+
+      <div class="footer-clinic">
+
+        <strong>Polydent</strong>
+
+        <p>Sheikh Zayed City, Cairo, Egypt</p>
+
+        <a href="contact.html?v=3" class="footer-map">Get Directions</a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-column">
+
+      <h3>Contact</h3>
+
+      <p data-site-phone>+20 128 000 4688</p>
+
+      <p data-site-email>info@embraceorthodontic.com</p>
+
+      <p data-site-domain>embraceorthodontic.com</p>
+
+      <div class="footer-socials">
+
+        <a href="#" class="icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+        <a href="#" class="icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+        <a href="#" class="icon twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+
+        <a href="#" class="icon youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <span data-site-footer>© 2026 Embrace Bespoke Orthodontic. All rights reserved.</span>
+
+  </div>
+
+</footer>
+
+<!-- ================= 07. FAQ ACCORDION FUNCTIONS ================= -->
+
+<script>
+
+const faqQuestions = document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach(function(question) {
+
+  question.addEventListener("click", function() {
+
+    const item = question.closest(".faq-item");
+
+    item.classList.toggle("open");
+
+  });
+
+});
+
+</script>
+
+<!-- ================= 08. PAGE SCRIPTS ================= -->
+
+<script>
+
+function toggleMenu() {
+
+  const body = document.body;
+
+  const burger = document.querySelector(".burger-btn");
+
+  body.classList.toggle("menu-open");
+
+  const isOpen = body.classList.contains("menu-open");
+
+  if (burger) {
+
+    burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+  }
+
+}
+
+window.addEventListener("scroll", function() {
+
+  if (window.scrollY > 80) {
+
+    document.body.classList.add("is-scrolled");
+
+  } else {
+
+    document.body.classList.remove("is-scrolled");
+
+  }
+
+});
+
+window.addEventListener("load", function() {
+
+  const hero = document.querySelector(".hero-reveal");
+
+  if (hero) {
+
+    setTimeout(function() {
+
+      hero.classList.add("animate");
+
+    }, 300);
+
+  }
+
+});
+
+</script>
+
+<!-- ================= 09. SITE DATA ================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (typeof SITE_DATA === "undefined") return;
+
+  document.querySelectorAll("[data-site-email]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.email;
+
+    if (el.tagName.toLowerCase() === "a") {
+
+      el.href = "mailto:" + SITE_DATA.contact.email;
+
+    }
+
+  });
+
+  document.querySelectorAll("[data-site-phone]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.phoneDisplay;
+
+  });
+
+  document.querySelectorAll("[data-site-phone-link]").forEach(function (el) {
+
+    el.href = "tel:" + SITE_DATA.contact.phoneRaw;
+
+  });
+
+  document.querySelectorAll("[data-site-whatsapp-link]").forEach(function (el) {
+
+    el.href = SITE_DATA.contact.whatsappUrl;
+
+  });
+
+  document.querySelectorAll("[data-site-domain]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.website.domain;
+
+  });
+
+  document.querySelectorAll("[data-site-address]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.location.fullAddress;
+
+  });
+
+  document.querySelectorAll("[data-site-footer]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.footer.copyrightText;
+
+  });
+
+});
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,532 @@
+<!--
+
+=========================================================
+
+ABOUT.HTML — LOCKED ABOUT PAGE DESIGN
+
+=========================================================
+
+01. Document Head
+
+02. Global Header
+
+03. Floating Contact Buttons
+
+04. Hero Section
+
+05. Philosophy + Doctor CTA Section
+
+06. Refined Approach Section
+
+07. Final CTA Section
+
+08. Global Footer
+
+09. Page Scripts
+
+=========================================================
+
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>About | Dr. Yasmine Soliman</title>
+
+  <link rel="stylesheet" href="design-system.css?v=4" />
+
+  <link rel="stylesheet" href="about.css?v=66" />
+
+  <link rel="stylesheet" href="style.css?v=139" />
+  
+
+  <script src="site-data.js?v=11" defer></script>
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body class="about-page">
+
+<!-- ================= 02. GLOBAL HEADER ================= -->
+
+<header class="site-header">
+
+  <div class="header-top">
+
+    <a href="index.html?v=3" class="header-doctor-name">Dr. Yasmine Soliman</a>
+
+    <div class="header-contact header-contact-stacked">
+
+      <a href="tel:+201280004688" class="header-phone-link" data-site-phone-link>
+
+        <i class="fa-solid fa-phone"></i>
+
+        <span data-site-phone>+20 128 000 4688</span>
+
+      </a>
+
+      <span data-site-domain>WWW.EMBRACEORTHODONTIC.COM</span>
+
+      <a href="contact.html?v=3" class="header-consultation">BOOK YOUR CONSULTATION</a>
+
+    </div>
+
+  </div>
+
+  <div class="header-main">
+
+    <a href="index.html?v=3" class="site-logo" aria-label="Embrace Bespoke Orthodontic">
+
+      <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+
+    </a>
+
+    <button class="burger-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">
+
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+    </button>
+
+  </div>
+
+</header>
+
+<!-- =========================================================
+
+   05. FULL SCREEN BURGER MENU
+
+========================================================= -->
+
+<div class="menu-overlay" id="menuOverlay">
+
+  <div class="menu-orthodontic-line"></div>
+
+  <div class="menu-inner">
+
+    <div>
+
+      <a href="index.html?v=3" class="menu-logo">
+
+       <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+
+      </a>
+
+      <nav class="menu-nav">
+
+        <a href="index.html?v=3">Home</a>
+
+        <a href="about.html?v=3">About</a>
+
+        <a href="services.html?v=3">Services</a>
+
+        <a href="pricing.html?v=1">Pricing</a>
+
+        <a href="faq.html?v=60">FAQ</a>
+
+        <a href="contact.html?v=3">Contact</a>
+
+      </nav>
+
+    </div>
+
+    <div class="menu-bottom">
+
+      <div>
+
+        <strong>Contact</strong>
+
+        <p data-site-phone>+20 128 000 4688</p>
+
+        <p data-site-email>info@embraceorthodontic.com</p>
+
+        <p data-site-domain>embraceorthodontic.com</p>
+
+      </div>
+
+      <div>
+
+        <strong>Clinics</strong>
+
+        <p data-site-address>Twin Tower, Sheikh Zayed City, Cairo, Egypt</p>
+
+        <p>Polydent, Sheikh Zayed City, Cairo, Egypt</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ================= 03. FLOATING CONTACT BUTTONS ================= -->
+
+<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" aria-label="WhatsApp" data-site-whatsapp-link>
+
+  <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call" data-site-phone-link>
+
+  <i class="fa-solid fa-phone"></i>
+
+</a>
+
+<!-- ================= 04. HERO SECTION ================= -->
+
+<section class="about-hero hero-reveal">
+
+  <div class="about-hero-content">
+
+    <p class="about-hero-script script-line">Orthodontics With Intention</p>
+
+    <h1 class="hero-title hero-title-line">Every Smile Begins With Trust</h1>
+
+  </div>
+
+</section>
+
+<!-- ================= 05. PHILOSOPHY + DOCTOR CTA SECTION ================= -->
+
+<section class="about-main-white">
+
+  <div class="about-philosophy-panel">
+
+    <div class="about-philosophy-inner">
+
+      <p class="about-section-script">Our Philosophy</p>
+
+      <h2>Rooted in Precision and Care</h2>
+
+      <span class="about-section-line"></span>
+
+      <p>
+
+        Dr. Yasmine Soliman is a dedicated orthodontic specialist with more than twenty years of clinical experience focused exclusively on orthodontic care. Holding a BDS from Cairo University, a Master’s degree in Orthodontics, and being a member of the American Aligners, she has developed a refined approach centred on precision, communication, and long-term patient confidence.
+
+      </p>
+
+      <p>
+
+        Throughout her professional career, she has managed a wide range of orthodontic cases involving growth modification, fixed appliances, and clear aligner therapy, combining advanced clinical planning with an individualised understanding of every patient’s needs. Her philosophy is rooted in the belief that orthodontic treatment is not only about creating balanced smiles, but also about improving comfort, self-confidence, and overall quality of life.
+
+      </p>
+
+      <p>
+
+        Alongside her private practice, Dr. Yasmine continues her clinical contribution through Cairo University’s orthodontic services in Sheikh Zayed, supporting patients who may not otherwise have access to specialist orthodontic care. She believes that trust, clarity, and a positive treatment environment are essential parts of a successful orthodontic journey — one that often accompanies patients over several years.
+
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="about-doctor-section">
+
+    <div class="about-doctor-card">
+
+      <p class="about-doctor-script">Meet  The  Expert</p>
+
+      <h2>Dr. Yasmine Soliman</h2>
+
+      <span class="about-section-line"></span>
+
+      <div class="about-doctor-image-wrap">
+
+        <img src="about-dr-yasmine.png" alt="Dr. Yasmine Soliman">
+
+      </div>
+
+      <p class="about-doctor-honours">
+
+        BDS, MSc Cairo Uni. Dental College<br>
+
+        Dip. American Aligners Specialist.
+
+      </p>
+
+    </div>
+
+    <div class="about-consult-box">
+
+      <h3>Speak directly with Dr. Yasmine</h3>
+
+      <p>
+
+        Begin your orthodontic journey with a calm, personal consultation designed to understand your smile, your concerns, and the treatment approach best suited to you.
+
+      </p>
+
+      <a href="contact.html?v=3" class="about-consult-btn">CALL THE EXPERT</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="about-refined-section">
+
+  <div class="about-refined-inner">
+
+    <p class="about-section-script">Our Approach</p>
+
+    <h2>Refind Orthodontic Care</h2>
+
+    <span class="about-section-line"></span>
+
+    <p>
+
+      Dr. Yasmine Soliman’s approach to orthodontics has been shaped through years of experience across both private specialist practice and university clinical care. Alongside her work within advanced modern dental environments equipped with contemporary orthodontic technologies, she continues to practise within the orthodontic unit of Cairo University in Sheikh Zayed, supporting a wide range of cases and treatment journeys.
+
+    </p>
+
+    <p>
+
+      At Embrace Orthodontics, the philosophy is centred around refined, patient-focused care that combines precision, comfort, and individual attention throughout every stage of treatment.
+
+    </p>
+
+    <p>
+
+      For Dr. Yasmine, orthodontics is not simply about creating aligned smiles, but about building confidence through a calm and supportive treatment experience tailored to each individual. Her commitment to detail, communication, and long-term patient relationships continues to define both her approach to orthodontics and the experience she hopes every patient will feel from their very first visit.
+
+    </p>
+
+  </div>
+
+</section>
+
+<!-- ================= 07. FINAL CTA SECTION ================= -->
+
+<section class="about-final-cta">
+
+  <div class="about-final-cta-inner">
+
+    <h2>Begin your orthodontic journey</h2>
+
+    <p>
+
+      Thoughtful specialist care, shaped around precision, comfort, and long-term confidence.
+
+    </p>
+
+    <a href="contact.html?v=3" class="about-final-btn">BOOK YOUR CONSULTATION</a>
+
+  </div>
+
+</section>
+
+<!-- ================= 08. GLOBAL FOOTER ================= -->
+
+<footer class="site-footer">
+
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+
+      <a href="index.html?v=3" class="footer-logo">
+
+        <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+
+      </a>
+
+      <p class="footer-question">Still Have Questions?</p>
+
+      <p>
+
+        Our team is happy to answer your questions and help you choose the right treatment for you or your child.
+
+      </p>
+
+      <a href="contact.html?v=3" class="footer-cta">BOOK YOUR CONSULTATION</a>
+
+    </div>
+
+    <div class="footer-column">
+
+      <h3>Clinics</h3>
+
+      <div class="footer-clinic">
+
+        <strong>Twin Tower</strong>
+
+        <p>Sheikh Zayed City, Cairo, Egypt</p>
+
+        <a href="contact.html?v=3" class="footer-map">Get Directions</a>
+
+      </div>
+
+      <div class="footer-clinic">
+
+        <strong>Polydent</strong>
+
+        <p>Sheikh Zayed City, Cairo, Egypt</p>
+
+        <a href="contact.html?v=3" class="footer-map">Get Directions</a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-column">
+
+      <h3>Contact</h3>
+
+      <p data-site-phone>+20 128 000 4688</p>
+
+      <p data-site-email>info@embraceorthodontic.com</p>
+
+      <p data-site-domain>embraceorthodontic.com</p>
+
+      <div class="footer-socials">
+
+        <a href="#" class="icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+        <a href="#" class="icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+        <a href="#" class="icon twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+
+        <a href="#" class="icon youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <span data-site-footer>© 2026 Embrace Bespoke Orthodontic. All rights reserved.</span>
+
+  </div>
+
+</footer>
+
+<!-- ================= 09. PAGE SCRIPTS ================= -->
+
+<script src="site-data.js?v=8"></script>
+
+<script>
+
+function toggleMenu() {
+
+  const body = document.body;
+
+  const burger = document.querySelector(".burger-btn");
+
+  body.classList.toggle("menu-open");
+
+  const isOpen = body.classList.contains("menu-open");
+
+  if (burger) {
+
+    burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+  }
+
+}
+
+window.addEventListener("scroll", function() {
+
+  if (window.scrollY > 80) {
+
+    document.body.classList.add("is-scrolled");
+
+  } else {
+
+    document.body.classList.remove("is-scrolled");
+
+  }
+
+});
+
+window.addEventListener("load", function() {
+
+  const hero = document.querySelector(".hero-reveal");
+
+  if (hero) {
+
+    setTimeout(function() {
+
+      hero.classList.add("animate");
+
+    }, 300);
+
+  }
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (typeof SITE_DATA === "undefined") return;
+
+  document.querySelectorAll("[data-site-email]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.email;
+
+    if (el.tagName.toLowerCase() === "a") {
+
+      el.href = "mailto:" + SITE_DATA.contact.email;
+
+    }
+
+  });
+
+  document.querySelectorAll("[data-site-phone]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.phoneDisplay;
+
+  });
+
+  document.querySelectorAll("[data-site-phone-link]").forEach(function (el) {
+
+    el.href = "tel:" + SITE_DATA.contact.phoneRaw;
+
+  });
+
+  document.querySelectorAll("[data-site-whatsapp-link]").forEach(function (el) {
+
+    el.href = SITE_DATA.contact.whatsappUrl;
+
+  });
+
+  document.querySelectorAll("[data-site-domain]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.website.domain;
+
+  });
+
+  document.querySelectorAll("[data-site-footer]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.footer.copyrightText;
+
+  });
+
+});
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1624 @@
+/* =========================================================
+
+   PRICING.CSS — V2 PRICING PAGE REFINED FINAL
+
+========================================================= */
+
+/*
+
+=========================================================
+
+PRICING.CSS — FINAL LOCKED VERSION
+
+=========================================================
+
+01. Fonts + Global
+02. Hero Section
+03. Hero Animations
+04. Main Body
+05. Introduction Section
+06. Pricing Cardsh
+07. Payment Strip
+08. Support Cards
+09. Pricing Popups
+10. Logo + Footer Refinements
+11. iPad / Tablet
+12. Mobile
+13. Laptop / PC
+
+=========================================================
+
+*/
+
+
+/* =========================================================
+
+                   01. FONTS + GLOBAL
+
+========================================================= */
+
+@font-face {
+
+  font-family: 'FasthinScript';
+
+  src: url('/dental-website-v2/fasthin-script.ttf') format('truetype');
+
+  font-weight: 400;
+
+  font-style: normal;
+
+}
+
+@font-face {
+
+  font-family: 'Kingsley Roman';
+
+  src: url('/dental-website-v2/kingsley-roman.ttf') format('truetype');
+
+  font-weight: 400;
+
+  font-style: normal;
+
+}
+
+body.pricing-page {
+
+  margin: 0;
+
+  padding: 0;
+
+  background: #efe9dc;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  color: #2d2a26;
+
+  overflow-x: hidden;
+
+}
+
+.pricing-page *,
+
+.pricing-page *::before,
+
+.pricing-page *::after {
+
+  box-sizing: border-box;
+
+  border-radius: 0 !important;
+
+}
+
+.pricing-page a {
+
+  text-decoration: none;
+
+}
+
+/* =========================================================
+
+                 02. HERO SECTION
+
+========================================================= */
+
+.pricing-hero {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 500px;
+
+  overflow: hidden;
+
+  background-image:
+
+    linear-gradient(
+
+      to right,
+
+      rgba(15,47,87,0.08),
+
+      rgba(15,47,87,0.01)
+
+    ),
+
+    url('/dental-website-v2/pricinghero.png');
+
+  background-size: cover;
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+}
+
+.pricing-hero-content {
+
+  position: absolute;
+
+  left: 5.5%;
+
+  top: 58%;
+
+  transform: translateY(-50%);
+
+  z-index: 2;
+
+  max-width: 760px;
+
+}
+
+.pricing-hero-script {
+
+  margin: 0 0 22px;
+
+  color: #c69033;
+
+  font-family: 'FasthinScript', cursive;
+
+  font-size: 56px;
+
+  line-height: 0.95;
+
+  font-weight: 400;
+
+  letter-spacing: 0.018em;
+
+  word-spacing: 0.03em;
+
+  text-shadow:
+
+    0 0 1px rgba(198,144,51,0.40),
+
+    0 2px 12px rgba(0,0,0,0.25);
+
+}
+
+.pricing-hero .hero-title {
+
+  margin: 0;
+
+  color: #0f2f57;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 44px;
+
+  line-height: 1.16;
+
+  font-weight: 300;
+
+  letter-spacing: 0.035em;
+
+  text-transform: none;
+
+  max-width: 720px;
+
+  text-shadow:
+
+    0 2px 14px rgba(255,255,255,0.06),
+
+    0 0 20px rgba(255,255,255,0.04);
+
+}
+/* ================= HERO ANIMATION — FAQ MATCH ================= */
+
+.pricing-hero .pricing-hero-script {
+
+  opacity: 0;
+
+  transform:
+
+    translateY(14px)
+
+    scaleY(1.18)
+
+    scaleX(1.01)
+
+    skewX(-14deg)
+
+    rotate(0.6deg);
+
+  filter: blur(3px);
+
+  animation: pricingScriptReveal 3.8s ease forwards;
+
+  animation-delay: 0.3s;
+
+  animation-fill-mode: forwards;
+
+}
+
+.pricing-hero .hero-title {
+
+  opacity: 0;
+
+  transform: translateY(55px);
+
+  animation: pricingHeroDrop 2.8s ease forwards;
+
+  animation-delay: 2.2s;
+
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes pricingScriptReveal {
+
+  0% {
+
+    opacity: 0;
+
+    transform:
+
+      translateY(14px)
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg);
+
+    filter: blur(3px);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform:
+
+      translateY(0)
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg);
+
+    filter: blur(0);
+
+  }
+
+}
+
+@keyframes pricingHeroDrop {
+
+  0% {
+
+    opacity: 0;
+
+    transform: translateY(55px);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+/* =========================================================
+
+                 03. MAIN BODY
+
+========================================================= */
+
+.pricing-main {
+
+  background: #efe9dc;
+
+  color: #2d2a26;
+
+  padding: 64px 0 78px;
+
+}
+
+/* =========================================================
+
+             04. INTRO SECTION
+
+========================================================= */
+
+.pricing-intro-section {
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 0 5.5% 44px;
+
+}
+
+.pricing-section-heading {
+
+  position: relative;
+
+  margin: 0 0 28px;
+
+  padding-bottom: 30px;
+
+}
+
+.pricing-section-heading::after {
+
+  content: "";
+
+  width: 72px;
+
+  height: 3px;
+
+  background: #d7aa63;
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: 0;
+
+}
+
+.pricing-section-heading p {
+
+  margin: 0 0 8px;
+
+  color: #d99a3e;
+
+  font-family: 'FasthinScript', cursive;
+
+  font-size: 56px;
+
+  line-height: 0.95;
+
+  font-weight: 400;
+
+  letter-spacing: 0.018em;
+
+  word-spacing: 0.03em;
+
+  opacity: 0.94;
+
+  text-shadow:
+
+    0 0 1px rgba(217,154,62,0.38),
+
+    0 1px 6px rgba(0,0,0,0.04);
+
+  transform:
+
+    scaleY(1.18)
+
+    scaleX(1.01)
+
+    skewX(-14deg)
+
+    rotate(0.6deg);
+
+}
+
+.pricing-section-heading h2 {
+
+  margin: 0;
+
+  color: #0f2f57;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 29px;
+
+  line-height: 1.16;
+
+  font-weight: 300;
+
+  letter-spacing: 0.035em;
+
+}
+
+.pricing-intro-copy {
+
+  max-width: 920px;
+
+}
+
+.pricing-intro-copy p {
+
+  margin: 0;
+
+  color: rgba(45,42,38,0.84);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 15px;
+
+  line-height: 1.82;
+
+  font-weight: 300;
+
+  letter-spacing: 0.01em;
+
+}
+
+/* =========================================================
+
+               05. PRICING CARDS
+
+========================================================= */
+
+.pricing-cards-section {
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 0 5.5% 42px;
+
+}
+
+.pricing-cards-row {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+
+}
+
+.price-card {
+
+  position: relative;
+
+  min-height: 225px;
+
+  padding: 30px 54px 28px 28px;
+
+  border: 1px solid rgba(185,150,87,0.28);
+
+  background: #f8f2e8;
+
+  color: #2d2a26;
+
+  cursor: pointer;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  text-align: left;
+
+  transition:
+
+    background 0.28s ease,
+
+    border-color 0.28s ease,
+
+    transform 0.28s ease;
+
+}
+
+.price-card:hover {
+
+  background: #fffaf2;
+
+  border-color: rgba(185,150,87,0.46);
+
+  transform: translateY(-2px);
+
+}
+
+.price-card h3 {
+
+  margin: 0;
+
+  color: #0f2f57;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 23px;
+
+  line-height: 1.2;
+
+  font-weight: 300;
+
+  letter-spacing: 0.025em;
+
+}
+
+.price-box {
+
+  margin-top: 28px;
+
+}
+
+.small-text {
+
+  display: block;
+
+  color: rgba(45,42,38,0.66);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.45;
+
+  font-weight: 300;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+}
+
+.price-box strong {
+
+  display: block;
+
+  margin: 7px 0;
+
+  color: #0f2f57;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 25px;
+
+  line-height: 1.1;
+
+  font-weight: 300;
+
+  letter-spacing: 0.02em;
+
+}
+
+.card-arrow {
+
+  position: absolute;
+
+  right: 26px;
+
+  top: 50%;
+
+  width: 18px;
+
+  height: 18px;
+
+  transform: translateY(-50%);
+
+}
+
+.card-arrow::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 10px;
+
+  height: 10px;
+
+  border-top: 1.5px solid #d99a3e;
+
+  border-right: 1.5px solid #d99a3e;
+
+  transform: rotate(45deg);
+
+  right: 3px;
+
+  top: 4px;
+
+}
+
+/* =========================================================
+
+             06. PAYMENT STRIP
+
+========================================================= */
+
+.payment-strip {
+
+  width: 100%;
+
+  margin: 14px 0 46px;
+
+  padding: 24px 5.5%;
+
+  background: #607485;
+
+  color: #ffffff;
+
+  display: grid;
+
+  grid-template-columns: 1.8fr 1fr;
+
+  align-items: center;
+
+  gap: 34px;
+
+}
+
+.payment-left,
+
+.payment-right {
+
+  max-width: 1180px;
+
+}
+
+.payment-left h3 {
+
+  margin: 0 0 8px;
+
+  color: rgba(255,255,255,0.94);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 23px;
+
+  line-height: 1.2;
+
+  font-weight: 300;
+
+  letter-spacing: 0.025em;
+
+}
+
+.payment-left p {
+
+  margin: 0;
+
+  max-width: 760px;
+
+  color: rgba(255,255,255,0.82);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+
+  font-weight: 300;
+
+}
+
+.payment-right {
+
+  padding-left: 34px;
+
+  border-left: 1px solid rgba(239,233,220,0.38);
+
+}
+
+.payment-right p {
+
+  margin: 5px 0;
+
+  color: rgba(255,255,255,0.88);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  font-weight: 300;
+
+  letter-spacing: 0.04em;
+
+}
+
+/* =========================================================
+
+                 07. SUPPORT CARDS
+
+========================================================= */
+
+.support-section {
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 0 5.5%;
+
+}
+
+.support-cards-row {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+}
+
+.support-card {
+
+  min-height: 180px;
+
+  padding: 30px 28px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(185,150,87,0.20);
+
+  box-shadow:
+
+    8px 8px 0 rgba(248,242,232,0.85),
+
+    0 18px 42px rgba(38,35,33,0.06);
+
+  text-align: left;
+
+}
+
+.support-card h3 {
+
+  margin: 0 0 14px;
+
+  color: #0f2f57;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 23px;
+
+  line-height: 1.2;
+
+  font-weight: 300;
+
+  letter-spacing: 0.025em;
+
+}
+
+.support-card p {
+
+  margin: 0;
+
+  color: rgba(45,42,38,0.74);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.68;
+
+  font-weight: 300;
+
+}
+
+/* =========================================================
+
+                08. POPUPS
+
+========================================================= */
+
+.pricing-popup {
+
+  position: fixed;
+
+  inset: 0;
+
+  display: none;
+
+  align-items: center;
+
+  justify-content: center;
+
+  z-index: 20000;
+
+  padding: 24px;
+
+  background: rgba(38,35,33,0.22);
+
+}
+
+.pricing-popup.show {
+
+  display: flex;
+
+}
+
+.pricing-popup-content {
+
+  position: relative;
+
+  width: 92%;
+
+  max-width: 680px;
+
+  max-height: 82vh;
+
+  overflow-y: auto;
+
+  padding: 34px;
+
+  background: rgba(248,242,232,0.98);
+
+  color: rgba(45,42,38,0.86);
+
+  border: 1px solid rgba(185,150,87,0.24);
+
+  box-shadow: 0 24px 58px rgba(5,22,38,0.22);
+
+}
+
+.pricing-popup-content h3 {
+
+  margin: 0 0 18px;
+
+  color: #2d2a26;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 32px;
+
+  line-height: 1.12;
+
+  font-weight: 300;
+
+  letter-spacing: 0.015em;
+
+}
+
+.pricing-popup-content p {
+
+  margin: 0 0 14px;
+
+  color: rgba(47,42,38,0.82);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.78;
+
+  font-weight: 300;
+
+}
+
+.pricing-popup-content button {
+
+  position: absolute;
+
+  top: 10px;
+
+  right: 16px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #2d2a26;
+
+  font-size: 36px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+}
+
+/* =========================================================
+
+             09. LOGO + FOOTER REFINEMENTS
+
+========================================================= */
+
+.pricing-page .header-top {
+
+  background: #f5eee3 !important;
+
+}
+
+
+.pricing-page .footer-logo img {
+
+  width: 230px !important;
+
+  max-width: 78% !important;
+
+  height: auto !important;
+
+  margin: 0 0 24px 0 !important;
+
+  display: block !important;
+
+}
+
+.pricing-page .floating-contact {
+
+  border-radius: 50% !important;
+
+}
+
+.pricing-page .footer-socials .icon {
+
+  width: 42px !important;
+
+  height: 42px !important;
+
+  border-radius: 50% !important;
+
+  overflow: hidden;
+
+}
+
+/* =========================================================
+
+                10. iPAD / TABLET
+
+========================================================= */
+
+@media (max-width: 1180px) {
+
+  .pricing-hero {
+
+    height: 340px;
+
+  }
+
+  .pricing-hero-content {
+
+    left: 5%;
+
+    top: 56%;
+
+    max-width: 620px;
+
+  }
+
+  .pricing-hero-script,
+
+  .pricing-section-heading p {
+
+    font-size: 56px;
+
+  }
+
+  .pricing-hero .hero-title {
+
+    font-size: 38px;
+
+    letter-spacing: 0.035em;
+
+  }
+
+  .pricing-section-heading h2 {
+
+    font-size: 29px;
+
+  }
+
+  .pricing-main {
+
+    padding: 56px 0 68px;
+
+  }
+
+  .pricing-intro-section,
+
+  .pricing-cards-section,
+
+  .support-section {
+
+    padding-left: 5%;
+
+    padding-right: 5%;
+
+  }
+
+  .pricing-section-heading p {
+
+    font-size: 54px;
+
+  }
+
+  .pricing-section-heading h2 {
+
+    font-size: 31px;
+
+    line-height: 1.14;
+
+  }
+
+  .pricing-cards-row {
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+
+  }
+
+  .price-card {
+
+    min-height: 190px;
+
+  }
+
+  .payment-strip {
+
+    padding-left: 5%;
+
+    padding-right: 5%;
+
+  }
+
+  .pricing-page .footer-logo img {
+
+    width: 210px !important;
+
+    max-width: 72% !important;
+
+  }
+
+}
+
+/* =========================================================
+
+                  11. MOBILE
+
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .pricing-hero {
+
+    height: 400px;
+
+    background-position: 67% center;
+
+  }
+
+  .pricing-hero-content {
+
+    left: 6%;
+
+    right: 6%;
+
+    top: 57%;
+
+    max-width: none;
+
+  }
+
+ .pricing-hero-script {
+
+    font-size: 48px;
+
+    margin-bottom: 0;
+
+    transform:
+
+      translateY(-28px)
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg);
+
+  }
+
+     .pricing-hero.animate .pricing-hero-script {
+
+    transform:
+
+      translateY(-28px)
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg);
+   
+}
+
+  .pricing-hero .hero-title {
+
+    margin-top: 30px;
+
+    font-size: 42px;
+
+    line-height: 1.22;
+
+    letter-spacing: 0.13em;
+
+    max-width: none;
+
+    width: 92vw;
+
+  }
+
+  .pricing-main {
+
+    padding: 48px 0 58px;
+
+  }
+
+  .pricing-intro-section {
+
+    padding: 18px 7% 58px;
+
+  }
+
+  .pricing-section-heading {
+
+    padding-bottom: 0;
+
+    margin-bottom: 26px;
+
+  }
+
+  .pricing-section-heading::after {
+
+    content: "";
+
+    display: block;
+
+    width: 72px;
+
+    height: 3px;
+
+    margin: 22px 0 26px;
+
+    background: rgba(240, 207, 138, 0.92);
+
+    position: relative;
+
+    left: 0;
+
+    bottom: auto;
+
+  }
+
+  .pricing-section-heading p {
+
+    font-family: 'FasthinScript', cursive;
+
+    font-size: 42px;
+
+    line-height: 0.95;
+
+    font-weight: 400;
+
+    letter-spacing: 0.018em;
+
+    word-spacing: 0.03em;
+
+    margin-bottom: 6px;
+
+    color: #d99a3e;
+
+    opacity: 0.94;
+
+    white-space: nowrap;
+
+    max-width: none;
+
+    text-shadow:
+
+      0 0 1px rgba(217,154,62,0.38),
+
+      0 1px 6px rgba(0,0,0,0.04);
+
+    transform:
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg);
+
+  }
+   
+
+  .pricing-section-heading h2 {
+
+    font-size: 24px;
+
+    line-height: 1.3;
+
+    letter-spacing: 0.035em;
+
+    font-weight: 300;
+
+  }
+
+  .pricing-intro-copy p {
+
+    font-size: 14px;
+
+    line-height: 1.82;
+
+  }
+
+  .pricing-cards-section {
+
+    padding: 0 6% 36px;
+
+  }
+
+  .pricing-cards-row {
+
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+  }
+
+  .price-card {
+
+    min-height: 128px;
+
+    padding: 24px 54px 22px 22px;
+
+  }
+
+  .price-card h3 {
+
+    font-size: 26px;
+
+  }
+
+  .price-box {
+
+    margin-top: 18px;
+
+  }
+
+  .price-box strong {
+
+    font-size: 24px;
+
+  }
+
+  .card-arrow {
+
+    right: 22px;
+
+  }
+
+  .payment-strip {
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    margin: 8px 0 38px;
+
+    padding: 20px 6%;
+
+  }
+
+  .payment-left h3 {
+
+    font-size: 23px;
+
+  }
+
+  .payment-right {
+
+    padding-left: 0;
+
+    border-left: none;
+
+    border-top: 1px solid rgba(239,233,220,0.38);
+
+    padding-top: 14px;
+
+  }
+
+  .support-section {
+
+    padding: 0 6%;
+
+  }
+
+  .support-cards-row {
+
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+  }
+
+  .support-card {
+
+    min-height: 150px;
+
+    padding: 26px 24px;
+
+  }
+
+  .support-card h3 {
+
+    font-size: 25px;
+
+  }
+
+  .pricing-popup-content {
+
+    width: 92%;
+
+    max-height: 82vh;
+
+    padding: 30px 24px;
+
+  }
+
+  .pricing-popup-content h3 {
+
+    font-size: 28px;
+
+  }
+
+  .pricing-popup-content p {
+
+    font-size: 13.4px;
+
+    line-height: 1.72;
+
+  }
+
+  .pricing-page .footer-logo img {
+
+    width: 230px !important;
+
+    max-width: 78% !important;
+
+    margin: 0 auto 22px auto !important;
+
+  }
+
+}
+
+
+/* =========================================================
+
+                   12.   LAPTOP / PC
+
+========================================================= */
+
+@media (min-width: 1181px) {
+
+  .pricing-hero {
+
+    height: 400px;
+
+  }
+
+  .pricing-section-heading p {
+
+    font-size: 42px;
+
+    transform:
+
+      translateX(42px)
+
+      scaleY(1.18)
+
+      scaleX(1.10)
+
+      skewX(-14deg)
+
+      rotate(0.6deg);
+
+  }
+
+  .pricing-section-heading::after {
+
+    width: 92px;
+
+    height: 4px;
+
+    background: #ddb46a;
+
+  }
+
+}
+
+/* FORCE GLOBAL HEADER LOGO SIZE — PRICING */
+
+header .site-logo img,
+
+.site-header .site-logo img,
+
+.header-main .site-logo img {
+
+  height: 68px !important;
+
+  min-height: 68px !important;
+
+  max-height: none !important;
+
+  width: auto !important;
+
+  transform: none !important;
+
+  scale: 1 !important;
+
+}
+
+
+
+/* FORCE PRICING HEADER LOGO TO MATCH GLOBAL SYSTEM */
+
+.pricing-page .site-logo img,
+
+body.pricing-page .site-logo img,
+
+.pricing-page .header-main .site-logo img,
+
+body.pricing-page .header-main .site-logo img {
+
+  width: auto !important;
+
+  height: 68px !important;
+
+  max-height: none !important;
+
+  object-fit: contain !important;
+
+  display: block !important;
+
+}
+
+
+/* =========================================================
+
+   PRICING HEADER LOGO FIX
+
+========================================================= */
+
+/* Laptop / Desktop */
+
+@media (min-width: 1181px) {
+
+  .pricing-page .site-logo img {
+
+    height: 68px !important;
+
+    width: auto !important;
+
+    max-height: none !important;
+
+  }
+
+}
+
+/* =========================================================
+
+   PRICING HEADER LOGO FIX
+
+========================================================= */
+
+@media (min-width: 1181px) {
+
+  .pricing-page .site-logo img {
+
+    height: 68px !important;
+
+    width: auto !important;
+
+    max-height: none !important;
+
+    min-height: 0 !important;
+
+    object-fit: contain !important;
+
+    display: block !important;
+
+  }
+
+}
+
+@media (max-width: 1180px) and (min-width: 701px) {
+
+  .pricing-page .site-logo img {
+
+    height: 60px !important;
+
+    width: auto !important;
+
+    max-height: none !important;
+
+    min-height: 0 !important;
+
+    object-fit: contain !important;
+
+    display: block !important;
+
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .pricing-page .site-logo img {
+
+    height: 54px !important;
+
+    width: auto !important;
+
+    max-height: none !important;
+
+    min-height: 0 !important;
+
+    object-fit: contain !important;
+
+    display: block !important;
+
+  }
+
+}
+
+
+/* =========================================================
+
+   FINAL PRICING LOGO SIZE OVERRIDE
+
+========================================================= */
+
+/* iPad / Tablet */
+
+@media (max-width: 1180px) and (min-width: 701px) {
+
+  .pricing-page .site-header .header-main .site-logo img {
+
+    height: 60px !important;
+
+    width: auto !important;
+
+    max-height: none !important;
+
+    min-height: 0 !important;
+
+    object-fit: contain !important;
+
+    display: block !important;
+
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .pricing-page .site-header .header-main .site-logo img {
+
+    height: 54px !important;
+
+    width: auto !important;
+
+    max-height: none !important;
+
+    min-height: 0 !important;
+
+    object-fit: contain !important;
+
+    display: block !important;
+
+  }
+
+}
+
+
