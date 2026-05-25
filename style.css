@@ -763,6 +763,8 @@ body.menu-open .menu-overlay {
 
 ========================================================= */
 
+/* Default hidden state */
+
 .hero-reveal .script-line,
 
 .hero-reveal .hero-title,
@@ -785,7 +787,7 @@ body.menu-open .menu-overlay {
 
 }
 
-/* ---------- 08B. HERO FALL / SOFT REVEAL ---------- */
+/* ---------- 08B. HERO TITLE / CONTENT SOFT REVEAL ---------- */
 
 .hero-reveal.animate .hero-title {
 
@@ -810,6 +812,8 @@ body.menu-open .menu-overlay {
   animation: heroSoftFall 2s cubic-bezier(0.18, 0.9, 0.22, 1) forwards 3s;
 
 }
+
+/* ---------- 08C. KEYFRAMES ---------- */
 
 @keyframes scriptWrite {
 
@@ -865,7 +869,7 @@ body.menu-open .menu-overlay {
 
 }
 
-/* ---------- 08C. REDUCED MOTION ACCESSIBILITY ---------- */
+/* ---------- 08D. REDUCED MOTION ACCESSIBILITY ---------- */
 
 @media (prefers-reduced-motion: reduce) {
 
