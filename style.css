@@ -237,7 +237,7 @@ a:hover {
 
   background: var(--v2-white);
 
-  transition: all 0.45s ease;
+  transition: background 0.35s ease;
 
 }
 
@@ -259,6 +259,8 @@ a:hover {
 
   gap: 34px;
 
+  overflow: hidden;
+
   transition:
 
     max-height 0.45s ease,
@@ -267,11 +269,17 @@ a:hover {
 
     padding 0.45s ease;
 
-  overflow: hidden;
-
 }
 
 .header-doctor-name {
+
+  display: flex;
+
+  align-items: center;
+
+  white-space: nowrap;
+
+  color: var(--v2-charcoal);
 
   font-size: 15px;
 
@@ -280,14 +288,6 @@ a:hover {
   letter-spacing: 0.08em;
 
   font-weight: 400;
-
-  color: var(--v2-charcoal);
-
-  white-space: nowrap;
-
-  display: flex;
-
-  align-items: center;
 
 }
 
@@ -349,13 +349,13 @@ a:hover {
 
   margin-top: 4px;
 
-  border: 1px solid var(--v2-gold);
-
   padding: 10px 28px;
 
-  color: var(--v2-charcoal);
+  border: 1px solid var(--v2-gold);
 
   background: transparent;
+
+  color: var(--v2-charcoal);
 
   font-size: 10px;
 
@@ -365,7 +365,13 @@ a:hover {
 
   text-transform: uppercase;
 
-  transition: all 0.3s ease;
+  transition:
+
+    background 0.3s ease,
+
+    color 0.3s ease,
+
+    border-color 0.3s ease;
 
 }
 
@@ -378,46 +384,6 @@ a:hover {
 }
 
 /* ---------- 05B. MAIN NAVBAR ---------- */
-
-.header-main {
-
-  width: 100%;
-
-  height: 108px;
-
-  padding: 0 6%;
-
-  background: var(--v2-white);
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  transition:
-
-    height 0.45s ease,
-
-    box-shadow 0.45s ease,
-
-    padding 0.45s ease;
-
-}
-
-/* ---------- 05C. LOGO SYSTEM ---------- */
-
-.site-logo {
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: flex-start;
-
-  height: 100%;
-
-}
 
 .header-main {
 
@@ -439,21 +405,49 @@ a:hover {
 
     height 0.45s ease,
 
-    box-shadow 0.45s ease,
+    box-shadow 0.35s ease,
 
-    padding 0.45s ease;
+    padding 0.35s ease;
+
+}
+
+/* ---------- 05C. LOGO SYSTEM ---------- */
+
+.site-logo {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  height: 100%;
+
+}
+
+.site-logo img {
+
+  width: auto;
+
+  height: 82px;
+
+  max-height: none;
+
+  object-fit: contain;
+
+  display: block;
 
 }
 
 .logo-text {
 
-  font-size: 20px;
+  color: var(--v2-charcoal);
 
-  letter-spacing: 0.06em;
+  font-size: 20px;
 
   font-weight: 300;
 
-  color: var(--v2-charcoal);
+  letter-spacing: 0.06em;
 
 }
 
@@ -476,22 +470,6 @@ body.is-scrolled .header-main {
   height: 58px;
 
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.055);
-
-}
-
-.site-logo img {
-
-  width: auto;
-
-  height: 82px;
-
-  max-height: none;
-
-  object-fit: contain;
-
-  display: block;
-
-  opacity: 1;
 
 }
 
@@ -535,11 +513,7 @@ body.is-scrolled .header-main {
 
   display: block;
 
-  width: 38px !important;
-
-  min-width: 38px;
-
-  max-width: 38px;
+  width: 38px;
 
   height: 2px;
 
