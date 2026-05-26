@@ -2,9 +2,21 @@
 
    EMBRACE BESPOKE ORTHODONTIC
 
-   Global Site Data
+   GLOBAL SITE DATA
 
-   Central source for repeated clinic details across the site
+   Central source for repeated live information:
+
+   - brand names
+
+   - phone / WhatsApp / email
+
+   - website URLs
+
+   - clinic location
+
+   - footer copyright
+
+   - social links
 
 ========================================================= */
 
@@ -14,11 +26,19 @@ const SITE_DATA = {
 
     name: "Embrace Bespoke Orthodontic",
 
-    doctorName: "Dr. Yasmine Soliman",
-
     shortName: "Embrace",
 
+    doctorName: "Dr. Yasmine Soliman",
+
     legalFooterName: "Dr. Yasmine Soliman"
+
+  },
+
+  assets: {
+
+    logo: "/dental-website-v3/logo.png",
+
+    logoAlt: "Embrace Bespoke Orthodontic"
 
   },
 
@@ -30,7 +50,11 @@ const SITE_DATA = {
 
     phoneRaw: "+201280004688",
 
+    phoneHref: "tel:+201280004688",
+
     whatsappDisplay: "+20 128 000 4688",
+
+    whatsappRaw: "201280004688",
 
     whatsappUrl: "https://wa.me/201280004688"
 
@@ -58,7 +82,7 @@ const SITE_DATA = {
 
     liveUrl: "https://embraceorthodontic.com",
 
-    githubPagesUrl: "https://ahmedinlondon.github.io/dental-website-v2/"
+    githubPagesUrl: "https://ahmedinlondon.github.io/dental-website-v3/"
 
   },
 
@@ -67,6 +91,8 @@ const SITE_DATA = {
     instagram: "",
 
     facebook: "",
+
+    youtube: "",
 
     tiktok: "",
 
