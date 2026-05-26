@@ -2004,3 +2004,19 @@ body.menu-open .menu-overlay {
 
 }
 
+
+/* MOBILE WHATSAPP FINAL POSITION */
+
+@media (max-width: 700px) {
+
+  a.float-whatsapp.floating-contact {
+
+    top: 125px !important;
+
+    bottom: auto !important;
+
+    transform: none !important;
+
+  }
+
+}
