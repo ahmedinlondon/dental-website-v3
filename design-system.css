@@ -507,6 +507,119 @@
 
 }
 
+/* =========================================================
+
+   10. COLOUR UTILITY SYSTEM
+
+========================================================= */
+
+:root {
+
+  /* =====================================================
+
+     BRAND CORE COLOURS
+
+  ===================================================== */
+
+  --brand-white: #ffffff;
+
+  --brand-ivory: #fffaf2;
+
+  --brand-cream: #f6efe6;
+
+  --brand-soft-cream: #f8f2e8;
+
+  --brand-charcoal: #2d2a26;
+
+  --brand-muted: #6f655c;
+
+  --brand-navy: #1d3557;
+
+  --brand-steel-blue: #607485;
+
+  --brand-footer-blue: #263c4b;
+
+  --brand-gold: #b88932;
+
+  --brand-gold-soft: #ddb46a;
+
+  --brand-gold-script: #c69033;
+
+  /* =====================================================
+
+     FOOTER COLOURS
+
+  ===================================================== */
+
+  --footer-global-bg: #f6efe4;
+
+  --footer-variant-bg: #263c4b;
+
+  --footer-text-dark: #2d2a26;
+
+  --footer-text-light: #ffffff;
+
+  --footer-text-light-soft: rgba(255,255,255,0.86);
+
+  --footer-heading-gold: #b88932;
+
+  --footer-border-gold: rgba(198,161,91,0.42);
+
+  --footer-border-gold-dark: rgba(185,150,87,0.26);
+
+  /* =====================================================
+
+     CARD COLOURS
+
+  ===================================================== */
+
+  --card-light-bg: rgba(239,233,220,0.96);
+
+  --card-light-text: rgba(47,42,38,0.86);
+
+  --card-dark-border: rgba(239,233,220,0.70);
+
+  --card-dark-border-hover: rgba(239,233,220,0.95);
+
+  --card-dark-hover-bg: rgba(255,255,255,0.055);
+
+  /* =====================================================
+
+     POPUP COLOURS
+
+  ===================================================== */
+
+  --popup-bg: rgba(239,233,220,0.96);
+
+  --popup-text: rgba(47,42,38,0.86);
+
+  --popup-overlay-bg: rgba(0,0,0,0.20);
+
+  --popup-shadow: 0 24px 58px rgba(5,22,38,0.24);
+
+  /* =====================================================
+
+     TEXT COLOUR UTILITIES
+
+  ===================================================== */
+
+  --text-dark: #2d2a26;
+
+  --text-soft-dark: rgba(47,42,38,0.92);
+
+  --text-muted: rgba(47,42,38,0.82);
+
+  --text-light: rgba(255,255,255,0.94);
+
+  --text-light-soft: rgba(255,255,255,0.88);
+
+}
+
+
+
+
+
+
 
 
 
