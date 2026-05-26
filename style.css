@@ -1564,6 +1564,44 @@ body.menu-open .menu-overlay {
 
 }
 
+
+/* =========================================================
+
+   12. GLOBAL UNDERLINE SYSTEM
+
+========================================================= */
+
+.hero-title-line::after {
+
+  content: "";
+
+  display: block;
+
+  width: 80px;
+
+  height: 4px;
+
+  background: #ddb46a;
+
+  margin-top: 22px;
+
+}
+
+/* ---------- 12A. LAPTOP / PC UNDERLINE ---------- */
+
+@media (min-width: 1181px) {
+
+  .hero-title-line::after {
+
+    width: 100px;
+
+    height: 5px;
+
+  }
+
+}
+
+
 /* =========================================================
 
    13. RESPONSIVE SYSTEM
