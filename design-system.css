@@ -218,6 +218,59 @@
 
 
 
+/* =========================================================
+
+   04. HERO TITLE SYSTEM
+
+========================================================= */
+
+:root {
+
+  /* =====================================================
+
+     HERO TITLE FAMILY / WEIGHT
+
+  ===================================================== */
+
+  --hero-title-font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  --hero-title-font-weight: 300;
+
+  --hero-title-line-height: 1.16;
+
+  --hero-title-letter-spacing: 0.035em;
+
+  --hero-title-text-transform: none;
+
+  /* =====================================================
+
+     HERO TITLE SIZES
+
+  ===================================================== */
+
+  --hero-title-size-desktop: 44px;
+
+  --hero-title-size-tablet: 38px;
+
+  --hero-title-size-mobile: 42px;
+
+  /* =====================================================
+
+     HERO TITLE COLOURS
+
+  ===================================================== */
+
+  --hero-title-color-light: rgba(255,255,255,0.96);
+
+  --hero-title-color-dark: #2d2a26;
+
+  --hero-title-color-navy: #1d3557;
+
+}
+
+
+
+
 
 
 
