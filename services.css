@@ -1470,26 +1470,41 @@ body.services-page {
 }
 
 /* =========================================================
+
    11. iPAD FOOTER LOGO ALIGNMENT FIX
+
 ========================================================= */
 
 @media (min-width: 701px) and (max-width: 1180px) {
 
   .footer-left {
+
     display: flex !important;
+
     flex-direction: column !important;
+
     align-items: center !important;
+
     text-align: center !important;
+
     padding-right: 20px !important;
+
   }
 
   .footer-logo,
+
   .footer-brand,
+
   .footer-left img {
+
     width: 300px !important;
+
     max-width: 90% !important;
+
     margin: 0 auto 30px auto !important;
+
     display: block !important;
+
   }
 
 }
