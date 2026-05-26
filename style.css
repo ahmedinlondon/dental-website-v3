@@ -1,6 +1,6 @@
 /* =========================================================
 
-   V2 GLOBAL STYLE SYSTEM INDEX
+   V3 GLOBAL STYLE SYSTEM INDEX
 
 =========================================================
 
@@ -41,6 +41,17 @@
     13C. Laptop / PC
 
 ========================================================= */
+
+/* =========================================================
+
+   SYSTEM RULE:
+   style.css controls global/shared systems only.
+   Page-specific layout/design must stay in each page CSS file.
+   Do not place experimental fixes here unless they apply globally.
+   Page exceptions must be clearly labelled.
+
+========================================================= */
+
 
 /* =========================================================
 
