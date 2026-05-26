@@ -989,36 +989,6 @@ body.menu-open .menu-overlay {
 
 }
 
-/* ---------- MOBILE REFINEMENT ---------- */
-
-@media (max-width: 700px) {
-
-  .floating-contact {
-
-    width: 54px;
-
-    height: 54px;
-
-    right: 18px;
-
-    font-size: 21px;
-
-  }
-
-  .float-whatsapp {
-
-    top: 44vh;
-
-  }
-
-  .float-call {
-
-    top: 80vh;
-
-  }
-
-}
-
 /* =========================================================
 
    10. GLOBAL FOOTER SYSTEM — LOCKED FOOTER
