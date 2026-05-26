@@ -20,34 +20,43 @@ SERVICES.CSS — FINAL CLEAN LOCKED VERSION
 */
 
 /* =========================================================
-   01. PAGE BASE + LOCAL FONT FALLBACK
+
+   01. PAGE BASE
+
 ========================================================= */
 
-@font-face {
-  font-family: 'Kingsley Roman';
-  src: url('/dental-website-v2/kingsley-roman.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
 body.services-page {
+
   margin: 0;
+
   padding: 0;
-  background: #efe9dc;
-  font-family: 'Montserrat', 'Poppins', sans-serif;
-  color: #ffffff;
+
+  background: var(--brand-dark-cream);
+
+  font-family: var(--font-heading);
+
+  color: var(--brand-white);
+
   overflow-x: hidden;
+
 }
 
 .services-page *,
+
 .services-page *::before,
+
 .services-page *::after {
+
   box-sizing: border-box;
+
   border-radius: 0 !important;
+
 }
 
 .services-page a {
+
   text-decoration: none;
+
 }
 
 /* =========================================================
