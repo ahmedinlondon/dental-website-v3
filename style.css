@@ -1474,13 +1474,27 @@ body.menu-open .menu-overlay {
 
   font-size: 11px;
 
+  font-weight: 400;
+
   letter-spacing: 0.15em;
+
+  line-height: 1;
 
   text-transform: uppercase;
 
   text-decoration: none;
 
-  transition: all 0.3s ease;
+  cursor: pointer;
+
+  transition:
+
+    background 0.3s ease,
+
+    color 0.3s ease,
+
+    border-color 0.3s ease,
+
+    transform 0.25s ease;
 
 }
 
@@ -1491,6 +1505,36 @@ body.menu-open .menu-overlay {
   background: var(--v2-gold);
 
   color: var(--v2-white);
+
+  transform: translateY(-1px);
+
+}
+
+.btn:focus-visible,
+
+.global-btn:focus-visible {
+
+  outline: 1px solid var(--v2-gold);
+
+  outline-offset: 3px;
+
+}
+
+/* ---------- 11A. BUTTON ARROW SYSTEM ---------- */
+
+.btn-arrow::after,
+
+.global-btn-arrow::after {
+
+  content: "›";
+
+  margin-left: 10px;
+
+  font-size: 18px;
+
+  line-height: 1;
+
+  font-weight: 300;
 
 }
 
