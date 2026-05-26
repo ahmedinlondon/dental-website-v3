@@ -2013,18 +2013,5 @@ html body .floating-contact.float-whatsapp {
 }
 
 
-/* MOBILE WHATSAPP FINAL POSITION */
 
-@media (max-width: 700px) {
 
-  a.float-whatsapp.floating-contact {
-
-    top: 145px !important;
-
-    bottom: auto !important;
-
-    transform: none !important;
-
-  }
-
-}
