@@ -85,21 +85,19 @@ body.services-page {
 ========================================================= */
 
 .services-hero-script {
-
   margin: 0 0 22px;
   color: #c69033;
-  font-family: 'FasthinScript', cursive;
-  font-size: 56px;
-  line-height: 0.95;
-  font-weight: 400;
-  letter-spacing: 0.018em;
-  word-spacing: 0.03em;
+  font-family: var(--script-font-family);
+  font-size: var(--hero-script-size-desktop);
+  line-height: var(--script-line-height);
+  font-weight: var(--script-font-weight);
+  letter-spacing: var(--script-letter-spacing);
+  word-spacing: var(--script-word-spacing);
   opacity: 0;
   text-shadow:
     0 0 1px rgba(198,144,51,0.40),
     0 2px 12px rgba(0,0,0,0.25);
 }
-
 /* =========================================================
 
    MAIN HERO TITLE
@@ -148,25 +146,43 @@ body.services-page {
 @keyframes servicesScriptReveal {
 
   0% {
+
     opacity: 0;
+
     transform:
+
       translateY(14px)
-      scaleY(1.18)
-      scaleX(1.01)
-      skewX(-14deg)
-      rotate(0.6deg);
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
+
     filter: blur(3px);
+
   }
 
   100% {
+
     opacity: 0.94;
+
     transform:
+
       translateY(0)
-      scaleY(1.18)
-      scaleX(1.01)
-      skewX(-14deg)
-      rotate(0.6deg);
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
+
     filter: blur(0);
+
   }
 
 }
