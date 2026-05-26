@@ -140,7 +140,7 @@ body {
 
   font-family: 'FasthinScript';
 
-  src: url('/dental-website-v2/fasthin-script.otf') format('opentype');
+  src: url('/dental-website-v3/fasthin-script.otf') format('opentype');
 
   font-weight: normal;
 
@@ -152,7 +152,7 @@ body {
 
   font-family: 'PaintBrushScript';
 
-  src: url('/dental-website-v2/paint-brush-script.otf') format('opentype');
+  src: url('/dental-website-v3/paint-brush-script.otf') format('opentype');
 
   font-weight: normal;
 
@@ -165,7 +165,7 @@ body {
 
   font-family: 'RoyaltyFree';
 
-  src: url('/dental-website-v2/royalty-free.otf') format('opentype');
+  src: url('/dental-website-v3/royalty-free.otf') format('opentype');
 
   font-weight: normal;
 
@@ -2014,7 +2014,7 @@ html body .floating-contact.float-whatsapp {
 
 }
 
-/* ---------- 12D. ROUND ICON EXCEPTIONS ---------- */
+/* ---------- 13D. ROUND ICON EXCEPTIONS ---------- */
 
 .floating-contact,
 
