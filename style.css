@@ -1800,9 +1800,17 @@ body.menu-open .menu-overlay {
 
   }
 
-.float-whatsapp {
+html body a.float-whatsapp.floating-contact,
 
-  top: 125px !important;
+html body .float-whatsapp.floating-contact,
+
+html body .floating-contact.float-whatsapp {
+
+  top: 145px !important;
+
+  bottom: auto !important;
+
+  transform: none !important;
 
 }
 
