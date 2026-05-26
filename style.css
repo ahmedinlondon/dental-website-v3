@@ -995,6 +995,9 @@ body.menu-open .menu-overlay {
    10. GLOBAL FOOTER SYSTEM — LOCKED FOOTER
 
 ========================================================= */
+
+/* =========================================================
+
    NOTE:
    This global footer system currently applies to:
    - Services
@@ -1005,6 +1008,7 @@ body.menu-open .menu-overlay {
    page-specific variants handled separately in:
    - home.css
    - contact.css
+
 ========================================================= */
 
 
