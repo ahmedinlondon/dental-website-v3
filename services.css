@@ -844,22 +844,37 @@ body.services-page {
     font-size: 22px;
   }
 
-  .services-interactive.panel-open {
-    display: block;
-  }
+.services-interactive.panel-open {
 
-  .services-interactive.panel-open .services-grid {
-    max-width: none;
-    grid-template-columns: repeat(3, 1fr);
-  }
+  display: flex;
 
-  .service-panel {
-    width: 100%;
-    max-width: none;
-    height: auto;
-    max-height: none;
-    margin-top: 28px;
-  }
+  gap: 28px;
+
+  align-items: flex-start;
+
+}
+
+.services-interactive.panel-open .services-grid {
+
+  max-width: 620px;
+
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.service-panel {
+
+  width: 390px;
+
+  max-width: 390px;
+
+  height: 620px;
+
+  max-height: none;
+
+  margin-top: 0;
+
+}
 
   .comparison-section {
     width: 90%;
