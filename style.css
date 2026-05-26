@@ -34,10 +34,11 @@
     10D. FOOTER SOCIAL ICONS
     10E. FOOTER COPYRIGHT
 11. GLOBAL BUTTON SYSTEM
-12. RESPONSIVE SYSTEM
-    12A. iPAD / TABLET
-    12B. MOBILE
-    12C. Laptop / PC
+12. GLOBAL UNDERLINE SYSTEM
+13. RESPONSIVE SYSTEM
+    13A. iPAD / TABLET
+    13B. MOBILE
+    13C. Laptop / PC
 
 ========================================================= */
 
@@ -1565,11 +1566,11 @@ body.menu-open .menu-overlay {
 
 /* =========================================================
 
-   12. RESPONSIVE SYSTEM
+   13. RESPONSIVE SYSTEM
 
 ========================================================= */
 
-/* ---------- 12A. iPAD / TABLET ---------- */
+/* ---------- 13A. iPAD / TABLET ---------- */
 
 @media (max-width: 1180px) {
 
@@ -1637,7 +1638,7 @@ body.menu-open .menu-overlay {
 
 }
 
-/* ---------- 12B. MOBILE ---------- */
+/* ---------- 13B. MOBILE ---------- */
 
 @media (max-width: 700px) {
 
@@ -1918,7 +1919,7 @@ html body .floating-contact.float-whatsapp {
 
 }
 
-/* ---------- 12C. LAPTOP / PC ---------- */
+/* ---------- 13C. LAPTOP / PC ---------- */
 
 @media (min-width: 1181px) {
 
