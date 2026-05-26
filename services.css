@@ -694,10 +694,13 @@ body.services-page {
 
 }
 
-  .services-hero .hero-title {
-    font-size: 38px;
-    letter-spacing: 0.035em;
-  }
+.services-hero .hero-title {
+
+  font-size: var(--hero-title-size-tablet);
+
+  letter-spacing: var(--hero-title-letter-spacing);
+
+}
 
   .services-approach-section {
     padding: 70px 6% 74px;
@@ -795,13 +798,19 @@ body.services-page {
       rotate(0.6deg);
   }
 
-  .services-hero .hero-title {
-     margin-top: 30px;
-     font-size: 42px;
-    line-height: 1.22;
-    letter-spacing: 0.13em;
-    max-width: 340px;
-  }
+ .services-hero .hero-title {
+
+  margin-top: 30px;
+
+  font-size: var(--hero-title-size-mobile);
+
+  line-height: 1.22;
+
+  letter-spacing: 0.13em;
+
+  max-width: 340px;
+
+}
 
   .services-approach-section {
     padding: 54px 7% 58px;
