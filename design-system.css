@@ -36,7 +36,7 @@
 
 /* =========================================================
 
-   01. ROOT DESIGN TOKENS
+                01. ROOT DESIGN TOKENS
 
 ========================================================= */
 
@@ -44,7 +44,7 @@
 
   /* =====================================================
 
-     FONT FAMILIES
+                 02. FONT FAMILIES
 
   ===================================================== */
 
@@ -119,6 +119,105 @@
   --shadow-light: 0 4px 20px rgba(0,0,0,0.03);
 
 }
+
+/* =========================================================
+
+             03. SCRIPT TEXT SYSTEM
+
+========================================================= */
+
+:root {
+
+  /* =====================================================
+
+     GLOBAL SCRIPT APPEARANCE
+
+  ===================================================== */
+
+  --script-font-family: 'FasthinScript', cursive;
+
+  --script-font-weight: 400;
+
+  --script-line-height: 0.95;
+
+  --script-letter-spacing: 0.018em;
+
+  --script-word-spacing: 0.03em;
+
+  /* =====================================================
+
+     GLOBAL SCRIPT SHAPE
+
+  ===================================================== */
+
+  --script-scale-y: 1.18;
+
+  --script-scale-x: 1.04;
+
+  --script-skew-x: -14deg;
+
+  --script-rotate: 0.6deg;
+
+  /* =====================================================
+
+     HERO SCRIPT SIZES
+
+  ===================================================== */
+
+  --hero-script-size-desktop: 56px;
+
+  --hero-script-size-mobile: 50px;
+
+  /* =====================================================
+
+     SECTION SCRIPT SIZES
+
+  ===================================================== */
+
+  --section-script-size-desktop: 56px;
+
+  --section-script-size-mobile: 42px;
+
+}
+
+/* =========================================================
+
+   GLOBAL SCRIPT STYLE
+
+========================================================= */
+
+.global-script {
+
+  font-family: var(--script-font-family);
+
+  font-weight: var(--script-font-weight);
+
+  line-height: var(--script-line-height);
+
+  letter-spacing: var(--script-letter-spacing);
+
+  word-spacing: var(--script-word-spacing);
+
+  transform:
+
+    scaleY(var(--script-scale-y))
+
+    scaleX(var(--script-scale-x))
+
+    skewX(var(--script-skew-x))
+
+    rotate(var(--script-rotate));
+
+}
+
+
+
+
+
+
+
+
+
 
 /* =========================================================
 
