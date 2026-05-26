@@ -767,81 +767,138 @@ body.services-page {
 }
 
 /* =========================================================
+
    07. COMPARISON SECTION + CARDS
+
 ========================================================= */
 
 .comparison-section {
-  max-width: 1180px;
+
+  max-width: var(--container-standard);
+
   margin: 0 auto;
+
   padding: 10px 0 0;
+
 }
 
 .comparison-title {
+
   margin: 0 0 32px;
+
 }
 
 .mobile-comparison-cards {
+
   display: grid;
+
   grid-template-columns: 1fr 1fr;
-  gap: 18px;
+
+  gap: var(--card-gap-desktop);
+
 }
 
 .mobile-comparison-card {
+
   min-height: 110px;
-  padding: 0 62px 0 30px;
-  border: 1px solid rgba(239,233,220,0.70);
+
+  padding: 0 62px 0 var(--card-padding-desktop);
+
+  border: 1px solid var(--card-dark-border);
+
   background: transparent;
-  color: #ffffff;
+
+  color: var(--brand-white);
+
   cursor: pointer;
+
   display: flex;
+
   align-items: center;
+
   justify-content: flex-start;
+
   position: relative;
+
   text-align: left;
+
   transition:
+
     background 0.28s ease,
+
     border-color 0.28s ease,
+
     transform 0.28s ease;
+
 }
 
 .mobile-comparison-card:hover {
-  background: rgba(255,255,255,0.055);
-  border-color: rgba(239,233,220,0.95);
+
+  background: var(--card-dark-hover-bg);
+
+  border-color: var(--card-dark-border-hover);
+
   transform: translateY(-2px);
+
 }
 
 .mobile-comparison-card h3 {
+
   margin: 0;
-  color: rgba(255,255,255,0.94);
-  font-family: 'Montserrat', 'Poppins', sans-serif;
-  font-size: 29px;
-  line-height: 1.16;
-  font-weight: 300;
-  letter-spacing: 0.035em;
+
+  color: var(--card-title-color-light);
+
+  font-family: var(--section-title-font-family);
+
+  font-size: var(--section-title-size-desktop);
+
+  line-height: var(--section-title-line-height);
+
+  font-weight: var(--section-title-font-weight);
+
+  letter-spacing: var(--section-title-letter-spacing);
+
   text-transform: none;
+
 }
 
 .mobile-comparison-card span {
+
   position: absolute;
+
   right: 28px;
+
   top: 50%;
+
   width: 18px;
+
   height: 18px;
+
   transform: translateY(-50%);
+
 }
 
 .mobile-comparison-card span::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-top: 1.5px solid #d99a3e;
-  border-right: 1.5px solid #d99a3e;
-  transform: rotate(45deg);
-  right: 3px;
-  top: 4px;
-}
 
+  content: "";
+
+  position: absolute;
+
+  width: 10px;
+
+  height: 10px;
+
+  border-top: 1.5px solid #d99a3e;
+
+  border-right: 1.5px solid #d99a3e;
+
+  transform: rotate(45deg);
+
+  right: 3px;
+
+  top: 4px;
+
+}
 /* =========================================================
    08. COMPARISON POPUP
 ========================================================= */
