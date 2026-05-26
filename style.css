@@ -27,7 +27,7 @@
 09. FLOATING CONTACT BUTTONS
     09A. WHATSAPP BUTTON
     09B. CALL BUTTON
-10. GLOBAL FOOTER SYSTEM
+10. GLOBAL FOOTER SYSTEM (NOT INCLUDING HOME AND CONTACT FOOTERS)
     10A. FOOTER STRUCTURE
     10B. FOOTER DECORATIVE OUTLINES
     10C. FOOTER CTA BUTTON
@@ -995,6 +995,18 @@ body.menu-open .menu-overlay {
    10. GLOBAL FOOTER SYSTEM — LOCKED FOOTER
 
 ========================================================= */
+   NOTE:
+   This global footer system currently applies to:
+   - Services
+   - Pricing
+   - FAQ
+   - About
+   Home and Contact footers remain intentional
+   page-specific variants handled separately in:
+   - home.css
+   - contact.css
+========================================================= */
+
 
 .site-footer {
 
