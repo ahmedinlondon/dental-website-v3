@@ -662,12 +662,21 @@ body.services-page {
     max-width: 620px;
   }
 
-  .services-hero-script,
-  .services-approach-script,
-  .services-section-heading p,
-  .comparison-title p {
-    font-size: 56px;
-  }
+.services-hero-script {
+
+  font-size: var(--hero-script-size-tablet);
+
+}
+
+.services-approach-script,
+
+.services-section-heading p,
+
+.comparison-title p {
+
+  font-size: var(--section-script-size-tablet);
+
+}
 
   .services-hero .hero-title {
     font-size: 38px;
