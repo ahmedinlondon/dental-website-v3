@@ -343,64 +343,113 @@ body.services-page {
 }
 
 /* =========================================================
+
    04. MAIN STEEL SECTION + SECTION HEADINGS
+
 ========================================================= */
 
 .services-main {
-  background: #607485;
-  color: #ffffff;
+
+  background: var(--brand-steel-blue);
+
+  color: var(--brand-white);
+
   padding: 0 0 72px;
+
 }
 
 .services-grid-section {
+
   padding: 64px 5.5% 56px;
+
 }
 
 .services-section-heading {
-  max-width: 1180px;
-  margin: 0 auto 36px;
+
+  max-width: var(--container-standard);
+
+  margin: 0 auto var(--section-heading-bottom-gap);
+
 }
 
 .services-section-heading p,
+
 .comparison-title p {
+
   margin: 0 0 18px;
+
   color: #f0c36f;
-  font-family: 'FasthinScript', cursive;
-  font-size: 56px;
-  line-height: 0.95;
-  font-weight: 400;
-  letter-spacing: 0.018em;
-  word-spacing: 0.03em;
+
+  font-family: var(--script-font-family);
+
+  font-size: var(--section-script-size-desktop);
+
+  line-height: var(--script-line-height);
+
+  font-weight: var(--script-font-weight);
+
+  letter-spacing: var(--script-letter-spacing);
+
+  word-spacing: var(--script-word-spacing);
+
   opacity: 0.94;
+
   text-transform: none;
+
   text-shadow:
+
     0 0 1px rgba(240,195,111,0.45),
+
     0 1px 8px rgba(0,0,0,0.10);
+
   transform:
-    scaleY(1.18)
-    scaleX(1.01)
-    skewX(-14deg)
-    rotate(0.6deg);
+
+    scaleY(var(--script-scale-y))
+
+    scaleX(var(--script-scale-x))
+
+    skewX(var(--script-skew-x))
+
+    rotate(var(--script-rotate));
+
 }
 
 .services-section-heading h2,
+
 .comparison-title h2 {
+
   margin: 0;
-  color: rgba(255,255,255,0.94);
-  font-family: 'Montserrat', 'Poppins', sans-serif;
-  font-size: 29px;
-  line-height: 1.16;
-  font-weight: 300;
-  letter-spacing: 0.035em;
+
+  color: var(--section-title-color-light);
+
+  font-family: var(--section-title-font-family);
+
+  font-size: var(--section-title-size-desktop);
+
+  line-height: var(--section-title-line-height);
+
+  font-weight: var(--section-title-font-weight);
+
+  letter-spacing: var(--section-title-letter-spacing);
+
+  text-transform: var(--section-title-text-transform);
+
 }
 
 .services-heading-line,
+
 .comparison-heading-line {
+
   display: block;
+
   width: 72px;
+
   height: 3px;
-  background: #ddb46a;
-  margin-top: 22px;
+
+  background: var(--brand-gold-soft);
+
+  margin-top: var(--title-to-line-gap);
+
 }
 
 /* =========================================================
