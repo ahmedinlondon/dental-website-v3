@@ -773,7 +773,7 @@ body.services-page {
    09. iPAD / TABLET
 ========================================================= */
 
-@media (max-width: 1180px) {
+@media (min-width: 701px) and (max-width: 1180px) {
 
   .services-hero {
     height: 400px;
