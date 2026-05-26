@@ -1,8 +1,36 @@
 /* =========================================================
 
    EMBRACE BESPOKE ORTHODONTIC
-
    GLOBAL DESIGN SYSTEM
+   Purpose:
+   This file controls visual design decisions:
+   - fonts
+   - script text
+   - hero titles
+   - section titles
+   - colours
+   - spacing
+   - reusable design tokens
+   style.css controls global mechanics/components.
+   page CSS files control page-specific layouts only.
+
+========================================================= */
+
+/* =========================================================
+
+   DESIGN SYSTEM INDEX
+
+=========================================================
+
+01. ROOT DESIGN TOKENS
+02. FONT FAMILY SYSTEM
+03. SCRIPT TEXT SYSTEM
+04. HERO TITLE SYSTEM
+05. SECTION TITLE SYSTEM
+06. BODY TEXT SYSTEM
+07. SPACING / CONTAINER SYSTEM
+08. COLOUR UTILITY SYSTEM
+09. HEADER PHONE LINK SUPPORT
 
 ========================================================= */
 
