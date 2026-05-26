@@ -900,66 +900,115 @@ body.services-page {
 
 }
 /* =========================================================
+
    08. COMPARISON POPUP
+
 ========================================================= */
 
 .comparison-overlay {
+
   display: none;
+
   position: fixed;
+
   inset: 0;
+
   z-index: 18000;
-  background: rgba(0,0,0,0.20);
+
+  background: var(--popup-overlay-bg);
+
   align-items: center;
+
   justify-content: center;
+
   padding: 26px;
+
 }
 
 .comparison-popup {
+
   position: relative;
+
   width: 100%;
+
   max-width: 460px;
+
   max-height: 82vh;
+
   overflow-y: auto;
+
   padding: 34px 32px;
-  background: rgba(239,233,220,0.96);
-  color: rgba(47,42,38,0.86);
-  box-shadow: 0 24px 58px rgba(5,22,38,0.24);
+
+  background: var(--popup-bg);
+
+  color: var(--popup-text);
+
+  box-shadow: var(--popup-shadow);
+
 }
 
 .comparison-popup h2 {
+
   margin: 0 0 20px;
-  color: #2d2a26;
-  font-family: 'Montserrat', 'Poppins', sans-serif;
-  font-size: 32px;
-  line-height: 1.12;
-  font-weight: 300;
-  letter-spacing: 0.015em;
+
+  color: var(--popup-title-color-dark);
+
+  font-family: var(--popup-title-font-family);
+
+  font-size: var(--popup-title-size-desktop);
+
+  line-height: var(--popup-title-line-height);
+
+  font-weight: var(--popup-title-font-weight);
+
+  letter-spacing: var(--popup-title-letter-spacing);
+
 }
 
 .comparison-popup ul {
+
   margin: 0;
+
   padding-left: 20px;
+
 }
 
 .comparison-popup li {
-  color: rgba(47,42,38,0.82);
-  font-family: 'Montserrat', 'Poppins', sans-serif;
-  font-size: 14px;
+
+  color: var(--body-copy-color-muted);
+
+  font-family: var(--body-copy-font-family);
+
+  font-size: var(--body-copy-font-size-mobile);
+
   line-height: 1.78;
-  font-weight: 300;
+
+  font-weight: var(--body-copy-font-weight);
+
   margin-bottom: 8px;
+
 }
 
 .comparison-close {
+
   position: absolute;
+
   top: 10px;
+
   right: 16px;
+
   border: none;
+
   background: transparent;
-  color: #2d2a26;
+
+  color: var(--popup-title-color-dark);
+
   font-size: 36px;
+
   line-height: 1;
+
   cursor: pointer;
+
 }
 
 /* =========================================================
