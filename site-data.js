@@ -12,7 +12,11 @@
 
    - website URLs
 
-   - clinic location
+   - clinic locations
+
+   - Google Maps links
+
+   - opening times
 
    - footer copyright
 
@@ -60,19 +64,75 @@ const SITE_DATA = {
 
   },
 
-  location: {
+  locations: {
 
-    clinicName: "Embrace Bespoke Orthodontic",
+    primary: {
 
-    addressLine1: "Twin Tower",
+      name: "Twin Tower",
 
-    addressLine2: "Sheikh Zayed City",
+      clinicName: "Embrace Bespoke Orthodontic",
 
-    city: "Cairo",
+      addressLine1: "Twin Tower",
 
-    country: "Egypt",
+      addressLine2: "Sheikh Zayed City",
 
-    fullAddress: "Twin Tower, Sheikh Zayed City, Cairo, Egypt"
+      city: "Cairo",
+
+      country: "Egypt",
+
+      fullAddress: "Twin Tower, Sheikh Zayed City, Cairo, Egypt",
+
+      googleMapsUrl: "",
+
+      googleMapsEmbedUrl: ""
+
+    },
+
+    secondary: {
+
+      name: "",
+
+      clinicName: "",
+
+      addressLine1: "",
+
+      addressLine2: "",
+
+      city: "",
+
+      country: "Egypt",
+
+      fullAddress: "",
+
+      googleMapsUrl: "",
+
+      googleMapsEmbedUrl: ""
+
+    }
+
+  },
+
+  openingTimes: {
+
+    label: "Opening times",
+
+    note: "Opening times to be confirmed",
+
+    display: "",
+
+    monday: "",
+
+    tuesday: "",
+
+    wednesday: "",
+
+    thursday: "",
+
+    friday: "",
+
+    saturday: "",
+
+    sunday: ""
 
   },
 
@@ -96,7 +156,9 @@ const SITE_DATA = {
 
     tiktok: "",
 
-    linkedin: ""
+    linkedin: "",
+
+    twitter: ""
 
   },
 
@@ -108,7 +170,9 @@ const SITE_DATA = {
 
     whatsappText: "Message us on WhatsApp",
 
-    emailText: "Email the clinic"
+    emailText: "Email the clinic",
+
+    directionsText: "Get directions"
 
   },
 
@@ -120,4 +184,4 @@ const SITE_DATA = {
 
   }
 
-};
+};;
