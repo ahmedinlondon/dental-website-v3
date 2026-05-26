@@ -1012,114 +1012,149 @@ body.services-page {
 }
 
 /* =========================================================
+
    09. iPAD / TABLET
+
 ========================================================= */
 
 @media (min-width: 701px) and (max-width: 1180px) {
 
   .services-hero {
+
     height: 400px;
+
   }
 
   .services-hero-content {
+
     left: 5%;
+
     top: 66%;
+
     max-width: 620px;
+
   }
 
-.services-hero-script {
+  .services-hero-script {
 
-  font-size: var(--hero-script-size-tablet);
+    font-size: var(--hero-script-size-tablet);
 
-}
+  }
 
-.services-approach-script,
+  .services-approach-script,
 
-.services-section-heading p,
+  .services-section-heading p,
 
-.comparison-title p {
+  .comparison-title p {
 
-  font-size: var(--section-script-size-tablet);
+    font-size: var(--section-script-size-tablet);
 
-}
+  }
 
-.services-hero .hero-title {
+  .services-hero .hero-title {
 
-  font-size: var(--hero-title-size-tablet);
+    font-size: var(--hero-title-size-tablet);
 
-  letter-spacing: var(--hero-title-letter-spacing);
+    letter-spacing: var(--hero-title-letter-spacing);
 
-}
+  }
 
   .services-approach-section {
-    padding: 70px 6% 74px;
+
+    padding: var(--section-medium-tablet) var(--page-padding-desktop) 74px;
+
   }
 
   .services-approach-inner h2 {
+
     font-size: 29px;
+
   }
 
   .services-main {
+
     padding-bottom: 64px;
+
   }
 
   .services-grid-section {
-    padding: 56px 5% 48px;
+
+    padding: 56px var(--page-padding-tablet) 48px;
+
   }
 
   .services-section-heading h2,
+
   .comparison-title h2 {
-    font-size: 27px;
+
+    font-size: var(--section-title-size-tablet);
+
   }
 
   .services-grid {
+
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+
+    gap: var(--card-gap-tablet);
+
   }
 
   .service-card {
+
     min-height: 112px;
+
     padding: 0 56px 0 24px;
+
   }
 
   .service-card h3 {
-    font-size: 22px;
+
+    font-size: var(--card-title-size-tablet);
+
   }
 
-.services-interactive.panel-open {
+  /* =====================================================
 
-  display: flex;
+     iPAD SIDE PANEL LAYOUT
 
-  gap: 28px;
+  ===================================================== */
 
-  align-items: flex-start;
+  .services-interactive.panel-open {
 
-}
+    display: flex;
 
-.services-interactive.panel-open .services-grid {
+    gap: 28px;
 
-  max-width: 620px;
+    align-items: flex-start;
 
-  grid-template-columns: repeat(2, 1fr);
+  }
 
-}
+  .services-interactive.panel-open .services-grid {
 
-.service-panel {
+    max-width: 620px;
 
-  width: 390px;
+    grid-template-columns: repeat(2, 1fr);
 
-  max-width: 390px;
+  }
 
-  height: 620px;
+  .service-panel {
 
-  max-height: none;
+    width: 390px;
 
-  margin-top: 0;
+    max-width: 390px;
 
-}
+    height: 620px;
+
+    max-height: none;
+
+    margin-top: 0;
+
+  }
 
   .comparison-section {
+
     width: 90%;
+
   }
 
 }
