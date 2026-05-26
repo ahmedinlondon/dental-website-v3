@@ -23,14 +23,26 @@
 =========================================================
 
 01. ROOT DESIGN TOKENS
+
 02. FONT FAMILY SYSTEM
+
 03. SCRIPT TEXT SYSTEM
+
 04. HERO TITLE SYSTEM
+
 05. SECTION TITLE SYSTEM
+
 06. BODY TEXT SYSTEM
-07. SPACING / CONTAINER SYSTEM
-08. COLOUR UTILITY SYSTEM
-09. HEADER PHONE LINK SUPPORT
+
+07. CARD TITLE SYSTEM
+
+08. POPUP TITLE SYSTEM
+
+09. SPACING / CONTAINER SYSTEM
+
+10. COLOUR UTILITY SYSTEM
+
+11. HEADER PHONE LINK SUPPORT
 
 ========================================================= */
 
@@ -269,7 +281,139 @@
 }
 
 
+/* =========================================================
 
+   05. SECTION TITLE SYSTEM
+
+========================================================= */
+
+:root {
+
+  /* =====================================================
+
+     SECTION TITLE FAMILY / WEIGHT
+
+  ===================================================== */
+
+  --section-title-font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  --section-title-font-weight: 300;
+
+  --section-title-line-height: 1.16;
+
+  --section-title-letter-spacing: 0.035em;
+
+  --section-title-text-transform: none;
+
+  /* =====================================================
+
+     SECTION TITLE SIZES
+
+  ===================================================== */
+
+  --section-title-size-desktop: 29px;
+
+  --section-title-size-tablet: 27px;
+
+  --section-title-size-mobile: 25px;
+
+  /* =====================================================
+
+     SECTION TITLE COLOURS
+
+  ===================================================== */
+
+  --section-title-color-light: rgba(255,255,255,0.94);
+
+  --section-title-color-blue: #607485;
+
+  --section-title-color-dark: #2d2a26;
+
+  --section-title-color-navy: #1d3557;
+
+}
+
+/* =========================================================
+
+   06. BODY TEXT SYSTEM
+
+========================================================= */
+
+:root {
+
+  --body-copy-font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  --body-copy-font-size-desktop: 15px;
+
+  --body-copy-font-size-mobile: 14px;
+
+  --body-copy-line-height-desktop: 1.95;
+
+  --body-copy-line-height-mobile: 1.82;
+
+  --body-copy-font-weight: 300;
+
+  --body-copy-letter-spacing: 0.01em;
+
+  --body-copy-color-dark: rgba(47,42,38,0.92);
+
+  --body-copy-color-muted: rgba(47,42,38,0.82);
+
+  --body-copy-color-light: rgba(255,255,255,0.88);
+
+}
+
+/* =========================================================
+
+   07. CARD TITLE SYSTEM
+
+========================================================= */
+
+:root {
+
+  --card-title-font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  --card-title-font-weight: 300;
+
+  --card-title-line-height: 1.2;
+
+  --card-title-letter-spacing: 0.025em;
+
+  --card-title-size-desktop: 23px;
+
+  --card-title-size-tablet: 22px;
+
+  --card-title-size-mobile: 26px;
+
+  --card-title-color-light: rgba(255,255,255,0.94);
+
+  --card-title-color-dark: #2d2a26;
+
+}
+
+/* =========================================================
+
+   08. POPUP TITLE SYSTEM
+
+========================================================= */
+
+:root {
+
+  --popup-title-font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  --popup-title-font-weight: 300;
+
+  --popup-title-line-height: 1.12;
+
+  --popup-title-letter-spacing: 0.015em;
+
+  --popup-title-size-desktop: 32px;
+
+  --popup-title-size-mobile: 28px;
+
+  --popup-title-color-dark: #2d2a26;
+
+}
 
 
 
