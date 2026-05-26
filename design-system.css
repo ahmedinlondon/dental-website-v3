@@ -415,6 +415,100 @@
 
 }
 
+/* =========================================================
+
+   09. SPACING / CONTAINER SYSTEM
+
+========================================================= */
+
+:root {
+
+  /* =====================================================
+
+     CONTAINER WIDTHS
+
+  ===================================================== */
+
+  --container-wide: 1240px;
+
+  --container-standard: 1180px;
+
+  --container-reading: 920px;
+
+  --container-narrow: 760px;
+
+  /* =====================================================
+
+     GLOBAL SIDE PADDING
+
+  ===================================================== */
+
+  --page-padding-desktop: 6%;
+
+  --page-padding-tablet: 5%;
+
+  --page-padding-mobile: 7%;
+
+  /* =====================================================
+
+     SECTION VERTICAL SPACING
+
+  ===================================================== */
+
+  --section-compact-desktop: 56px;
+
+  --section-medium-desktop: 78px;
+
+  --section-feature-desktop: 96px;
+
+  --section-compact-tablet: 52px;
+
+  --section-medium-tablet: 70px;
+
+  --section-feature-tablet: 84px;
+
+  --section-compact-mobile: 42px;
+
+  --section-medium-mobile: 54px;
+
+  --section-feature-mobile: 66px;
+
+  /* =====================================================
+
+     TITLE / CONTENT RHYTHM
+
+  ===================================================== */
+
+  --title-to-line-gap: 22px;
+
+  --line-to-content-gap: 34px;
+
+  --script-to-title-gap: 8px;
+
+  --section-heading-bottom-gap: 36px;
+
+  --section-heading-bottom-gap-mobile: 28px;
+
+  /* =====================================================
+
+     CARD / GRID RHYTHM
+
+  ===================================================== */
+
+  --card-gap-desktop: 18px;
+
+  --card-gap-tablet: 16px;
+
+  --card-gap-mobile: 14px;
+
+  --card-padding-desktop: 30px;
+
+  --card-padding-mobile: 22px;
+
+}
+
+
+
 
 
 
