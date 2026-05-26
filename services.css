@@ -231,66 +231,115 @@ body.services-page {
   }
 
 }
+
 /* =========================================================
+
    03. OUR APPROACH SECTION
+
 ========================================================= */
 
 .services-approach-section {
-  background: #efe9dc;
-  padding: 78px 6% 84px;
+
+  background: var(--brand-dark-cream);
+
+  padding: 78px var(--page-padding-desktop) 84px;
+
 }
 
 .services-approach-inner {
+
   max-width: 980px;
+
 }
 
 .services-approach-script {
-  margin: 0 0 8px;
+
+  margin: 0 0 var(--script-to-title-gap);
+
   color: #d99a3e;
-  font-family: 'FasthinScript', cursive;
-  font-size: 56px;
-  line-height: 0.95;
-  font-weight: 400;
-  letter-spacing: 0.018em;
-  word-spacing: 0.03em;
+
+  font-family: var(--script-font-family);
+
+  font-size: var(--section-script-size-desktop);
+
+  line-height: var(--script-line-height);
+
+  font-weight: var(--script-font-weight);
+
+  letter-spacing: var(--script-letter-spacing);
+
+  word-spacing: var(--script-word-spacing);
+
   opacity: 0.94;
+
   text-shadow:
+
     0 0 1px rgba(217,154,62,0.38),
+
     0 1px 6px rgba(0,0,0,0.04);
+
   transform:
-    scaleY(1.18)
-    scaleX(1.01)
-    skewX(-14deg)
-    rotate(0.6deg);
+
+    scaleY(var(--script-scale-y))
+
+    scaleX(var(--script-scale-x))
+
+    skewX(var(--script-skew-x))
+
+    rotate(var(--script-rotate));
+
 }
 
 .services-approach-inner h2 {
+
   margin: 0;
-  color: #607485;
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  color: var(--section-title-color-blue);
+
+  font-family: var(--section-title-font-family);
+
   font-size: 32px;
+
   line-height: 1.18;
-  font-weight: 300;
+
+  font-weight: var(--section-title-font-weight);
+
   letter-spacing: 0.03em;
+
 }
 
 .services-approach-line {
+
   display: block;
+
   width: 72px;
+
   height: 3px;
-  margin: 22px 0 34px;
-  background: #ddb46a;
+
+  margin: var(--title-to-line-gap) 0 var(--line-to-content-gap);
+
+  background: var(--brand-gold-soft);
+
 }
 
 .services-approach-text {
-  max-width: 920px;
+
+  max-width: var(--container-reading);
+
   margin: 0;
-  color: rgba(47,42,38,0.92);
-  font-family: 'Montserrat', 'Poppins', sans-serif;
-  font-size: 15px;
-  line-height: 1.95;
-  font-weight: 300;
-  letter-spacing: 0.01em;
+
+  color: var(--body-copy-color-dark);
+
+  font-family: var(--body-copy-font-family);
+
+  font-size: var(--body-copy-font-size-desktop);
+
+  line-height: var(--body-copy-line-height-desktop);
+
+  font-weight: var(--body-copy-font-weight);
+
+  letter-spacing: var(--body-copy-letter-spacing);
+
 }
 
 /* =========================================================
