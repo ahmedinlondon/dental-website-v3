@@ -709,7 +709,7 @@ body.pricing-page {
 
 .support-section {
 
-  max-width: 1180px;
+  max-width: var(--container-standard);
 
   margin: 0 auto;
 
@@ -723,7 +723,7 @@ body.pricing-page {
 
   grid-template-columns: repeat(3, 1fr);
 
-  gap: 18px;
+  gap: var(--card-gap-desktop);
 
 }
 
@@ -731,9 +731,9 @@ body.pricing-page {
 
   min-height: 180px;
 
-  padding: 30px 28px;
+  padding: var(--card-padding-desktop) 28px;
 
-  background: #ffffff;
+  background: var(--brand-white);
 
   border: 1px solid rgba(185,150,87,0.20);
 
@@ -751,17 +751,17 @@ body.pricing-page {
 
   margin: 0 0 14px;
 
-  color: #0f2f57;
+  color: var(--hero-title-color-navy);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--card-title-font-family);
 
-  font-size: 23px;
+  font-size: var(--card-title-size-desktop);
 
-  line-height: 1.2;
+  line-height: var(--card-title-line-height);
 
-  font-weight: 300;
+  font-weight: var(--card-title-font-weight);
 
-  letter-spacing: 0.025em;
+  letter-spacing: var(--card-title-letter-spacing);
 
 }
 
@@ -771,7 +771,7 @@ body.pricing-page {
 
   color: rgba(45,42,38,0.74);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--body-copy-font-family);
 
   font-size: 14px;
 
