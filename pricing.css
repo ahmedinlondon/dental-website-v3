@@ -961,14 +961,17 @@ body.pricing-page {
 
   }
 
-  .pricing-hero-script,
+ .pricing-hero-script {
 
-  .pricing-section-heading p {
+  font-size: var(--hero-script-size-tablet);
 
-    font-size: var(--section-script-size-tablet);
+}
 
-  }
+.pricing-section-heading p {
 
+  font-size: var(--section-script-size-tablet);
+
+}
   .pricing-hero .hero-title {
 
     font-size: var(--hero-title-size-tablet);
