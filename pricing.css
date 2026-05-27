@@ -315,7 +315,7 @@ body.pricing-page {
 
 .pricing-intro-section {
 
-  max-width: 1180px;
+  max-width: var(--container-standard);
 
   margin: 0 auto;
 
@@ -341,7 +341,7 @@ body.pricing-page {
 
   height: 3px;
 
-  background: #d7aa63;
+  background: var(--brand-gold-soft);
 
   position: absolute;
 
@@ -353,21 +353,21 @@ body.pricing-page {
 
 .pricing-section-heading p {
 
-  margin: 0 0 8px;
+  margin: 0 0 var(--script-to-title-gap);
 
   color: #d99a3e;
 
-  font-family: 'FasthinScript', cursive;
+  font-family: var(--script-font-family);
 
-  font-size: 56px;
+  font-size: var(--section-script-size-desktop);
 
-  line-height: 0.95;
+  line-height: var(--script-line-height);
 
-  font-weight: 400;
+  font-weight: var(--script-font-weight);
 
-  letter-spacing: 0.018em;
+  letter-spacing: var(--script-letter-spacing);
 
-  word-spacing: 0.03em;
+  word-spacing: var(--script-word-spacing);
 
   opacity: 0.94;
 
@@ -379,13 +379,13 @@ body.pricing-page {
 
   transform:
 
-    scaleY(1.18)
+    scaleY(var(--script-scale-y))
 
-    scaleX(1.01)
+    scaleX(var(--script-scale-x))
 
-    skewX(-14deg)
+    skewX(var(--script-skew-x))
 
-    rotate(0.6deg);
+    rotate(var(--script-rotate));
 
 }
 
@@ -393,23 +393,23 @@ body.pricing-page {
 
   margin: 0;
 
-  color: #0f2f57;
+  color: var(--hero-title-color-navy);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--section-title-font-family);
 
-  font-size: 29px;
+  font-size: var(--section-title-size-desktop);
 
-  line-height: 1.16;
+  line-height: var(--section-title-line-height);
 
-  font-weight: 300;
+  font-weight: var(--section-title-font-weight);
 
-  letter-spacing: 0.035em;
+  letter-spacing: var(--section-title-letter-spacing);
 
 }
 
 .pricing-intro-copy {
 
-  max-width: 920px;
+  max-width: var(--container-reading);
 
 }
 
@@ -417,23 +417,22 @@ body.pricing-page {
 
   margin: 0;
 
-  color: rgba(45,42,38,0.84);
+  color: var(--body-copy-color-muted);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--body-copy-font-family);
 
-  font-size: 15px;
+  font-size: var(--body-copy-font-size-desktop);
 
-  line-height: 1.82;
+  line-height: var(--body-copy-line-height-mobile);
 
-  font-weight: 300;
+  font-weight: var(--body-copy-font-weight);
 
-  letter-spacing: 0.01em;
+  letter-spacing: var(--body-copy-letter-spacing);
 
 }
 
 /* =========================================================
-
-               05. PRICING CARDS
+               06. PRICING CARDS
 
 ========================================================= */
 
