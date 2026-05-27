@@ -895,16 +895,15 @@ body.pricing-page {
 
 /* =========================================================
 
-             09. LOGO + FOOTER REFINEMENTS
+             10. LOGO + FOOTER REFINEMENTS
 
 ========================================================= */
 
 .pricing-page .header-top {
 
-  background: #f5eee3 !important;
+  background: var(--brand-cream) !important;
 
 }
-
 
 .pricing-page .footer-logo img {
 
