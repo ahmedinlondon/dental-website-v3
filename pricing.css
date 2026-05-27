@@ -299,9 +299,9 @@ body.pricing-page {
 
 .pricing-main {
 
-  background: #efe9dc;
+  background: var(--brand-dark-cream);
 
-  color: #2d2a26;
+  color: var(--brand-charcoal);
 
   padding: 64px 0 78px;
 
@@ -309,7 +309,7 @@ body.pricing-page {
 
 /* =========================================================
 
-             04. INTRO SECTION
+             05. INTRO SECTION
 
 ========================================================= */
 
