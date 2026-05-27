@@ -99,7 +99,7 @@ body.pricing-page {
 
     ),
 
-    url('/dental-website-v2/pricinghero.png');
+    url('/dental-website-v3/pricinghero.png');
 
   background-size: cover;
 
@@ -121,27 +121,27 @@ body.pricing-page {
 
   z-index: 2;
 
-  max-width: 760px;
+  max-width: var(--container-narrow);
 
 }
 
 .pricing-hero-script {
 
-  margin: 0 0 22px;
+  margin: 0 0 var(--title-to-line-gap);
 
-  color: #c69033;
+  color: var(--brand-gold-script);
 
-  font-family: 'FasthinScript', cursive;
+  font-family: var(--script-font-family);
 
-  font-size: 56px;
+  font-size: var(--hero-script-size-desktop);
 
-  line-height: 0.95;
+  line-height: var(--script-line-height);
 
-  font-weight: 400;
+  font-weight: var(--script-font-weight);
 
-  letter-spacing: 0.018em;
+  letter-spacing: var(--script-letter-spacing);
 
-  word-spacing: 0.03em;
+  word-spacing: var(--script-word-spacing);
 
   text-shadow:
 
@@ -155,19 +155,19 @@ body.pricing-page {
 
   margin: 0;
 
-  color: #0f2f57;
+  color: var(--v2-navy);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--hero-title-font-family);
 
-  font-size: 44px;
+  font-size: var(--hero-title-size-desktop);
 
-  line-height: 1.16;
+  line-height: var(--hero-title-line-height);
 
-  font-weight: 300;
+  font-weight: var(--hero-title-font-weight);
 
-  letter-spacing: 0.035em;
+  letter-spacing: var(--hero-title-letter-spacing);
 
-  text-transform: none;
+  text-transform: var(--hero-title-text-transform);
 
   max-width: 720px;
 
@@ -178,112 +178,6 @@ body.pricing-page {
     0 0 20px rgba(255,255,255,0.04);
 
 }
-/* ================= HERO ANIMATION — FAQ MATCH ================= */
-
-.pricing-hero .pricing-hero-script {
-
-  opacity: 0;
-
-  transform:
-
-    translateY(14px)
-
-    scaleY(1.18)
-
-    scaleX(1.01)
-
-    skewX(-14deg)
-
-    rotate(0.6deg);
-
-  filter: blur(3px);
-
-  animation: pricingScriptReveal 3.8s ease forwards;
-
-  animation-delay: 0.3s;
-
-  animation-fill-mode: forwards;
-
-}
-
-.pricing-hero .hero-title {
-
-  opacity: 0;
-
-  transform: translateY(55px);
-
-  animation: pricingHeroDrop 2.8s ease forwards;
-
-  animation-delay: 2.2s;
-
-  animation-fill-mode: forwards;
-
-}
-
-@keyframes pricingScriptReveal {
-
-  0% {
-
-    opacity: 0;
-
-    transform:
-
-      translateY(14px)
-
-      scaleY(1.18)
-
-      scaleX(1.01)
-
-      skewX(-14deg)
-
-      rotate(0.6deg);
-
-    filter: blur(3px);
-
-  }
-
-  100% {
-
-    opacity: 1;
-
-    transform:
-
-      translateY(0)
-
-      scaleY(1.18)
-
-      scaleX(1.01)
-
-      skewX(-14deg)
-
-      rotate(0.6deg);
-
-    filter: blur(0);
-
-  }
-
-}
-
-@keyframes pricingHeroDrop {
-
-  0% {
-
-    opacity: 0;
-
-    transform: translateY(55px);
-
-  }
-
-  100% {
-
-    opacity: 1;
-
-    transform: translateY(0);
-
-  }
-
-}
-
 /* =========================================================
 
                  03. MAIN BODY
