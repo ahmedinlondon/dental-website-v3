@@ -939,7 +939,7 @@ body.pricing-page {
 
 /* =========================================================
 
-                10. iPAD / TABLET
+                11. iPAD / TABLET
 
 ========================================================= */
 
@@ -965,21 +965,21 @@ body.pricing-page {
 
   .pricing-section-heading p {
 
-    font-size: 56px;
+    font-size: var(--section-script-size-tablet);
 
   }
 
   .pricing-hero .hero-title {
 
-    font-size: 38px;
+    font-size: var(--hero-title-size-tablet);
 
-    letter-spacing: 0.035em;
+    letter-spacing: var(--hero-title-letter-spacing);
 
   }
 
   .pricing-section-heading h2 {
 
-    font-size: 29px;
+    font-size: var(--section-title-size-tablet);
 
   }
 
@@ -1001,12 +1001,6 @@ body.pricing-page {
 
   }
 
-  .pricing-section-heading p {
-
-    font-size: 54px;
-
-  }
-
   .pricing-section-heading h2 {
 
     font-size: 31px;
@@ -1019,7 +1013,7 @@ body.pricing-page {
 
     grid-template-columns: repeat(2, 1fr);
 
-    gap: 16px;
+    gap: var(--card-gap-tablet);
 
   }
 
@@ -1046,7 +1040,6 @@ body.pricing-page {
   }
 
 }
-
 /* =========================================================
 
                   11. MOBILE
