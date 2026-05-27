@@ -1365,7 +1365,7 @@ body.pricing-page {
 
 /* =========================================================
 
-                   12.   LAPTOP / PC
+                   13. LAPTOP / PC
 
 ========================================================= */
 
@@ -1385,13 +1385,13 @@ body.pricing-page {
 
       translateX(42px)
 
-      scaleY(1.18)
+      scaleY(var(--script-scale-y))
 
       scaleX(1.10)
 
-      skewX(-14deg)
+      skewX(var(--script-skew-x))
 
-      rotate(0.6deg);
+      rotate(var(--script-rotate));
 
   }
 
@@ -1401,196 +1401,12 @@ body.pricing-page {
 
     height: 4px;
 
-    background: #ddb46a;
+    background: var(--brand-gold-soft);
 
   }
 
 }
 
-/* FORCE GLOBAL HEADER LOGO SIZE — PRICING */
 
-header .site-logo img,
-
-.site-header .site-logo img,
-
-.header-main .site-logo img {
-
-  height: 68px !important;
-
-  min-height: 68px !important;
-
-  max-height: none !important;
-
-  width: auto !important;
-
-  transform: none !important;
-
-  scale: 1 !important;
-
-}
-
-
-
-/* FORCE PRICING HEADER LOGO TO MATCH GLOBAL SYSTEM */
-
-.pricing-page .site-logo img,
-
-body.pricing-page .site-logo img,
-
-.pricing-page .header-main .site-logo img,
-
-body.pricing-page .header-main .site-logo img {
-
-  width: auto !important;
-
-  height: 68px !important;
-
-  max-height: none !important;
-
-  object-fit: contain !important;
-
-  display: block !important;
-
-}
-
-
-/* =========================================================
-
-   PRICING HEADER LOGO FIX
-
-========================================================= */
-
-/* Laptop / Desktop */
-
-@media (min-width: 1181px) {
-
-  .pricing-page .site-logo img {
-
-    height: 68px !important;
-
-    width: auto !important;
-
-    max-height: none !important;
-
-  }
-
-}
-
-/* =========================================================
-
-   PRICING HEADER LOGO FIX
-
-========================================================= */
-
-@media (min-width: 1181px) {
-
-  .pricing-page .site-logo img {
-
-    height: 68px !important;
-
-    width: auto !important;
-
-    max-height: none !important;
-
-    min-height: 0 !important;
-
-    object-fit: contain !important;
-
-    display: block !important;
-
-  }
-
-}
-
-@media (max-width: 1180px) and (min-width: 701px) {
-
-  .pricing-page .site-logo img {
-
-    height: 60px !important;
-
-    width: auto !important;
-
-    max-height: none !important;
-
-    min-height: 0 !important;
-
-    object-fit: contain !important;
-
-    display: block !important;
-
-  }
-
-}
-
-@media (max-width: 700px) {
-
-  .pricing-page .site-logo img {
-
-    height: 54px !important;
-
-    width: auto !important;
-
-    max-height: none !important;
-
-    min-height: 0 !important;
-
-    object-fit: contain !important;
-
-    display: block !important;
-
-  }
-
-}
-
-
-/* =========================================================
-
-   FINAL PRICING LOGO SIZE OVERRIDE
-
-========================================================= */
-
-/* iPad / Tablet */
-
-@media (max-width: 1180px) and (min-width: 701px) {
-
-  .pricing-page .site-header .header-main .site-logo img {
-
-    height: 60px !important;
-
-    width: auto !important;
-
-    max-height: none !important;
-
-    min-height: 0 !important;
-
-    object-fit: contain !important;
-
-    display: block !important;
-
-  }
-
-}
-
-/* Mobile */
-
-@media (max-width: 700px) {
-
-  .pricing-page .site-header .header-main .site-logo img {
-
-    height: 54px !important;
-
-    width: auto !important;
-
-    max-height: none !important;
-
-    min-height: 0 !important;
-
-    object-fit: contain !important;
-
-    display: block !important;
-
-  }
-
-}
 
 
