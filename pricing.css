@@ -617,9 +617,9 @@ body.pricing-page {
 
   padding: 24px 5.5%;
 
-  background: #607485;
+  background: var(--brand-steel-blue);
 
-  color: #ffffff;
+  color: var(--footer-text-light);
 
   display: grid;
 
@@ -635,7 +635,7 @@ body.pricing-page {
 
 .payment-right {
 
-  max-width: 1180px;
+  max-width: var(--container-standard);
 
 }
 
@@ -645,15 +645,15 @@ body.pricing-page {
 
   color: rgba(255,255,255,0.94);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--card-title-font-family);
 
-  font-size: 23px;
+  font-size: var(--card-title-size-desktop);
 
-  line-height: 1.2;
+  line-height: var(--card-title-line-height);
 
-  font-weight: 300;
+  font-weight: var(--card-title-font-weight);
 
-  letter-spacing: 0.025em;
+  letter-spacing: var(--card-title-letter-spacing);
 
 }
 
@@ -665,7 +665,7 @@ body.pricing-page {
 
   color: rgba(255,255,255,0.82);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--body-copy-font-family);
 
   font-size: 13px;
 
@@ -689,7 +689,7 @@ body.pricing-page {
 
   color: rgba(255,255,255,0.88);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--body-copy-font-family);
 
   font-size: 13px;
 
@@ -703,7 +703,7 @@ body.pricing-page {
 
 /* =========================================================
 
-                 07. SUPPORT CARDS
+                 08. SUPPORT CARDS
 
 ========================================================= */
 
