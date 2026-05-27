@@ -37,41 +37,17 @@ PRICING.CSS — FINAL LOCKED VERSION
 
 ========================================================= */
 
-@font-face {
-
-  font-family: 'FasthinScript';
-
-  src: url('/dental-website-v2/fasthin-script.ttf') format('truetype');
-
-  font-weight: 400;
-
-  font-style: normal;
-
-}
-
-@font-face {
-
-  font-family: 'Kingsley Roman';
-
-  src: url('/dental-website-v2/kingsley-roman.ttf') format('truetype');
-
-  font-weight: 400;
-
-  font-style: normal;
-
-}
-
 body.pricing-page {
 
   margin: 0;
 
   padding: 0;
 
-  background: #efe9dc;
+  background: var(--brand-dark-cream);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--font-heading);
 
-  color: #2d2a26;
+  color: var(--brand-charcoal);
 
   overflow-x: hidden;
 
