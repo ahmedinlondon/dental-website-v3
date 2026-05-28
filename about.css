@@ -550,9 +550,9 @@ body.about-page {
 
 .about-final-cta {
 
-  background: #ffffff;
+  background: var(--brand-white);
 
-  padding: 58px 5.5% 64px;
+  padding: 58px var(--page-padding-desktop) 64px;
 
   text-align: center;
 
@@ -560,7 +560,7 @@ body.about-page {
 
 .about-final-cta-inner {
 
-  max-width: 760px;
+  max-width: var(--container-narrow);
 
   margin: 0 auto;
 
@@ -570,7 +570,7 @@ body.about-page {
 
   margin-bottom: 20px;
 
-  color: #0f2f57;
+  color: var(--hero-title-color-navy);
 
 }
 
@@ -578,15 +578,15 @@ body.about-page {
 
   margin: 0 0 36px;
 
-  color: rgba(47,42,38,0.84);
+  color: var(--body-copy-color-muted);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--body-copy-font-family);
 
-  font-size: 15px;
+  font-size: var(--body-copy-font-size-desktop);
 
   line-height: 1.9;
 
-  font-weight: 300;
+  font-weight: var(--body-copy-font-weight);
 
 }
 
