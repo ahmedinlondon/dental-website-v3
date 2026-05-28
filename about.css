@@ -494,6 +494,8 @@ body.about-page {
   font-weight: var(--body-copy-font-weight);
 
 }
+
+
 /* =========================================================
 
    07. REFINED APPROACH SECTION
@@ -502,9 +504,9 @@ body.about-page {
 
 .about-refined-section {
 
-  background: #f5eee3;
+  background: var(--brand-cream);
 
-  padding: 62px 5.5% 66px;
+  padding: 62px var(--page-padding-desktop) 66px;
 
 }
 
@@ -518,17 +520,17 @@ body.about-page {
 
   margin: 0 0 28px;
 
-  color: rgba(47,42,38,0.90);
+  color: var(--body-copy-color-dark);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--body-copy-font-family);
 
-  font-size: 15px;
+  font-size: var(--body-copy-font-size-desktop);
 
-  line-height: 1.95;
+  line-height: var(--body-copy-line-height-desktop);
 
-  font-weight: 300;
+  font-weight: var(--body-copy-font-weight);
 
-  letter-spacing: 0.01em;
+  letter-spacing: var(--body-copy-letter-spacing);
 
   max-width: 1180px;
 
