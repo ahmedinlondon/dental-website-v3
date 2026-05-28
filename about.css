@@ -90,7 +90,7 @@ body.about-page {
 
   overflow: hidden;
 
-  background-image: url('/dental-website-v2/about-hero.png');
+  background-image: url('/dental-website-v3/about-hero.png');
 
   background-size: cover;
 
@@ -112,27 +112,27 @@ body.about-page {
 
   z-index: 2;
 
-  max-width: 760px;
+  max-width: var(--container-narrow);
 
 }
 
 .about-hero-script {
 
-  margin: 0 0 22px;
+  margin: 0 0 var(--title-to-line-gap);
 
-  color: #c69033;
+  color: var(--brand-gold-script);
 
-  font-family: 'FasthinScript', cursive;
+  font-family: var(--script-font-family);
 
-  font-size: 56px;
+  font-size: var(--hero-script-size-desktop);
 
-  line-height: 0.95;
+  line-height: var(--script-line-height);
 
-  font-weight: 400;
+  font-weight: var(--script-font-weight);
 
-  letter-spacing: 0.018em;
+  letter-spacing: var(--script-letter-spacing);
 
-  word-spacing: 0.03em;
+  word-spacing: var(--script-word-spacing);
 
   opacity: 0;
 
@@ -148,19 +148,19 @@ body.about-page {
 
   margin: 0;
 
-  color: rgba(255,255,255,0.96);
+  color: var(--hero-title-color-light);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--hero-title-font-family);
 
-  font-size: 44px;
+  font-size: var(--hero-title-size-desktop);
 
-  line-height: 1.16;
+  line-height: var(--hero-title-line-height);
 
-  font-weight: 300;
+  font-weight: var(--hero-title-font-weight);
 
-  letter-spacing: 0.035em;
+  letter-spacing: var(--hero-title-letter-spacing);
 
-  text-transform: none;
+  text-transform: var(--hero-title-text-transform);
 
   max-width: 720px;
 
@@ -173,6 +173,7 @@ body.about-page {
     0 0 20px rgba(255,255,255,0.08);
 
 }
+
 
 /* =========================================================
 
