@@ -1221,10 +1221,9 @@ body.about-page {
 
 /* =========================================================
 
-                   12.  LAPTOP / PC
+   12. LAPTOP / PC
 
 ========================================================= */
-
 
 @media (min-width: 1181px) {
 
@@ -1254,50 +1253,47 @@ body.about-page {
 
   }
 
-   /* Laptop Script Size Reduction */
+  .about-page .about-section-script,
 
-.about-page .about-section-script,
+  .about-page .about-doctor-script {
 
-.about-page .about-doctor-script {
+    font-family: var(--script-font-family);
 
-  font-family: 'FasthinScript', cursive;
+    font-size: var(--section-script-size-desktop);
 
-  font-size: 42px;
+    line-height: var(--script-line-height);
 
-  line-height: 0.95;
+    font-weight: var(--script-font-weight);
 
-  font-weight: 400;
+    letter-spacing: var(--script-letter-spacing);
 
-  letter-spacing: 0.028em;
+    word-spacing: var(--script-word-spacing);
 
-  word-spacing: 0.03em;
+    color: #d99a3e;
 
-  color: #d99a3e;
+    margin-bottom: 8px;
 
-  margin-bottom: 8px;
+    transform:
 
-transform:
+      translateX(26px)
 
-  translateX(26px)
+      scaleY(var(--script-scale-y))
 
-  scaleY(1.18)
+      scaleX(1.06)
 
-  scaleX(1.06)
+      skewX(var(--script-skew-x))
 
-  skewX(-14deg)
+      rotate(var(--script-rotate));
 
-  rotate(0.6deg);
-   
-  text-shadow:
+    text-shadow:
 
-    0 0 1px rgba(217,154,62,0.38),
+      0 0 1px rgba(217,154,62,0.38),
 
-    0 1px 6px rgba(0,0,0,0.04);
+      0 1px 6px rgba(0,0,0,0.04);
 
-}
+  }
 
 }
-
      
      
 
