@@ -612,13 +612,13 @@ body.about-page {
 
   padding: 0 24px;
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--button-font-family);
 
-  font-size: 11px;
+  font-size: var(--button-font-size);
 
-  font-weight: 400;
+  font-weight: var(--button-font-weight);
 
-  letter-spacing: 0.16em;
+  letter-spacing: var(--button-letter-spacing);
 
   text-transform: uppercase;
 
@@ -628,15 +628,15 @@ body.about-page {
 
 .about-consult-btn {
 
-  background: #607485;
+  background: var(--brand-steel-blue);
 
-  color: #ffffff;
+  color: var(--brand-white);
 
 }
 
 .about-consult-btn:hover {
 
-  background: #0f2f57;
+  background: var(--hero-title-color-navy);
 
 }
 
@@ -644,11 +644,11 @@ body.about-page {
 
   min-width: 280px;
 
-  background: #b88932;
+  background: var(--brand-gold-button);
 
-  border: 1px solid #b88932;
+  border: 1px solid var(--brand-gold-button);
 
-  color: #ffffff;
+  color: var(--brand-white);
 
 }
 
@@ -656,7 +656,7 @@ body.about-page {
 
   background: transparent;
 
-  color: #b88932;
+  color: var(--brand-gold-button);
 
 }
 
