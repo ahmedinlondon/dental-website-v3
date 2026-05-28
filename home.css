@@ -662,7 +662,7 @@ body.home-page {
 
 .home-questions-section {
 
-  background: #f8f2e8;
+  background: var(--brand-soft-cream);
 
   padding: 96px 7% 102px;
 
@@ -670,7 +670,7 @@ body.home-page {
 
 .home-question-grid {
 
-  max-width: 1180px;
+  max-width: var(--container-standard);
 
   margin: 0 auto;
 
@@ -752,11 +752,13 @@ body.home-page {
 
   color: #2d2d2d;
 
+  font-family: var(--card-title-font-family);
+
   font-size: 25px;
 
   line-height: 1.15;
 
-  font-weight: 300;
+  font-weight: var(--card-title-font-weight);
 
 }
 
@@ -768,11 +770,13 @@ body.home-page {
 
   color: #6e6a66;
 
+  font-family: var(--body-copy-font-family);
+
   font-size: 14px;
 
   line-height: 1.85;
 
-  font-weight: 300;
+  font-weight: var(--body-copy-font-weight);
 
 }
 
@@ -780,7 +784,7 @@ body.home-page {
 
   margin-top: auto;
 
-  color: #b88932;
+  color: var(--brand-gold);
 
   font-size: 11px;
 
@@ -814,7 +818,7 @@ body.home-page {
 
   background: transparent;
 
-  color: #2d2a26;
+  color: var(--brand-charcoal);
 
 }
 
@@ -824,7 +828,7 @@ body.home-page {
 
   margin-bottom: 14px;
 
-  color: #b88932;
+  color: var(--brand-gold);
 
   font-size: 13px;
 
@@ -842,11 +846,13 @@ body.home-page {
 
   color: rgba(47,42,38,0.78);
 
+  font-family: var(--body-copy-font-family);
+
   font-size: 14px;
 
   line-height: 1.75;
 
-  font-weight: 300;
+  font-weight: var(--body-copy-font-weight);
 
 }
 
@@ -858,7 +864,7 @@ body.home-page {
 
 .home-experience-section {
 
-  background: #ffffff;
+  background: var(--brand-white);
 
   padding: 92px 7% 96px;
 
@@ -866,7 +872,7 @@ body.home-page {
 
 .home-experience-grid {
 
-  max-width: 1180px;
+  max-width: var(--container-standard);
 
   margin: 0 auto;
 
@@ -888,13 +894,15 @@ body.home-page {
 
   margin: 0 0 18px;
 
-  color: #2d2a26;
+  color: var(--brand-charcoal);
+
+  font-family: var(--card-title-font-family);
 
   font-size: 28px;
 
   line-height: 1.1;
 
-  font-weight: 300;
+  font-weight: var(--card-title-font-weight);
 
 }
 
@@ -904,11 +912,13 @@ body.home-page {
 
   color: rgba(47,42,38,0.84);
 
+  font-family: var(--body-copy-font-family);
+
   font-size: 14px;
 
   line-height: 1.9;
 
-  font-weight: 300;
+  font-weight: var(--body-copy-font-weight);
 
 }
 
@@ -920,7 +930,7 @@ body.home-page {
 
 .home-final-cta {
 
-  background: #ffffff;
+  background: var(--brand-white);
 
   padding: 26px 7% 42px;
 
@@ -928,7 +938,7 @@ body.home-page {
 
 .home-final-cta-inner {
 
-  max-width: 1180px;
+  max-width: var(--container-standard);
 
   margin: 0 auto;
 
@@ -940,13 +950,15 @@ body.home-page {
 
   margin: 0 0 30px;
 
-  color: #2d2a26;
+  color: var(--brand-charcoal);
+
+  font-family: var(--section-title-font-family);
 
   font-size: 34px;
 
   line-height: 1.1;
 
-  font-weight: 300;
+  font-weight: var(--section-title-font-weight);
 
 }
 
@@ -962,11 +974,11 @@ body.home-page {
 
   height: 42px;
 
-  border: 1px solid #b88932;
+  border: 1px solid var(--brand-gold);
 
   background: transparent;
 
-  color: #b88932;
+  color: var(--brand-gold);
 
   font-size: 11px;
 
@@ -988,9 +1000,9 @@ body.home-page {
 
 .home-final-btn:hover {
 
-  background: #b88932;
+  background: var(--brand-gold);
 
-  color: #ffffff;
+  color: var(--brand-white);
 
 }
 
