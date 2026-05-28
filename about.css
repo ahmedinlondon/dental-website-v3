@@ -704,7 +704,7 @@ body.about-page {
 
     left: 5%;
 
-    top: 72%;
+    top: 64%;
 
     max-width: 620px;
 
@@ -1194,21 +1194,23 @@ body.about-page {
 
   }
 
-  .footer-logo,
+.about-page .footer-logo,
 
-  .footer-brand,
+.about-page .footer-brand,
 
-  .footer-left img {
+.about-page .footer-left img,
 
-    width: 280px !important;
+.about-page .site-footer .footer-logo img {
 
-    max-width: 80% !important;
+  width: 230px !important;
 
-    margin: 0 auto !important;
+  max-width: 78% !important;
 
-    display: block !important;
+  margin: 0 auto 22px auto !important;
 
-  }
+  display: block !important;
+
+}
 
   .footer-left {
 
