@@ -735,59 +735,113 @@ body.faq-page .site-header {
 
 }
 /* =========================================================
+
    12. iPAD / TABLET
+
 ========================================================= */
 
-@media (max-width: 1180px) {
+@media (min-width: 701px) and (max-width: 1180px) {
+
   .faq-hero {
+
     min-height: 360px;
+
     background-position: center center;
+
   }
 
   .faq-hero-text {
+
     position: absolute;
+
     width: 56%;
+
     max-width: 650px;
+
     padding-left: 6%;
+
     top: 58%;
+
     left: 0;
+
     transform: translateY(-50%);
+
     margin-top: 0;
+
   }
 
   .faq-hero .script-line {
+
     margin-bottom: 18px;
+
     margin-left: 34px;
-    font-size: 56px;
-    letter-spacing: 0.018em;
+
+    font-size: var(--hero-script-size-tablet);
+
+    letter-spacing: var(--script-letter-spacing);
+
   }
 
   .faq-hero .hero-title {
+
     max-width: 620px;
-    font-size: 36px;
+
+    font-size: var(--hero-title-size-tablet);
+
     line-height: 1.22;
-    letter-spacing: 2.2px;
+
+    letter-spacing: var(--hero-title-letter-spacing);
+
+  }
+
+  .faq-main-script {
+
+    font-size: var(--section-script-size-tablet);
+
+  }
+
+  .faq-title {
+
+    font-size: var(--section-title-size-tablet);
+
   }
 
   .faq-main {
+
     padding: 62px 6% 76px;
+
   }
 
   .faq-categories {
+
     gap: 38px 38px;
+
   }
 
   .faq-category {
+
     min-height: 345px;
+
+  }
+
+  .faq-category-title {
+
+    font-size: var(--section-title-size-tablet);
+
   }
 
   .faq-question-box {
+
     height: 248px;
+
   }
 
   .faq-question {
+
     font-size: 14.5px;
+
   }
+
 }
 
 /* =========================================================
