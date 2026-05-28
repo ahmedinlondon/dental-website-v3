@@ -30,6 +30,8 @@
 
 13. MOBILE
 
+14. FINAL CONTACT FIXES
+
 ========================================================= */
 
 /* =========================================================
@@ -46,15 +48,19 @@ body.contact-page {
 
   overflow-x: hidden;
 
-  background: #f5eee3;
+  background: var(--brand-cream);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--font-heading);
 
-  color: #2d2a26;
+  color: var(--brand-charcoal);
 
 }
 
-.contact-page * {
+.contact-page *,
+
+.contact-page *::before,
+
+.contact-page *::after {
 
   box-sizing: border-box;
 
@@ -82,7 +88,7 @@ body.contact-page {
 
     linear-gradient(rgba(7,22,38,0.18), rgba(7,22,38,0.24)),
 
-    url('contact-hero-panorama.png');
+    url('/dental-website-v3/contact-hero-panorama.png');
 
   background-size: cover;
 
@@ -116,7 +122,9 @@ body.contact-page {
 
   margin: 0;
 
-  color: rgba(255,255,255,0.96);
+  color: var(--hero-title-color-light);
+
+  font-family: var(--hero-title-font-family);
 
   font-size: 48px;
 
@@ -158,7 +166,7 @@ body.contact-page {
 
   width: 100%;
 
-  background: #607485;
+  background: var(--brand-steel-blue);
 
   padding: 68px 5.5% 60px;
 
@@ -192,7 +200,7 @@ body.contact-page {
 
   background: rgba(245,238,227,0.98);
 
-  color: #2d2a26;
+  color: var(--brand-charcoal);
 
 }
 
@@ -202,11 +210,13 @@ body.contact-page {
 
   margin: 0;
 
+  font-family: var(--section-title-font-family);
+
   font-size: 34px;
 
   line-height: 1.14;
 
-  font-weight: 300;
+  font-weight: var(--section-title-font-weight);
 
   letter-spacing: 0.02em;
 
@@ -246,7 +256,7 @@ body.contact-page {
 
   background: rgba(255,255,255,0.78);
 
-  color: #2d2a26;
+  color: var(--brand-charcoal);
 
   font-family: inherit;
 
@@ -274,11 +284,11 @@ body.contact-page {
 
   height: 52px;
 
-  border: 1px solid #b88932;
+  border: 1px solid var(--brand-gold);
 
-  background: #b88932;
+  background: var(--brand-gold);
 
-  color: #ffffff;
+  color: var(--brand-white);
 
   display: flex;
 
@@ -330,7 +340,7 @@ body.contact-page {
 
 .privacy-note i {
 
-  color: #b88932;
+  color: var(--brand-gold);
 
   margin-right: 7px;
 
@@ -346,13 +356,13 @@ body.contact-page {
 
   background: rgba(83,101,116,0.92);
 
-  color: #ffffff;
+  color: var(--brand-white);
 
 }
 
 .contact-help-card h2 {
 
-  color: #ffffff;
+  color: var(--brand-white);
 
 }
 
@@ -402,7 +412,7 @@ body.contact-page {
 
   margin-bottom: 6px;
 
-  color: #ffffff;
+  color: var(--brand-white);
 
   font-size: 15px;
 
@@ -430,7 +440,7 @@ body.contact-page {
 
 .contact-locations-section {
 
-  background: #f5eee3;
+  background: var(--brand-cream);
 
   padding: 46px 7% 58px;
 
@@ -448,7 +458,7 @@ body.contact-page {
 
 .contact-section-heading span {
 
-  color: #2d2a26;
+  color: var(--brand-charcoal);
 
   font-size: 34px;
 
@@ -538,7 +548,7 @@ body.contact-page {
 
   margin: 0 0 24px;
 
-  color: #2d2a26;
+  color: var(--brand-charcoal);
 
   font-size: 25px;
 
@@ -638,7 +648,7 @@ body.contact-page {
 
 .location-details i {
 
-  color: #b88932;
+  color: var(--brand-gold);
 
   margin-top: 4px;
 
@@ -728,11 +738,11 @@ body.contact-page {
 
 .location-btn.dark {
 
-  background: #b88932;
+  background: var(--brand-gold);
 
-  border: 1px solid #b88932;
+  border: 1px solid var(--brand-gold);
 
-  color: #ffffff;
+  color: var(--brand-white);
 
 }
 
@@ -740,9 +750,9 @@ body.contact-page {
 
   background: transparent;
 
-  border: 1px solid #b88932;
+  border: 1px solid var(--brand-gold);
 
-  color: #b88932;
+  color: var(--brand-gold);
 
 }
 
@@ -784,9 +794,9 @@ body.contact-page {
 
 .contact-footer {
 
-  background: #263c4b;
+  background: var(--footer-variant-bg);
 
-  color: #ffffff;
+  color: var(--footer-text-light);
 
   padding: 42px 5.5% 36px;
 
@@ -826,7 +836,7 @@ body.contact-page {
 
   height: 100%;
 
-  background: rgba(185,150,87,0.26);
+  background: var(--footer-border-gold-dark);
 
 }
 
@@ -834,7 +844,7 @@ body.contact-page {
 
   margin: 0 0 22px;
 
-  color: #ffffff;
+  color: var(--footer-text-light);
 
   font-size: 13px;
 
@@ -850,7 +860,7 @@ body.contact-page {
 
 .contact-footer a {
 
-  color: rgba(255,255,255,0.86);
+  color: var(--footer-text-light-soft);
 
   font-size: 13px;
 
@@ -876,7 +886,7 @@ body.contact-page {
 
 .contact-footer-contact i {
 
-  color: #b88932;
+  color: var(--brand-gold);
 
   margin-top: 4px;
 
@@ -916,11 +926,11 @@ body.contact-page {
 
   height: 42px;
 
-  background: #b88932;
+  background: var(--brand-gold);
 
-  border: 1px solid #b88932;
+  border: 1px solid var(--brand-gold);
 
-  color: #ffffff !important;
+  color: var(--brand-white) !important;
 
   display: inline-flex;
 
@@ -978,13 +988,13 @@ body.contact-page {
 
   border-radius: 50% !important;
 
-  color: #ffffff !important;
+  color: var(--brand-white) !important;
 
 }
 
 .contact-footer-socials .icon i {
 
-  color: #ffffff !important;
+  color: var(--brand-white) !important;
 
 }
 
@@ -1246,7 +1256,7 @@ body.contact-page {
 
 /* =========================================================
 
-   FINAL CONTACT FIXES
+   14. FINAL CONTACT FIXES
 
 ========================================================= */
 
@@ -1261,5 +1271,4 @@ body.contact-page {
   overflow: hidden !important;
 
 }
-
 
