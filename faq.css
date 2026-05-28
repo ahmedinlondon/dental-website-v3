@@ -845,116 +845,191 @@ body.faq-page .site-header {
 }
 
 /* =========================================================
+
    13. MOBILE
+
 ========================================================= */
 
 @media (max-width: 700px) {
+
   .faq-hero {
+
     min-height: 450px;
+
     align-items: center;
-    background-image: url('/dental-website-v2/faq-hero-mobile.png');
+
+    background-image: url('/dental-website-v3/faq-hero-mobile.png');
+
     background-size: 145%;
+
     background-position: calc(50% - 86px) 22%;
+
   }
 
   .faq-hero-text {
+
     position: absolute;
+
     width: 88%;
+
     max-width: none;
+
     padding-left: 4%;
+
     top: 52%;
+
     left: 7%;
+
     transform: translateY(-50%);
+
   }
 
-.faq-hero .script-line {
-  margin-bottom: 16px;
-  margin-left: -4px;
-  font-size: 50px;
-  line-height: 0.95;
-  white-space: nowrap;
-  max-width: none;
-  text-shadow:
-    0 0 1px rgba(241,210,154,0.95),
-    0 2px 10px rgba(5,31,55,0.35);
-}
+  .faq-hero .script-line {
+
+    margin-bottom: 16px;
+
+    margin-left: -4px;
+
+    font-size: var(--hero-script-size-mobile);
+
+    line-height: var(--script-line-height);
+
+    white-space: nowrap;
+
+    max-width: none;
+
+    text-shadow:
+
+      0 0 1px rgba(241,210,154,0.95),
+
+      0 2px 10px rgba(5,31,55,0.35);
+
+  }
 
   .faq-hero .hero-title {
+
     max-width: 330px;
-    font-size: 42px;
+
+    font-size: var(--hero-title-size-mobile);
+
     line-height: 1.14;
+
     letter-spacing: 1.4px;
+
   }
 
   .faq-main {
+
     padding: 48px 6% 64px;
+
   }
 
   .faq-main-script {
-    font-size: 42px;
+
+    font-size: var(--section-script-size-mobile);
+
   }
 
   .faq-title {
+
     font-size: 34px;
+
     margin-bottom: 22px;
+
   }
 
   .faq-intro-copy {
+
     font-size: 14.5px;
+
     line-height: 1.75;
+
   }
 
   .faq-intro-section {
+
     margin-bottom: 48px;
+
   }
 
   .faq-categories {
+
     grid-template-columns: 1fr;
+
     gap: 34px;
+
   }
 
   .faq-category {
+
     min-height: 330px;
+
   }
 
   .faq-category-title {
+
     font-size: 30px;
+
   }
 
   .faq-category-line {
+
     width: 72px;
+
     height: 3px;
+
     margin: 12px 0 16px;
+
   }
 
   .faq-question-box {
+
     height: 238px;
+
     padding-right: 12px;
+
   }
 
   .faq-question {
+
     font-size: 14px;
+
     line-height: 1.55;
+
     padding: 8px 0;
+
   }
 
   .faq-answer {
+
     font-size: 13.5px;
+
     line-height: 1.68;
+
   }
 
   .footer-logo,
+
   .footer-brand,
+
   .footer-left img {
+
     width: 280px !important;
+
     max-width: 80% !important;
+
     margin: 0 auto !important;
+
     display: block !important;
+
   }
 
   .footer-left {
+
     text-align: center !important;
+
   }
+
 }
 
 
