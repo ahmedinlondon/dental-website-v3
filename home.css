@@ -2172,21 +2172,37 @@ body.home-page {
 
   }
 
-  .home-doctor-content .home-script-heading {
+    .home-doctor-content .home-script-heading {
 
     order: 1;
 
-    font-size: 42px;
+    font-family: var(--script-font-family) !important;
 
-    line-height: 1;
+    font-size: var(--section-script-size-mobile);
+
+    line-height: var(--script-line-height);
+
+    font-weight: var(--script-font-weight);
+
+    letter-spacing: var(--script-letter-spacing);
+
+    word-spacing: var(--script-word-spacing);
 
     margin: 0 0 14px;
 
     color: #c9a15d;
 
-    font-weight: 600;
-
     text-align: left;
+
+    transform:
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
 
   }
 
