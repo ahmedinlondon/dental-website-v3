@@ -266,12 +266,11 @@ body.about-page {
 
 .about-main-white {
 
-  background: #f6efe4;
+  background: var(--brand-cream);
 
-  padding: 58px 5.5% 70px;
+  padding: 58px var(--page-padding-desktop) 70px;
 
 }
-
 /* =========================================================
 
    05. PHILOSOPHY PANEL
