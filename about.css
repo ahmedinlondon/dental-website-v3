@@ -429,7 +429,7 @@ body.about-page {
 
 .about-doctor-card h2 {
 
-  color: #0f2f57;
+  color: var(--hero-title-color-navy);
 
 }
 
@@ -449,7 +449,7 @@ body.about-page {
 
   color: rgba(47,42,38,0.76);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--body-copy-font-family);
 
   font-size: 11px;
 
@@ -463,7 +463,7 @@ body.about-page {
 
 .about-consult-box {
 
-  background: #f8f2e8;
+  background: var(--brand-soft-cream);
 
   padding: 62px 60px;
 
@@ -475,7 +475,7 @@ body.about-page {
 
   margin-bottom: 22px;
 
-  color: #0f2f57;
+  color: var(--hero-title-color-navy);
 
 }
 
@@ -485,16 +485,15 @@ body.about-page {
 
   color: rgba(47,42,38,0.88);
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: var(--body-copy-font-family);
 
-  font-size: 15px;
+  font-size: var(--body-copy-font-size-desktop);
 
   line-height: 1.9;
 
-  font-weight: 300;
+  font-weight: var(--body-copy-font-weight);
 
 }
-
 /* =========================================================
 
    07. REFINED APPROACH SECTION
