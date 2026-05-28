@@ -416,7 +416,7 @@ body.home-page {
 
 .home-intro-section {
 
-  background: #f5eee3;
+  background: var(--brand-cream);
 
   padding: 96px 7% 104px;
 
@@ -432,13 +432,15 @@ body.home-page {
 
   margin: 0;
 
-  color: #607485;
+  color: var(--brand-steel-blue);
+
+  font-family: var(--section-title-font-family);
 
   font-size: 32px;
 
   line-height: 1.15;
 
-  font-weight: 300;
+  font-weight: var(--section-title-font-weight);
 
   letter-spacing: 0.03em;
 
@@ -448,13 +450,15 @@ body.home-page {
 
   margin: 0 0 26px;
 
-  color: rgba(47,42,38,0.90);
+  color: var(--body-copy-color-dark);
 
-  font-size: 15px;
+  font-family: var(--body-copy-font-family);
 
-  line-height: 1.95;
+  font-size: var(--body-copy-font-size-desktop);
 
-  font-weight: 300;
+  line-height: var(--body-copy-line-height-desktop);
+
+  font-weight: var(--body-copy-font-weight);
 
 }
 
@@ -466,7 +470,7 @@ body.home-page {
 
 .home-treatment-section {
 
-  background: #ffffff;
+  background: var(--brand-white);
 
   padding: 94px 7% 90px;
 
@@ -474,7 +478,7 @@ body.home-page {
 
 .home-treatment-list {
 
-  max-width: 1180px;
+  max-width: var(--container-standard);
 
   margin: 0 auto;
 
@@ -494,7 +498,7 @@ body.home-page {
 
   align-items: center;
 
-  background: #ffffff;
+  background: var(--brand-white);
 
   border: 1px solid rgba(185,150,87,0.14);
 
@@ -534,13 +538,15 @@ body.home-page {
 
   margin: 0 0 22px;
 
-  color: #2d2a26;
+  color: var(--brand-charcoal);
+
+  font-family: var(--card-title-font-family);
 
   font-size: 34px;
 
   line-height: 1.1;
 
-  font-weight: 300;
+  font-weight: var(--card-title-font-weight);
 
 }
 
@@ -550,11 +556,13 @@ body.home-page {
 
   color: rgba(47,42,38,0.86);
 
-  font-size: 15px;
+  font-family: var(--body-copy-font-family);
+
+  font-size: var(--body-copy-font-size-desktop);
 
   line-height: 1.9;
 
-  font-weight: 300;
+  font-weight: var(--body-copy-font-weight);
 
 }
 
@@ -566,7 +574,7 @@ body.home-page {
 
 .home-doctor-section {
 
-  background: #f5eee3;
+  background: var(--brand-cream);
 
   padding: 98px 7% 104px;
 
@@ -574,7 +582,7 @@ body.home-page {
 
 .home-doctor-inner {
 
-  max-width: 1180px;
+  max-width: var(--container-standard);
 
   margin: 0 auto;
 
@@ -618,13 +626,15 @@ body.home-page {
 
   margin: 0;
 
-  color: #607485;
+  color: var(--brand-steel-blue);
+
+  font-family: var(--section-title-font-family);
 
   font-size: 36px;
 
   line-height: 1.1;
 
-  font-weight: 300;
+  font-weight: var(--section-title-font-weight);
 
 }
 
@@ -632,13 +642,15 @@ body.home-page {
 
   margin: 0 0 24px;
 
-  color: rgba(47,42,38,0.90);
+  color: var(--body-copy-color-dark);
 
-  font-size: 15px;
+  font-family: var(--body-copy-font-family);
 
-  line-height: 1.95;
+  font-size: var(--body-copy-font-size-desktop);
 
-  font-weight: 300;
+  line-height: var(--body-copy-line-height-desktop);
+
+  font-weight: var(--body-copy-font-weight);
 
 }
 
