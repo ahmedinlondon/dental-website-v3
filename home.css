@@ -1296,17 +1296,17 @@ body.home-page {
 
   .home-hero .home-hero-script {
 
-    font-family: 'FasthinScript', cursive;
+    font-family: var(--script-font-family);
 
-    font-size: 56px;
+    font-size: var(--hero-script-size-tablet);
 
-    line-height: 0.95;
+    line-height: var(--script-line-height);
 
-    font-weight: 400;
+    font-weight: var(--script-font-weight);
 
-    letter-spacing: 0.018em;
+    letter-spacing: var(--script-letter-spacing);
 
-    word-spacing: 0.03em;
+    word-spacing: var(--script-word-spacing);
 
     color: #ddb46a;
 
@@ -1316,21 +1316,15 @@ body.home-page {
 
     transform:
 
-      scaleY(1.18)
+      scaleY(var(--script-scale-y))
 
-      scaleX(1.01)
+      scaleX(var(--script-scale-x))
 
-      skewX(-14deg)
+      skewX(var(--script-skew-x))
 
-      rotate(0.6deg)
+      rotate(var(--script-rotate))
 
       translateY(12px);
-
-    text-shadow:
-
-      0 0 1px rgba(217,154,62,0.38),
-
-      0 1px 6px rgba(0,0,0,0.04);
 
   }
 
@@ -1406,51 +1400,45 @@ body.home-page {
 
   /* Shared iPad Script Headings */
 
-.home-page .home-script-heading {
+  .home-page .home-script-heading {
 
-    font-family: 'FasthinScript', cursive;
+    font-family: var(--script-font-family);
 
-    font-size: 46px;
+    font-size: var(--section-script-size-tablet);
 
-    line-height: 0.95;
+    line-height: var(--script-line-height);
 
-    font-weight: 400;
+    font-weight: var(--script-font-weight);
 
-    letter-spacing: 0.018em;
+    letter-spacing: var(--script-letter-spacing);
 
-    word-spacing: 0.03em;
+    word-spacing: var(--script-word-spacing);
 
     color: #d99a3e;
 
     transform:
 
-      scaleY(1.18)
+      scaleY(var(--script-scale-y))
 
-      scaleX(1.01)
+      scaleX(var(--script-scale-x))
 
-      skewX(-14deg)
+      skewX(var(--script-skew-x))
 
-      rotate(0.6deg);
-
-    text-shadow:
-
-      0 0 1px rgba(217,154,62,0.38),
-
-      0 1px 6px rgba(0,0,0,0.04);
+      rotate(var(--script-rotate));
 
   }
 
-   /* Shared iPad Gold Underlines */
+  /* Shared iPad Gold Underlines */
 
-   .home-page .home-gold-line {
+  .home-page .home-gold-line {
 
-   width: 72px !important;
+    width: 72px !important;
 
-   height: 3px !important;
+    height: 3px !important;
 
-   background: #ddb46a !important;
+    background: var(--brand-gold-soft) !important;
 
-}
+  }
 
   /* Introduction */
 
@@ -1460,15 +1448,9 @@ body.home-page {
 
   }
 
-  .home-intro-inner {
-
-    max-width: 980px;
-
-  }
-
   .home-intro-inner h2 {
 
-    font-size: 30px;
+    font-size: var(--section-title-size-tablet);
 
     line-height: 1.18;
 
@@ -1480,17 +1462,11 @@ body.home-page {
 
   }
 
-  .home-intro-copy {
-
-    max-width: 920px;
-
-  }
-
   .home-intro-copy p {
 
-    font-size: 14.5px;
+    font-size: var(--body-copy-font-size-tablet);
 
-    line-height: 1.82;
+    line-height: var(--body-copy-line-height-tablet);
 
     margin-bottom: 24px;
 
@@ -1512,17 +1488,11 @@ body.home-page {
 
   .home-treatment-section .home-section-heading h2 {
 
-    font-size: 34px;
+    font-size: var(--section-title-size-tablet);
 
     line-height: 1.12;
 
     letter-spacing: 0.01em;
-
-  }
-
-  .home-treatment-section .home-gold-line {
-
-    margin: 24px 0 0;
 
   }
 
@@ -1545,20 +1515,6 @@ body.home-page {
     grid-template-columns: 0.95fr 1.05fr;
 
     align-items: stretch;
-
-    border: 1px solid rgba(185,150,87,0.10);
-
-  }
-
-  .home-treatment-panel.reverse .home-treatment-image {
-
-    order: 2;
-
-  }
-
-  .home-treatment-panel.reverse .home-treatment-content {
-
-    order: 1;
 
   }
 
@@ -1586,7 +1542,7 @@ body.home-page {
 
   .home-treatment-content h3 {
 
-    font-size: 27px;
+    font-size: var(--card-title-size-tablet);
 
     line-height: 1.08;
 
@@ -1596,21 +1552,11 @@ body.home-page {
 
   .home-treatment-content p {
 
-    font-size: 13.8px;
+    font-size: var(--body-copy-font-size-tablet);
 
     line-height: 1.72;
 
-    max-width: 760px;
-
     margin-bottom: 22px;
-
-  }
-
-  .home-arrow-link {
-
-    font-size: 10px;
-
-    letter-spacing: 0.18em;
 
   }
 
@@ -1630,18 +1576,6 @@ body.home-page {
 
   }
 
-  .home-doctor-content {
-
-    order: 2;
-
-  }
-
-  .home-doctor-image {
-
-    order: 1;
-
-  }
-
   .home-doctor-image img {
 
     height: 520px;
@@ -1652,7 +1586,7 @@ body.home-page {
 
   .home-doctor-content h2 {
 
-    font-size: 34px;
+    font-size: var(--section-title-size-tablet);
 
     line-height: 1.12;
 
@@ -1660,26 +1594,13 @@ body.home-page {
 
   }
 
-  .home-doctor-content .home-gold-line {
-
-
-    margin: 0 0 30px;
-
-  }
-
   .home-doctor-content p {
 
-    font-size: 14.5px;
+    font-size: var(--body-copy-font-size-tablet);
 
-    line-height: 1.82;
+    line-height: var(--body-copy-line-height-tablet);
 
     margin-bottom: 22px;
-
-  }
-
-  .home-doctor-content .home-arrow-link {
-
-    margin-top: 6px;
 
   }
 
@@ -1688,35 +1609,6 @@ body.home-page {
   .home-questions-section {
 
     padding: 64px 6% 72px;
-
-  }
-
-  .home-questions-section .home-section-heading {
-
-    max-width: 1180px;
-
-    margin: 0 auto 34px;
-
-  }
-
-  .home-questions-section .home-section-heading h2 {
-
-    font-size: 31px;
-
-    line-height: 1.15;
-
-    font-weight: 300;
-
-    letter-spacing: 0.02em;
-
-  }
-
-  .home-questions-section .home-gold-line {
-
-
-    margin: 24px 0 0;
-
-
 
   }
 
@@ -1738,7 +1630,7 @@ body.home-page {
 
   .home-question-card h3 {
 
-    font-size: 23px;
+    font-size: var(--card-title-size-tablet);
 
     line-height: 1.16;
 
@@ -1748,19 +1640,11 @@ body.home-page {
 
   .home-question-card p {
 
-    font-size: 13.4px;
+    font-size: var(--body-copy-font-size-tablet);
 
     line-height: 1.62;
 
     margin: 0 0 22px;
-
-  }
-
-  .home-question-card span {
-
-    font-size: 10px;
-
-    letter-spacing: 0.17em;
 
   }
 
@@ -1769,28 +1653,6 @@ body.home-page {
   .home-experience-section {
 
     padding: 54px 7% 18px;
-
-  }
-
-  .home-experience-section .home-section-heading {
-
-    margin-bottom: 34px;
-
-  }
-
-  .home-experience-section .home-section-heading h2 {
-
-    font-size: 31px;
-
-    line-height: 1.12;
-
-  }
-
-  .home-experience-section .home-gold-line {
-
-    width: 112px;
-
-    margin: 22px 0 0;
 
   }
 
@@ -1806,7 +1668,7 @@ body.home-page {
 
   .home-experience-item h3 {
 
-    font-size: 25px;
+    font-size: var(--card-title-size-tablet);
 
     margin-bottom: 12px;
 
@@ -1814,7 +1676,7 @@ body.home-page {
 
   .home-experience-item p {
 
-    font-size: 13.4px;
+    font-size: var(--body-copy-font-size-tablet);
 
     line-height: 1.62;
 
@@ -1850,7 +1712,7 @@ body.home-page {
 
   .home-final-cta-inner h2 {
 
-    font-size: 31px;
+    font-size: var(--section-title-size-tablet);
 
     line-height: 1.12;
 
