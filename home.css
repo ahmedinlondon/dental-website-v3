@@ -1743,7 +1743,7 @@ body.home-page {
 
   .home-hero {
 
-    background-image: url('/dental-website-v2/homehero-mobile.png');
+    background-image: url('/dental-website-v3/homehero-mobile.png');
 
     height: 400px;
 
@@ -1783,39 +1783,39 @@ body.home-page {
 
   }
 
-.home-hero-script {
+  .home-hero-script {
 
-  font-family: 'FasthinScript', cursive;
+    font-family: var(--script-font-family);
 
-  font-size: 56px;
+    font-size: var(--hero-script-size-mobile);
 
-  line-height: 0.92;
+    line-height: 0.92;
 
-  font-weight: 400;
+    font-weight: var(--script-font-weight);
 
-  letter-spacing: 0.018em;
+    letter-spacing: var(--script-letter-spacing);
 
-  word-spacing: 0.03em;
+    word-spacing: var(--script-word-spacing);
 
- transform:
+    transform:
 
-  translateY(36px)
+      translateY(36px)
 
-  scaleY(1.18)
+      scaleY(var(--script-scale-y))
 
-  scaleX(1.01)
+      scaleX(var(--script-scale-x))
 
-  skewX(-14deg)
+      skewX(var(--script-skew-x))
 
-  rotate(0.6deg);
+      rotate(var(--script-rotate));
 
-  text-shadow:
+    text-shadow:
 
-    0 0 1px rgba(217,154,62,0.38),
+      0 0 1px rgba(217,154,62,0.38),
 
-    0 1px 6px rgba(0,0,0,0.04);
+      0 1px 6px rgba(0,0,0,0.04);
 
-}
+  }
 
   .home-hero .home-hero-brand {
 
@@ -1861,7 +1861,6 @@ body.home-page {
 
   }
 
-
   .home-hero.animate .home-hero-script {
 
     opacity: 1;
@@ -1902,6 +1901,36 @@ body.home-page {
 
   }
 
+  /* Shared Mobile Script Headings */
+
+  .home-page .home-script-heading {
+
+    font-family: var(--script-font-family) !important;
+
+    font-size: var(--section-script-size-mobile);
+
+    line-height: var(--script-line-height);
+
+    font-weight: var(--script-font-weight);
+
+    letter-spacing: var(--script-letter-spacing);
+
+    word-spacing: var(--script-word-spacing);
+
+    color: #d99a3e;
+
+    transform:
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
+
+  }
+
   /* Introduction */
 
   .home-intro-section {
@@ -1912,33 +1941,29 @@ body.home-page {
 
   .home-intro-section .home-script-heading {
 
-    font-size: 42px;
-
-    line-height: 1.05;
-
     margin-bottom: 12px;
 
   }
 
   .home-intro-inner h2 {
 
-    font-size: 25px;
+    font-size: var(--section-title-size-mobile);
 
     line-height: 1.22;
 
   }
 
-   /* Shared Mobile Gold Underlines */
+  /* Shared Mobile Gold Underlines */
 
-.home-page .home-gold-line {
+  .home-page .home-gold-line {
 
-  width: 72px !important;
+    width: 72px !important;
 
-  height: 3px !important;
+    height: 3px !important;
 
-  background: #ddb46a !important;
+    background: var(--brand-gold-soft) !important;
 
-}
+  }
 
   .home-intro-section .home-gold-line {
 
@@ -1948,9 +1973,9 @@ body.home-page {
 
   .home-intro-copy p {
 
-    font-size: 14.5px;
+    font-size: var(--body-copy-font-size-mobile);
 
-    line-height: 1.74;
+    line-height: var(--body-copy-line-height-mobile);
 
     margin-bottom: 24px;
 
@@ -1992,7 +2017,15 @@ body.home-page {
 
   .home-treatment-content h3 {
 
-    font-size: 28px;
+    font-size: var(--card-title-size-mobile);
+
+  }
+
+  .home-treatment-content p {
+
+    font-size: var(--body-copy-font-size-mobile);
+
+    line-height: var(--body-copy-line-height-mobile);
 
   }
 
@@ -2034,37 +2067,13 @@ body.home-page {
 
   }
 
-    .home-doctor-content .home-script-heading {
+  .home-doctor-content .home-script-heading {
 
     order: 1;
 
-    font-family: var(--script-font-family) !important;
-
-    font-size: var(--section-script-size-mobile);
-
-    line-height: var(--script-line-height);
-
-    font-weight: var(--script-font-weight);
-
-    letter-spacing: var(--script-letter-spacing);
-
-    word-spacing: var(--script-word-spacing);
-
     margin: 0 0 14px;
 
-    color: #c9a15d;
-
     text-align: left;
-
-    transform:
-
-      scaleY(var(--script-scale-y))
-
-      scaleX(var(--script-scale-x))
-
-      skewX(var(--script-skew-x))
-
-      rotate(var(--script-rotate));
 
   }
 
@@ -2072,7 +2081,7 @@ body.home-page {
 
     order: 2;
 
-    font-size: 29px;
+    font-size: var(--section-title-size-mobile);
 
     line-height: 1.16;
 
@@ -2084,8 +2093,8 @@ body.home-page {
 
   .home-doctor-content .home-gold-line {
 
-    order: 3; 
-      
+    order: 3;
+
     margin: 0 0 34px;
 
   }
@@ -2122,9 +2131,9 @@ body.home-page {
 
     order: 5;
 
-    font-size: 14.5px;
+    font-size: var(--body-copy-font-size-mobile);
 
-    line-height: 1.78;
+    line-height: var(--body-copy-line-height-mobile);
 
     margin-bottom: 24px;
 
@@ -2158,7 +2167,15 @@ body.home-page {
 
   .home-question-card h3 {
 
-    font-size: 22px;
+    font-size: var(--card-title-size-mobile);
+
+  }
+
+  .home-question-card p {
+
+    font-size: var(--body-copy-font-size-mobile);
+
+    line-height: var(--body-copy-line-height-mobile);
 
   }
 
@@ -2167,6 +2184,14 @@ body.home-page {
     min-height: auto;
 
     padding: 30px 26px;
+
+  }
+
+  .home-question-note p {
+
+    font-size: var(--body-copy-font-size-mobile);
+
+    line-height: var(--body-copy-line-height-mobile);
 
   }
 
@@ -2194,13 +2219,17 @@ body.home-page {
 
   .home-experience-item h3 {
 
+    font-size: var(--card-title-size-mobile);
+
     margin-bottom: 14px;
 
   }
 
   .home-experience-item p {
 
-    line-height: 1.72;
+    font-size: var(--body-copy-font-size-mobile);
+
+    line-height: var(--body-copy-line-height-mobile);
 
   }
 
@@ -2213,6 +2242,8 @@ body.home-page {
   }
 
   .home-final-cta-inner h2 {
+
+    font-size: var(--section-title-size-mobile);
 
     margin-bottom: 22px;
 
