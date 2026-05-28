@@ -712,17 +712,17 @@ body.about-page {
 
   .about-hero-script {
 
-    font-size: 46px;
+    font-size: var(--hero-script-size-tablet);
 
   }
 
- .about-page .about-section-script,
+  .about-page .about-section-script,
 
- .about-page .about-doctor-script {
+  .about-page .about-doctor-script {
 
-    font-size: 42px;
+    font-size: var(--section-script-size-tablet);
 
-    line-height: 0.95;
+    line-height: var(--script-line-height);
 
     margin-bottom: 6px;
 
@@ -730,9 +730,9 @@ body.about-page {
 
   .about-hero .hero-title {
 
-    font-size: 38px;
+    font-size: var(--hero-title-size-tablet);
 
-    letter-spacing: 0.035em;
+    letter-spacing: var(--hero-title-letter-spacing);
 
   }
 
@@ -764,7 +764,7 @@ body.about-page {
 
   .about-final-cta h2 {
 
-    font-size: 29px;
+    font-size: var(--section-title-size-tablet);
 
   }
 
@@ -816,7 +816,7 @@ body.about-page {
 
   .about-consult-box p {
 
-    font-size: 14px;
+    font-size: var(--body-copy-font-size-mobile);
 
     line-height: 1.7;
 
@@ -844,7 +844,7 @@ body.about-page {
 
   .about-final-cta-inner {
 
-    max-width: 1180px;
+    max-width: var(--container-standard);
 
     display: grid;
 
@@ -870,7 +870,7 @@ body.about-page {
 
     margin: 10px 0 0;
 
-    font-size: 14px;
+    font-size: var(--body-copy-font-size-mobile);
 
   }
 
@@ -892,19 +892,19 @@ body.about-page {
 
     margin: 0;
 
-    background: #ffffff;
+    background: var(--brand-white);
 
-    color: #b88932;
+    color: var(--brand-gold);
 
-    border: 1px solid #b88932;
+    border: 1px solid var(--brand-gold);
 
   }
 
   .about-final-btn:hover {
 
-    background: #b88932;
+    background: var(--brand-gold);
 
-    color: #ffffff;
+    color: var(--brand-white);
 
   }
 
