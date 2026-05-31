@@ -1612,7 +1612,7 @@ body.home-page {
 
     transform:
 
-      translateX(20px)
+      translateX(-20px)
 
       scaleY(var(--script-scale-y))
 
