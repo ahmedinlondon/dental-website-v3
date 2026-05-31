@@ -853,53 +853,53 @@ body.about-page {
   transform: translateX(-8px);
 
 }
-  @keyframes aboutScriptReveal {
+@keyframes aboutScriptReveal {
 
-    0% {
+  0% {
 
-      opacity: 0;
+    opacity: 0;
 
-      transform:
+    transform:
 
-        translateX(var(--hero-script-align-x-mobile))
+      translateX(2px)
 
-        translateY(14px)
+      translateY(14px)
 
-        scaleY(var(--script-scale-y))
+      scaleY(var(--script-scale-y))
 
-        scaleX(var(--script-scale-x))
+      scaleX(var(--script-scale-x))
 
-        skewX(var(--script-skew-x))
+      skewX(var(--script-skew-x))
 
-        rotate(var(--script-rotate));
+      rotate(var(--script-rotate));
 
-      filter: blur(3px);
-
-    }
-
-    100% {
-
-      opacity: 0.94;
-
-      transform:
-
-        translateX(var(--hero-script-align-x-mobile))
-
-        translateY(0)
-
-        scaleY(var(--script-scale-y))
-
-        scaleX(var(--script-scale-x))
-
-        skewX(var(--script-skew-x))
-
-        rotate(var(--script-rotate));
-
-      filter: blur(0);
-
-    }
+    filter: blur(3px);
 
   }
+
+  100% {
+
+    opacity: 0.94;
+
+    transform:
+
+      translateX(2px)
+
+      translateY(0)
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
+
+    filter: blur(0);
+
+  }
+
+}
 
   .about-hero .hero-title {
 
