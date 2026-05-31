@@ -1183,7 +1183,31 @@ body.about-page {
 }
 
 
+/* ABOUT SCRIPT SYSTEM FIX */
 
+.about-page .global-script {
+
+  font-family: var(--script-font-family) !important;
+
+  font-weight: var(--script-font-weight) !important;
+
+  line-height: var(--script-line-height) !important;
+
+  letter-spacing: var(--script-letter-spacing) !important;
+
+  word-spacing: var(--script-word-spacing) !important;
+
+  transform:
+
+    scaleY(var(--script-scale-y))
+
+    scaleX(var(--script-scale-x))
+
+    skewX(var(--script-skew-x))
+
+    rotate(var(--script-rotate)) !important;
+
+}
      
 
    
