@@ -988,29 +988,37 @@ body.about-page {
 
   }
 
-  .about-final-cta {
+ .about-final-cta {
 
-    padding: 42px var(--page-padding-mobile) 46px;
+  padding: 42px var(--page-padding-mobile) 46px;
 
-  }
+}
 
-  .about-final-cta h2 {
+.about-final-cta h2 {
 
-    margin-bottom: 14px;
+  margin-bottom: 14px;
 
-  }
+}
 
-  .about-final-cta p {
+.about-final-cta p {
 
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 
-  }
+}
 
-  .about-final-btn {
+.about-final-btn {
 
-    height: 42px;
+  height: 42px;
 
-  }
+  width: 76%;
+
+  max-width: 540px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+}
 
 .about-page .site-footer .footer-logo img {
 
@@ -1024,19 +1032,13 @@ body.about-page {
 
 .about-page .site-footer .footer-brand {
 
-  max-width: 260px !important;
+  max-width: 280px !important;
 
-  margin-left: auto !important;
+  margin: 0 auto !important;
 
-  margin-right: auto !important;
+  text-align: center !important;
 
 }
-
-  .about-page .site-footer .footer-brand {
-
-    text-align: center !important;
-
-  }
 
 }
 
