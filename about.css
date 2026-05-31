@@ -1012,11 +1012,11 @@ body.about-page {
 
   }
 
-  .about-page .site-footer .footer-logo img {
+.about-page .site-footer .footer-logo img {
 
-  width: 200px !important;
+  width: 175px !important;
 
-  max-width: 72% !important;
+  max-width: none !important;
 
   margin: 0 auto 22px auto !important;
 
