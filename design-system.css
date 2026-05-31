@@ -1,17 +1,39 @@
 /* =========================================================
 
    EMBRACE BESPOKE ORTHODONTIC
+
    GLOBAL DESIGN SYSTEM
+
    Purpose:
-   This file controls visual design decisions:
+
+   This file controls shared visual design decisions:
+
    - fonts
+
    - script text
+
    - hero titles
+
    - section titles
+
+   - body text
+
+   - card titles
+
+   - popup titles
+
+   - underlines
+
+   - buttons
+
    - colours
+
    - spacing
-   - reusable design tokens
+
+   - containers
+
    style.css controls global mechanics/components.
+
    page CSS files control page-specific layouts only.
 
 ========================================================= */
@@ -32,99 +54,37 @@
 
 05. SECTION TITLE SYSTEM
 
-06. BODY TEXT SYSTEM
+06. UNDERLINE SYSTEM
 
-07. CARD TITLE SYSTEM
+07. BODY TEXT SYSTEM
 
-08. POPUP TITLE SYSTEM
+08. CARD TITLE SYSTEM
 
-09. SPACING / CONTAINER SYSTEM
+09. POPUP TITLE SYSTEM
 
-10. COLOUR UTILITY SYSTEM
+10. BUTTON SYSTEM
 
-11. HEADER PHONE LINK SUPPORT
+11. SPACING / CONTAINER SYSTEM
+
+12. COLOUR UTILITY SYSTEM
+
+13. HEADER PHONE LINK SUPPORT
 
 ========================================================= */
 
 /* =========================================================
 
-                01. ROOT DESIGN TOKENS
+   01. ROOT DESIGN TOKENS
 
 ========================================================= */
 
 :root {
 
-  /* =====================================================
-
-                 02. FONT FAMILIES
-
-  ===================================================== */
-
-  --font-body: 'Poppins', sans-serif;
-
-  --font-heading: 'Montserrat', sans-serif;
-
-  --font-script: 'FasthinScript', cursive;
-
-  /* =====================================================
-
-     PRIMARY COLOUR SYSTEM
-
-  ===================================================== */
-
-  --color-navy: #1d3557;
-
-  --color-navy-soft: #27496d;
-
-  --color-light-blue: #edf5f9;
-
-  --color-cream: #f6efe6;
-
-  --color-white: #ffffff;
-
-  --color-gold: #b89b5e;
-
-  --color-text: #2b2b2b;
-
-  --color-text-light: #6f6f6f;
-
-  --color-border: rgba(0, 0, 0, 0.08);
-
-  /* =====================================================
-
-     SPACING SYSTEM
-
-  ===================================================== */
-
-  --section-padding: 120px;
-
-  --section-padding-mobile: 80px;
-
-  --container-width: 1400px;
-
-  /* =====================================================
-
-     BORDER SYSTEM
-
-  ===================================================== */
-
   --border-radius: 0px;
-
-  /* =====================================================
-
-     TRANSITION SYSTEM
-
-  ===================================================== */
 
   --transition-smooth: all 0.4s ease;
 
   --transition-fast: all 0.25s ease;
-
-  /* =====================================================
-
-     SHADOW SYSTEM
-
-  ===================================================== */
 
   --shadow-soft: 0 10px 30px rgba(0,0,0,0.04);
 
@@ -134,43 +94,61 @@
 
 /* =========================================================
 
-             03. SCRIPT TEXT SYSTEM
+   02. FONT FAMILY SYSTEM
 
 ========================================================= */
 
 :root {
 
-/* =====================================================
+  --font-body: 'Poppins', sans-serif;
 
-   GLOBAL SCRIPT APPEARANCE
+  --font-heading: 'Montserrat', 'Poppins', sans-serif;
 
-===================================================== */
+  --font-script: 'FasthinScript', cursive;
 
---script-font-family: 'FasthinScript', cursive;
+}
 
---script-font-weight: 600;
+/* =========================================================
 
---script-line-height: 0.95;
+   03. SCRIPT TEXT SYSTEM
 
---script-letter-spacing: 0.05em;
+========================================================= */
 
---script-word-spacing: 0.08em;
+:root {
 
-/* Section Script Rendering */
+  /* ---------- Global script appearance ---------- */
 
---section-script-line-height: 0.92;
+  --script-font-family: 'FasthinScript', cursive;
 
---section-script-text-shadow:
+  --script-font-weight: 600;
 
-  0 0 1px rgba(217,154,62,0.38),
+  --script-line-height: 0.95;
 
-  0 1px 6px rgba(0,0,0,0.04);
+  --script-letter-spacing: 0.05em;
 
-  /* =====================================================
+  --script-word-spacing: 0.08em;
 
-     GLOBAL SCRIPT SHAPE
+  /* ---------- Section script rendering ---------- */
 
-  ===================================================== */
+  --section-script-line-height: 0.92;
+
+  --section-script-text-shadow:
+
+    0 0 1px rgba(217,154,62,0.38),
+
+    0 1px 6px rgba(0,0,0,0.04);
+
+  /* ---------- Hero script rendering ---------- */
+
+  --hero-script-line-height: 0.95;
+
+  --hero-script-text-shadow:
+
+    0 0 1px rgba(198,144,51,0.40),
+
+    0 2px 12px rgba(0,0,0,0.25);
+
+  /* ---------- Global script shape ---------- */
 
   --script-scale-y: 1.10;
 
@@ -180,25 +158,23 @@
 
   --script-rotate: 0.6deg;
 
-
-  /* =====================================================
-
-     GLOBAL SCRIPT ALIGNMENT
-
-  ===================================================== */
+  /* ---------- Section script alignment ---------- */
 
   --section-script-align-x-desktop: 70px;
 
   --section-script-align-x-tablet: 70px;
 
   --section-script-align-x-mobile: 24px;
-   
 
-  /* =====================================================
+  /* ---------- Hero script alignment ---------- */
 
-     HERO SCRIPT SIZES
+  --hero-script-align-x-desktop: 0px;
 
-  ===================================================== */
+  --hero-script-align-x-tablet: 0px;
+
+  --hero-script-align-x-mobile: 0px;
+
+  /* ---------- Hero script sizes ---------- */
 
   --hero-script-size-desktop: 56px;
 
@@ -206,11 +182,7 @@
 
   --hero-script-size-mobile: 50px;
 
-  /* =====================================================
-
-     SECTION SCRIPT SIZES
-
-  ===================================================== */
+  /* ---------- Section script sizes ---------- */
 
   --section-script-size-desktop: 40px;
 
@@ -220,11 +192,7 @@
 
 }
 
-/* =========================================================
-
-   GLOBAL SCRIPT STYLE
-
-========================================================= */
+/* Optional utility class */
 
 .global-script {
 
@@ -232,11 +200,13 @@
 
   font-weight: var(--script-font-weight);
 
-  line-height: var(--script-line-height);
+  line-height: var(--section-script-line-height);
 
   letter-spacing: var(--script-letter-spacing);
 
   word-spacing: var(--script-word-spacing);
+
+  text-shadow: var(--section-script-text-shadow);
 
   transform:
 
@@ -250,21 +220,13 @@
 
 }
 
-
-
 /* =========================================================
 
-                   04. HERO TITLE SYSTEM
+   04. HERO TITLE SYSTEM
 
 ========================================================= */
 
 :root {
-
-  /* =====================================================
-
-     HERO TITLE FAMILY / WEIGHT
-
-  ===================================================== */
 
   --hero-title-font-family: 'Montserrat', 'Poppins', sans-serif;
 
@@ -276,23 +238,11 @@
 
   --hero-title-text-transform: none;
 
-  /* =====================================================
-
-     HERO TITLE SIZES
-
-  ===================================================== */
-
   --hero-title-size-desktop: 44px;
 
   --hero-title-size-tablet: 38px;
 
   --hero-title-size-mobile: 42px;
-
-  /* =====================================================
-
-     HERO TITLE COLOURS
-
-  ===================================================== */
 
   --hero-title-color-light: rgba(255,255,255,0.96);
 
@@ -300,22 +250,21 @@
 
   --hero-title-color-navy: #1d3557;
 
-}
+  --hero-title-text-shadow-light:
 
+    0 2px 14px rgba(0,0,0,0.28),
+
+    0 0 20px rgba(255,255,255,0.08);
+
+}
 
 /* =========================================================
 
-                  05. SECTION TITLE SYSTEM
+   05. SECTION TITLE SYSTEM
 
 ========================================================= */
 
 :root {
-
-  /* =====================================================
-
-     SECTION TITLE FAMILY / WEIGHT
-
-  ===================================================== */
 
   --section-title-font-family: 'Montserrat', 'Poppins', sans-serif;
 
@@ -327,23 +276,11 @@
 
   --section-title-text-transform: none;
 
-  /* =====================================================
-
-     SECTION TITLE SIZES
-
-  ===================================================== */
-
   --section-title-size-desktop: 29px;
 
   --section-title-size-tablet: 27px;
 
   --section-title-size-mobile: 25px;
-
-  /* =====================================================
-
-     SECTION TITLE COLOURS
-
-  ===================================================== */
 
   --section-title-color-light: rgba(255,255,255,0.94);
 
@@ -357,7 +294,35 @@
 
 /* =========================================================
 
-                   06. BODY TEXT SYSTEM
+   06. UNDERLINE SYSTEM
+
+========================================================= */
+
+:root {
+
+  --underline-width-desktop: 92px;
+
+  --underline-height-desktop: 4px;
+
+  --underline-width-tablet: 72px;
+
+  --underline-height-tablet: 3px;
+
+  --underline-width-mobile: 72px;
+
+  --underline-height-mobile: 3px;
+
+  --underline-color: #ddb46a;
+
+  --underline-gap-top: 22px;
+
+  --underline-gap-bottom: 34px;
+
+}
+
+/* =========================================================
+
+   07. BODY TEXT SYSTEM
 
 ========================================================= */
 
@@ -367,9 +332,13 @@
 
   --body-copy-font-size-desktop: 15px;
 
+  --body-copy-font-size-tablet: 14.5px;
+
   --body-copy-font-size-mobile: 14px;
 
   --body-copy-line-height-desktop: 1.95;
+
+  --body-copy-line-height-tablet: 1.82;
 
   --body-copy-line-height-mobile: 1.82;
 
@@ -387,7 +356,7 @@
 
 /* =========================================================
 
-                  07. CARD TITLE SYSTEM
+   08. CARD TITLE SYSTEM
 
 ========================================================= */
 
@@ -411,11 +380,13 @@
 
   --card-title-color-dark: #2d2a26;
 
+  --card-title-color-navy: #1d3557;
+
 }
 
 /* =========================================================
 
-              08. POPUP TITLE SYSTEM
+   09. POPUP TITLE SYSTEM
 
 ========================================================= */
 
@@ -439,17 +410,33 @@
 
 /* =========================================================
 
-                09. SPACING / CONTAINER SYSTEM
+   10. BUTTON SYSTEM
 
 ========================================================= */
 
 :root {
 
-  /* =====================================================
+  --button-font-family: 'Montserrat', 'Poppins', sans-serif;
 
-     CONTAINER WIDTHS
+  --button-font-size: 11px;
 
-  ===================================================== */
+  --button-font-weight: 400;
+
+  --button-letter-spacing: 0.16em;
+
+  --button-height: 44px;
+
+}
+
+/* =========================================================
+
+   11. SPACING / CONTAINER SYSTEM
+
+========================================================= */
+
+:root {
+
+  /* ---------- Container widths ---------- */
 
   --container-wide: 1240px;
 
@@ -459,11 +446,7 @@
 
   --container-narrow: 760px;
 
-  /* =====================================================
-
-     GLOBAL SIDE PADDING
-
-  ===================================================== */
+  /* ---------- Global side padding ---------- */
 
   --page-padding-desktop: 6%;
 
@@ -471,11 +454,7 @@
 
   --page-padding-mobile: 7%;
 
-  /* =====================================================
-
-     SECTION VERTICAL SPACING
-
-  ===================================================== */
+  /* ---------- Section vertical spacing ---------- */
 
   --section-compact-desktop: 56px;
 
@@ -495,11 +474,7 @@
 
   --section-feature-mobile: 66px;
 
-  /* =====================================================
-
-     TITLE / CONTENT RHYTHM
-
-  ===================================================== */
+  /* ---------- Title / content rhythm ---------- */
 
   --title-to-line-gap: 22px;
 
@@ -511,11 +486,7 @@
 
   --section-heading-bottom-gap-mobile: 28px;
 
-  /* =====================================================
-
-     CARD / GRID RHYTHM
-
-  ===================================================== */
+  /* ---------- Card / grid rhythm ---------- */
 
   --card-gap-desktop: 18px;
 
@@ -531,17 +502,13 @@
 
 /* =========================================================
 
-               10. COLOUR UTILITY SYSTEM
+   12. COLOUR UTILITY SYSTEM
 
 ========================================================= */
 
 :root {
 
-  /* =====================================================
-
-     BRAND CORE COLOURS
-
-  ===================================================== */
+  /* ---------- Brand core colours ---------- */
 
   --brand-white: #ffffff;
 
@@ -567,15 +534,33 @@
 
   --brand-gold-script: #c69033;
 
-  /* =====================================================
+  /* ---------- Legacy/alternate colour aliases ---------- */
 
-     FOOTER COLOURS
+  --color-navy: var(--brand-navy);
 
-  ===================================================== */
+  --color-navy-soft: #27496d;
+
+  --color-light-blue: #edf5f9;
+
+  --color-cream: var(--brand-cream);
+
+  --color-white: var(--brand-white);
+
+  --color-gold: #b89b5e;
+
+  --color-text: #2b2b2b;
+
+  --color-text-light: #6f6f6f;
+
+  --color-border: rgba(0, 0, 0, 0.08);
+
+  /* ---------- Footer colours ---------- */
 
   --footer-global-bg: #f6efe4;
 
   --footer-variant-bg: #263c4b;
+
+  --footer-bottom-strip-bg: #526675;
 
   --footer-text-dark: #2d2a26;
 
@@ -583,17 +568,15 @@
 
   --footer-text-light-soft: rgba(255,255,255,0.86);
 
+  --footer-text-light-muted: rgba(255,255,255,0.72);
+
   --footer-heading-gold: #b88932;
 
   --footer-border-gold: rgba(198,161,91,0.42);
 
   --footer-border-gold-dark: rgba(185,150,87,0.26);
 
-  /* =====================================================
-
-     CARD COLOURS
-
-  ===================================================== */
+  /* ---------- Card colours ---------- */
 
   --card-light-bg: rgba(239,233,220,0.96);
 
@@ -605,11 +588,7 @@
 
   --card-dark-hover-bg: rgba(255,255,255,0.055);
 
-  /* =====================================================
-
-     POPUP COLOURS
-
-  ===================================================== */
+  /* ---------- Popup colours ---------- */
 
   --popup-bg: rgba(239,233,220,0.96);
 
@@ -619,11 +598,7 @@
 
   --popup-shadow: 0 24px 58px rgba(5,22,38,0.24);
 
-  /* =====================================================
-
-     TEXT COLOUR UTILITIES
-
-  ===================================================== */
+  /* ---------- Text colour utilities ---------- */
 
   --text-dark: #2d2a26;
 
@@ -637,11 +612,9 @@
 
 }
 
-
-
 /* =========================================================
 
-              11. HEADER PHONE LINK SUPPORT
+   13. HEADER PHONE LINK SUPPORT
 
 ========================================================= */
 
