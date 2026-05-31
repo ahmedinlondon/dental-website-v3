@@ -1014,13 +1014,13 @@ body.about-page {
 
   .about-page .site-footer .footer-logo img {
 
-    width: 230px !important;
+  width: 200px !important;
 
-    max-width: 78% !important;
+  max-width: 72% !important;
 
-    margin: 0 auto 22px auto !important;
+  margin: 0 auto 22px auto !important;
 
-  }
+}
 
   .about-page .site-footer .footer-brand {
 
