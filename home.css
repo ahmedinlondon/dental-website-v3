@@ -2601,7 +2601,29 @@ body.home-page {
 
 
 
+/* Doctor script alignment final override */
 
+@media (min-width: 701px) {
+
+  .home-page .home-doctor-content > .home-script-heading {
+
+    margin-left: 0 !important;
+
+    transform:
+
+      translateX(28px)
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate)) !important;
+
+  }
+
+}
 
 
 
