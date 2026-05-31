@@ -140,21 +140,31 @@
 
 :root {
 
-  /* =====================================================
+/* =====================================================
 
-     GLOBAL SCRIPT APPEARANCE
+   GLOBAL SCRIPT APPEARANCE
 
-  ===================================================== */
+===================================================== */
 
-  --script-font-family: 'FasthinScript', cursive;
+--script-font-family: 'FasthinScript', cursive;
 
-  --script-font-weight: 600;
+--script-font-weight: 600;
 
-  --script-line-height: 0.95;
+--script-line-height: 0.95;
 
-  --script-letter-spacing: 0.05em;
+--script-letter-spacing: 0.05em;
 
-  --script-word-spacing: 0.08em;
+--script-word-spacing: 0.08em;
+
+/* Section Script Rendering */
+
+--section-script-line-height: 0.92;
+
+--section-script-text-shadow:
+
+  0 0 1px rgba(217,154,62,0.38),
+
+  0 1px 6px rgba(0,0,0,0.04);
 
   /* =====================================================
 
