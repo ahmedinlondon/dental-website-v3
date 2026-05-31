@@ -1926,7 +1926,9 @@ body.home-page {
 
     color: #d99a3e;
 
-    transform:
+   transform:
+
+      translateX(var(--section-script-align-x-mobile))
 
       scaleY(var(--script-scale-y))
 
