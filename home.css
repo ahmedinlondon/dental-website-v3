@@ -1504,7 +1504,7 @@ body.home-page {
 
   .home-doctor-content .home-script-heading {
 
-    margin-left: -40px;
+    margin-left: 0px;
 
     transform:
 
@@ -2581,6 +2581,21 @@ body.home-page {
     z-index: 1;
 
   }
+
+   .home-doctor-content .home-script-heading {
+
+  transform:
+
+    scaleY(var(--script-scale-y))
+
+    scaleX(var(--script-scale-x))
+
+    skewX(var(--script-skew-x))
+
+    rotate(var(--script-rotate));
+
+}
+   
 
 }
 
