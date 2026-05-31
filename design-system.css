@@ -177,11 +177,11 @@
 
   ===================================================== */
 
-  --section-script-align-x-desktop: 40px;
+  --section-script-align-x-desktop: 70px;
 
-  --section-script-align-x-tablet: 40px;
+  --section-script-align-x-tablet: 70px;
 
-  --section-script-align-x-mobile: 40px;
+  --section-script-align-x-mobile: 24px;
    
 
   /* =====================================================
@@ -206,7 +206,7 @@
 
   --section-script-size-tablet: 34px;
 
-  --section-script-size-mobile: 20px;
+  --section-script-size-mobile: 34px;
 
 }
 
