@@ -1608,6 +1608,22 @@ body.home-page {
 
   }
 
+     .home-doctor-content .home-script-heading {
+
+    transform:
+
+      translateX(20px)
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
+
+  }
+
   /* Questions */
 
   .home-questions-section {
