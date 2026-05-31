@@ -624,7 +624,7 @@ body.home-page {
 
 }
 
-.home-doctor-content p {
+.home-doctor-content p:not(.home-script-heading) {
 
   margin: 0 0 24px;
 
@@ -635,7 +635,6 @@ body.home-page {
   line-height: var(--body-copy-line-height-desktop);
 
 }
-
 /* =========================================================
 
    07. QUESTIONS SECTION
@@ -1494,15 +1493,15 @@ body.home-page {
 
   }
 
-  .home-doctor-content p {
+.home-doctor-content p:not(.home-script-heading) {
 
-    font-size: var(--body-copy-font-size-desktop);
+  font-size: var(--body-copy-font-size-desktop);
 
-    line-height: var(--body-copy-line-height-desktop);
+  line-height: var(--body-copy-line-height-desktop);
 
-    margin-bottom: 22px;
+  margin-bottom: 22px;
 
-  }
+}
 
   .home-doctor-content .home-script-heading {
 
