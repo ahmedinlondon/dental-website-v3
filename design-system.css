@@ -148,13 +148,13 @@
 
   --script-font-family: 'FasthinScript', cursive;
 
-  --script-font-weight: 500;
+  --script-font-weight: 600;
 
   --script-line-height: 0.95;
 
-  --script-letter-spacing: 0.03em;
+  --script-letter-spacing: 0.05em;
 
-  --script-word-spacing: 0.05em;
+  --script-word-spacing: 0.08em;
 
   /* =====================================================
 
@@ -162,9 +162,9 @@
 
   ===================================================== */
 
-  --script-scale-y: 1.14;
+  --script-scale-y: 1.10;
 
-  --script-scale-x: 1.08;
+  --script-scale-x: 1.14;
 
   --script-skew-x: -14deg;
 
