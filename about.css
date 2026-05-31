@@ -254,6 +254,8 @@ body.about-page {
 
   opacity: 0.94;
 
+  color: var(--brand-gold-script);
+
 }
 
 .about-philosophy-inner h2,
@@ -786,6 +788,22 @@ body.about-page {
 
   }
 
+.about-doctor-script {
+
+  transform:
+
+    translateX(28px)
+
+    scaleY(var(--script-scale-y))
+
+    scaleX(var(--script-scale-x))
+
+    skewX(var(--script-skew-x))
+
+    rotate(var(--script-rotate));
+
+}
+   
 }
 
 /* =========================================================
@@ -1051,6 +1069,22 @@ body.about-page {
     margin-bottom: 8px;
 
   }
+
+.about-doctor-script {
+
+  transform:
+
+    translateX(28px)
+
+    scaleY(var(--script-scale-y))
+
+    scaleX(var(--script-scale-x))
+
+    skewX(var(--script-skew-x))
+
+    rotate(var(--script-rotate));
+
+}
 
 }
 
