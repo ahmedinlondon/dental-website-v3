@@ -4,6 +4,56 @@
 
    GLOBAL DESIGN SYSTEM
 
+=========================================================
+
+01. ROOT / CORE TOKENS
+02. FONT FAMILY SYSTEM
+03. SCRIPT TEXT SYSTEM
+    - script tokens
+    - global-script base class
+    - global-hero-script class
+    - global-section-script class
+    - responsive script sizing/alignment
+04. HERO TITLE SYSTEM
+    - hero title tokens
+    - global-hero-title class
+    - responsive hero title sizing
+05. SECTION TITLE SYSTEM
+    - section title tokens
+    - global-section-title class
+    - responsive section title sizing
+06. UNDERLINE SYSTEM
+    - underline tokens
+    - global-gold-line class
+    - responsive underline sizing
+07. BODY TEXT SYSTEM
+    - body copy tokens
+    - global-body-copy class
+    - responsive body copy sizing
+08. CARD TITLE SYSTEM
+    - card title tokens
+    - global-card-title class
+    - responsive card title sizing
+09. POPUP TITLE SYSTEM
+    - popup title tokens
+    - global-popup-title class
+    - responsive popup title sizing
+10. BUTTON SYSTEM
+    - button tokens
+    - global-button class
+11. SPACING / CONTAINER SYSTEM
+12. COLOUR UTILITY SYSTEM
+13. HEADER PHONE LINK SUPPORT
+
+========================================================= */
+
+
+/* =========================================================
+
+   EMBRACE BESPOKE ORTHODONTIC
+
+   GLOBAL DESIGN SYSTEM
+
    This file controls shared visual design:
 
    fonts, scripts, hero titles, section titles,
