@@ -254,7 +254,9 @@ body.about-page {
 
   opacity: 0.94;
 
-  color: var(--brand-gold-script);
+  color: var(--brand-gold-script) !important;
+
+}
 
 }
 
