@@ -1608,21 +1608,21 @@ body.home-page {
 
   }
 
-     .home-doctor-content .home-script-heading {
+.home-doctor-content .home-script-heading {
 
-    transform:
+  margin-left: -40px;
 
-      translateX(-40px)
+  transform:
 
-      scaleY(var(--script-scale-y))
+    scaleY(var(--script-scale-y))
 
-      scaleX(var(--script-scale-x))
+    scaleX(var(--script-scale-x))
 
-      skewX(var(--script-skew-x))
+    skewX(var(--script-skew-x))
 
-      rotate(var(--script-rotate));
+    rotate(var(--script-rotate));
 
-  }
+}
 
   /* Questions */
 
