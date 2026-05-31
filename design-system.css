@@ -1,2 +1,946 @@
+/* =========================================================
 
+   EMBRACE BESPOKE ORTHODONTIC
+
+   GLOBAL DESIGN SYSTEM
+
+   This file controls shared visual design:
+
+   fonts, scripts, hero titles, section titles,
+
+   body copy, card titles, popup titles, underlines,
+
+   buttons, colours, spacing, containers.
+
+   Page CSS should control layout only.
+
+========================================================= */
+
+/* =========================================================
+
+   01. ROOT / CORE TOKENS
+
+========================================================= */
+
+:root {
+
+  --border-radius: 0px;
+
+  --transition-smooth: all 0.4s ease;
+
+  --transition-fast: all 0.25s ease;
+
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.04);
+
+  --shadow-light: 0 4px 20px rgba(0,0,0,0.03);
+
+}
+
+/* =========================================================
+
+   02. FONT FAMILY SYSTEM
+
+========================================================= */
+
+:root {
+
+  --font-body: 'Poppins', sans-serif;
+
+  --font-heading: 'Montserrat', 'Poppins', sans-serif;
+
+  --font-script: 'FasthinScript', cursive;
+
+}
+
+/* =========================================================
+
+   03. SCRIPT TEXT SYSTEM
+
+========================================================= */
+
+:root {
+
+  --script-font-family: var(--font-script);
+
+  --script-font-weight: 600;
+
+  --script-line-height: 0.95;
+
+  --script-letter-spacing: 0.05em;
+
+  --script-word-spacing: 0.08em;
+
+  --script-scale-y: 1.10;
+
+  --script-scale-x: 1.14;
+
+  --script-skew-x: -14deg;
+
+  --script-rotate: 0.6deg;
+
+  --hero-script-size-desktop: 56px;
+
+  --hero-script-size-tablet: 56px;
+
+  --hero-script-size-mobile: 36px;
+
+  --section-script-size-desktop: 40px;
+
+  --section-script-size-tablet: 34px;
+
+  --section-script-size-mobile: 34px;
+
+  --hero-script-line-height: 0.95;
+
+  --section-script-line-height: 0.92;
+
+  --hero-script-align-x-desktop: 60px;
+
+  --hero-script-align-x-tablet: 60px;
+
+  --hero-script-align-x-mobile: 10px;
+
+  --section-script-align-x-desktop: 70px;
+
+  --section-script-align-x-tablet: 70px;
+
+  --section-script-align-x-mobile: 24px;
+
+  --hero-script-text-shadow:
+
+    0 0 1px rgba(198,144,51,0.40),
+
+    0 2px 12px rgba(0,0,0,0.25);
+
+  --section-script-text-shadow:
+
+    0 0 1px rgba(217,154,62,0.38),
+
+    0 1px 6px rgba(0,0,0,0.04);
+
+}
+
+/* Base script */
+
+.global-script {
+
+  font-family: var(--script-font-family);
+
+  font-weight: var(--script-font-weight);
+
+  letter-spacing: var(--script-letter-spacing);
+
+  word-spacing: var(--script-word-spacing);
+
+  color: var(--brand-gold-script);
+
+}
+
+/* Hero script */
+
+.global-hero-script {
+
+  font-family: var(--script-font-family);
+
+  font-size: var(--hero-script-size-desktop);
+
+  line-height: var(--hero-script-line-height);
+
+  font-weight: var(--script-font-weight);
+
+  letter-spacing: var(--script-letter-spacing);
+
+  word-spacing: var(--script-word-spacing);
+
+  color: var(--brand-gold-script);
+
+  text-shadow: var(--hero-script-text-shadow);
+
+  transform:
+
+    translateX(var(--hero-script-align-x-desktop))
+
+    scaleY(var(--script-scale-y))
+
+    scaleX(var(--script-scale-x))
+
+    skewX(var(--script-skew-x))
+
+    rotate(var(--script-rotate));
+
+}
+
+/* Section script */
+
+.global-section-script {
+
+  font-family: var(--script-font-family);
+
+  font-size: var(--section-script-size-desktop);
+
+  line-height: var(--section-script-line-height);
+
+  font-weight: var(--script-font-weight);
+
+  letter-spacing: var(--script-letter-spacing);
+
+  word-spacing: var(--script-word-spacing);
+
+  color: var(--brand-gold-script);
+
+  text-shadow: var(--section-script-text-shadow);
+
+  transform:
+
+    translateX(var(--section-script-align-x-desktop))
+
+    scaleY(var(--script-scale-y))
+
+    scaleX(var(--script-scale-x))
+
+    skewX(var(--script-skew-x))
+
+    rotate(var(--script-rotate));
+
+}
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .global-hero-script {
+
+    font-size: var(--hero-script-size-tablet);
+
+    transform:
+
+      translateX(var(--hero-script-align-x-tablet))
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
+
+  }
+
+  .global-section-script {
+
+    font-size: var(--section-script-size-tablet);
+
+    transform:
+
+      translateX(var(--section-script-align-x-tablet))
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
+
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .global-hero-script {
+
+    font-size: var(--hero-script-size-mobile);
+
+    transform:
+
+      translateX(var(--hero-script-align-x-mobile))
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
+
+  }
+
+  .global-section-script {
+
+    font-size: var(--section-script-size-mobile);
+
+    transform:
+
+      translateX(var(--section-script-align-x-mobile))
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
+
+  }
+
+}
+
+/* =========================================================
+
+   04. HERO TITLE SYSTEM
+
+========================================================= */
+
+:root {
+
+  --hero-title-font-family: var(--font-heading);
+
+  --hero-title-font-weight: 300;
+
+  --hero-title-line-height: 1.16;
+
+  --hero-title-letter-spacing: 0.055em;
+
+  --hero-title-text-transform: none;
+
+  --hero-title-size-desktop: 44px;
+
+  --hero-title-size-tablet: 38px;
+
+  --hero-title-size-mobile: 42px;
+
+  --hero-title-color-light: rgba(255,255,255,0.96);
+
+  --hero-title-color-dark: #2d2a26;
+
+  --hero-title-color-navy: #1d3557;
+
+  --hero-title-text-shadow-light:
+
+    0 2px 14px rgba(0,0,0,0.28),
+
+    0 0 20px rgba(255,255,255,0.08);
+
+}
+
+.global-hero-title {
+
+  font-family: var(--hero-title-font-family);
+
+  font-size: var(--hero-title-size-desktop);
+
+  line-height: var(--hero-title-line-height);
+
+  font-weight: var(--hero-title-font-weight);
+
+  letter-spacing: var(--hero-title-letter-spacing);
+
+  text-transform: var(--hero-title-text-transform);
+
+}
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .global-hero-title {
+
+    font-size: var(--hero-title-size-tablet);
+
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .global-hero-title {
+
+    font-size: var(--hero-title-size-mobile);
+
+  }
+
+}
+
+/* =========================================================
+
+   05. SECTION TITLE SYSTEM
+
+========================================================= */
+
+:root {
+
+  --section-title-font-family: var(--font-heading);
+
+  --section-title-font-weight: 300;
+
+  --section-title-line-height: 1.16;
+
+  --section-title-letter-spacing: 0.035em;
+
+  --section-title-text-transform: none;
+
+  --section-title-size-desktop: 29px;
+
+  --section-title-size-tablet: 27px;
+
+  --section-title-size-mobile: 25px;
+
+  --section-title-color-light: rgba(255,255,255,0.94);
+
+  --section-title-color-blue: #607485;
+
+  --section-title-color-dark: #2d2a26;
+
+  --section-title-color-navy: #1d3557;
+
+}
+
+.global-section-title {
+
+  font-family: var(--section-title-font-family);
+
+  font-size: var(--section-title-size-desktop);
+
+  line-height: var(--section-title-line-height);
+
+  font-weight: var(--section-title-font-weight);
+
+  letter-spacing: var(--section-title-letter-spacing);
+
+  text-transform: var(--section-title-text-transform);
+
+}
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .global-section-title {
+
+    font-size: var(--section-title-size-tablet);
+
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .global-section-title {
+
+    font-size: var(--section-title-size-mobile);
+
+  }
+
+}
+
+/* =========================================================
+
+   06. UNDERLINE SYSTEM
+
+========================================================= */
+
+:root {
+
+  --underline-width-desktop: 92px;
+
+  --underline-height-desktop: 4px;
+
+  --underline-width-tablet: 72px;
+
+  --underline-height-tablet: 3px;
+
+  --underline-width-mobile: 72px;
+
+  --underline-height-mobile: 3px;
+
+  --underline-color: #ddb46a;
+
+  --underline-gap-top: 22px;
+
+  --underline-gap-bottom: 34px;
+
+}
+
+.global-gold-line {
+
+  display: block;
+
+  width: var(--underline-width-desktop);
+
+  height: var(--underline-height-desktop);
+
+  margin: var(--underline-gap-top) 0 var(--underline-gap-bottom);
+
+  background: var(--underline-color);
+
+}
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .global-gold-line {
+
+    width: var(--underline-width-tablet);
+
+    height: var(--underline-height-tablet);
+
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .global-gold-line {
+
+    width: var(--underline-width-mobile);
+
+    height: var(--underline-height-mobile);
+
+  }
+
+}
+
+/* =========================================================
+
+   07. BODY TEXT SYSTEM
+
+========================================================= */
+
+:root {
+
+  --body-copy-font-family: var(--font-heading);
+
+  --body-copy-font-size-desktop: 15px;
+
+  --body-copy-font-size-tablet: 14.5px;
+
+  --body-copy-font-size-mobile: 14px;
+
+  --body-copy-line-height-desktop: 1.95;
+
+  --body-copy-line-height-tablet: 1.82;
+
+  --body-copy-line-height-mobile: 1.82;
+
+  --body-copy-font-weight: 300;
+
+  --body-copy-letter-spacing: 0.01em;
+
+  --body-copy-color-dark: rgba(47,42,38,0.92);
+
+  --body-copy-color-muted: rgba(47,42,38,0.82);
+
+  --body-copy-color-light: rgba(255,255,255,0.88);
+
+}
+
+.global-body-copy {
+
+  font-family: var(--body-copy-font-family);
+
+  font-size: var(--body-copy-font-size-desktop);
+
+  line-height: var(--body-copy-line-height-desktop);
+
+  font-weight: var(--body-copy-font-weight);
+
+  letter-spacing: var(--body-copy-letter-spacing);
+
+}
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .global-body-copy {
+
+    font-size: var(--body-copy-font-size-tablet);
+
+    line-height: var(--body-copy-line-height-tablet);
+
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .global-body-copy {
+
+    font-size: var(--body-copy-font-size-mobile);
+
+    line-height: var(--body-copy-line-height-mobile);
+
+  }
+
+}
+
+/* =========================================================
+
+   08. CARD TITLE SYSTEM
+
+========================================================= */
+
+:root {
+
+  --card-title-font-family: var(--font-heading);
+
+  --card-title-font-weight: 300;
+
+  --card-title-line-height: 1.2;
+
+  --card-title-letter-spacing: 0.025em;
+
+  --card-title-size-desktop: 23px;
+
+  --card-title-size-tablet: 22px;
+
+  --card-title-size-mobile: 26px;
+
+  --card-title-color-light: rgba(255,255,255,0.94);
+
+  --card-title-color-dark: #2d2a26;
+
+  --card-title-color-navy: #1d3557;
+
+}
+
+.global-card-title {
+
+  font-family: var(--card-title-font-family);
+
+  font-size: var(--card-title-size-desktop);
+
+  line-height: var(--card-title-line-height);
+
+  font-weight: var(--card-title-font-weight);
+
+  letter-spacing: var(--card-title-letter-spacing);
+
+}
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .global-card-title {
+
+    font-size: var(--card-title-size-tablet);
+
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .global-card-title {
+
+    font-size: var(--card-title-size-mobile);
+
+  }
+
+}
+
+/* =========================================================
+
+   09. POPUP TITLE SYSTEM
+
+========================================================= */
+
+:root {
+
+  --popup-title-font-family: var(--font-heading);
+
+  --popup-title-font-weight: 300;
+
+  --popup-title-line-height: 1.12;
+
+  --popup-title-letter-spacing: 0.015em;
+
+  --popup-title-size-desktop: 32px;
+
+  --popup-title-size-mobile: 28px;
+
+  --popup-title-color-dark: #2d2a26;
+
+}
+
+.global-popup-title {
+
+  font-family: var(--popup-title-font-family);
+
+  font-size: var(--popup-title-size-desktop);
+
+  line-height: var(--popup-title-line-height);
+
+  font-weight: var(--popup-title-font-weight);
+
+  letter-spacing: var(--popup-title-letter-spacing);
+
+}
+
+@media (max-width: 700px) {
+
+  .global-popup-title {
+
+    font-size: var(--popup-title-size-mobile);
+
+  }
+
+}
+
+/* =========================================================
+
+   10. BUTTON SYSTEM
+
+========================================================= */
+
+:root {
+
+  --button-font-family: var(--font-heading);
+
+  --button-font-size: 11px;
+
+  --button-font-weight: 400;
+
+  --button-letter-spacing: 0.16em;
+
+  --button-height: 44px;
+
+}
+
+.global-button {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  height: var(--button-height);
+
+  font-family: var(--button-font-family);
+
+  font-size: var(--button-font-size);
+
+  line-height: 1;
+
+  font-weight: var(--button-font-weight);
+
+  letter-spacing: var(--button-letter-spacing);
+
+  text-transform: uppercase;
+
+}
+
+/* =========================================================
+
+   11. SPACING / CONTAINER SYSTEM
+
+========================================================= */
+
+:root {
+
+  --container-wide: 1240px;
+
+  --container-standard: 1180px;
+
+  --container-reading: 920px;
+
+  --container-narrow: 760px;
+
+  --page-padding-desktop: 6%;
+
+  --page-padding-tablet: 5%;
+
+  --page-padding-mobile: 7%;
+
+  --section-compact-desktop: 56px;
+
+  --section-medium-desktop: 78px;
+
+  --section-feature-desktop: 96px;
+
+  --section-compact-tablet: 52px;
+
+  --section-medium-tablet: 70px;
+
+  --section-feature-tablet: 84px;
+
+  --section-compact-mobile: 42px;
+
+  --section-medium-mobile: 54px;
+
+  --section-feature-mobile: 66px;
+
+  --title-to-line-gap: 22px;
+
+  --line-to-content-gap: 34px;
+
+  --script-to-title-gap: 8px;
+
+  --section-heading-bottom-gap: 36px;
+
+  --section-heading-bottom-gap-mobile: 28px;
+
+  --card-gap-desktop: 18px;
+
+  --card-gap-tablet: 16px;
+
+  --card-gap-mobile: 14px;
+
+  --card-padding-desktop: 30px;
+
+  --card-padding-mobile: 22px;
+
+}
+
+/* =========================================================
+
+   12. COLOUR UTILITY SYSTEM
+
+========================================================= */
+
+:root {
+
+  --brand-white: #ffffff;
+
+  --brand-ivory: #fffaf2;
+
+  --brand-cream: #f6efe6;
+
+  --brand-soft-cream: #f8f2e8;
+
+  --brand-charcoal: #2d2a26;
+
+  --brand-muted: #6f655c;
+
+  --brand-navy: #1d3557;
+
+  --brand-steel-blue: #607485;
+
+  --brand-footer-blue: #263c4b;
+
+  --brand-gold: #b88932;
+
+  --brand-gold-soft: #ddb46a;
+
+  --brand-gold-script: #c69033;
+
+  --color-navy: var(--brand-navy);
+
+  --color-navy-soft: #27496d;
+
+  --color-light-blue: #edf5f9;
+
+  --color-cream: var(--brand-cream);
+
+  --color-white: var(--brand-white);
+
+  --color-gold: #b89b5e;
+
+  --color-text: #2b2b2b;
+
+  --color-text-light: #6f6f6f;
+
+  --color-border: rgba(0, 0, 0, 0.08);
+
+  --footer-global-bg: #f6efe4;
+
+  --footer-variant-bg: #263c4b;
+
+  --footer-bottom-strip-bg: #526675;
+
+  --footer-text-dark: #2d2a26;
+
+  --footer-text-light: #ffffff;
+
+  --footer-text-light-soft: rgba(255,255,255,0.86);
+
+  --footer-text-light-muted: rgba(255,255,255,0.72);
+
+  --footer-heading-gold: #b88932;
+
+  --footer-border-gold: rgba(198,161,91,0.42);
+
+  --footer-border-gold-dark: rgba(185,150,87,0.26);
+
+  --card-light-bg: rgba(239,233,220,0.96);
+
+  --card-light-text: rgba(47,42,38,0.86);
+
+  --card-dark-border: rgba(239,233,220,0.70);
+
+  --card-dark-border-hover: rgba(239,233,220,0.95);
+
+  --card-dark-hover-bg: rgba(255,255,255,0.055);
+
+  --popup-bg: rgba(239,233,220,0.96);
+
+  --popup-text: rgba(47,42,38,0.86);
+
+  --popup-overlay-bg: rgba(0,0,0,0.20);
+
+  --popup-shadow: 0 24px 58px rgba(5,22,38,0.24);
+
+  --text-dark: #2d2a26;
+
+  --text-soft-dark: rgba(47,42,38,0.92);
+
+  --text-muted: rgba(47,42,38,0.82);
+
+  --text-light: rgba(255,255,255,0.94);
+
+  --text-light-soft: rgba(255,255,255,0.88);
+
+}
+
+/* =========================================================
+
+   13. HEADER PHONE LINK SUPPORT
+
+========================================================= */
+
+.header-phone-link {
+
+  color: inherit;
+
+  text-decoration: none;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  transition:
+
+    opacity 0.25s ease,
+
+    color 0.25s ease;
+
+}
+
+.header-phone-link:hover {
+
+  color: inherit;
+
+  text-decoration: none;
+
+  opacity: 0.88;
+
+}
+
+@media (max-width: 700px) {
+
+  .header-contact .header-phone-link {
+
+    display: inline-flex !important;
+
+    align-items: center;
+
+    gap: 6px;
+
+  }
+
+  .header-contact .header-phone-link span {
+
+    display: inline !important;
+
+    visibility: visible !important;
+
+    opacity: 1 !important;
+
+  }
+
+}
 
