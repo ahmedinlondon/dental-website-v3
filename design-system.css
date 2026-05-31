@@ -170,6 +170,20 @@
 
   --script-rotate: 0.6deg;
 
+
+  /* =====================================================
+
+     GLOBAL SCRIPT ALIGNMENT
+
+  ===================================================== */
+
+  --section-script-align-x-desktop: 0px;
+
+  --section-script-align-x-tablet: 0px;
+
+  --section-script-align-x-mobile: 0px;
+   
+
   /* =====================================================
 
      HERO SCRIPT SIZES
