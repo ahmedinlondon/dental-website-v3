@@ -838,16 +838,21 @@ body.about-page {
 
   }
 
-  .about-hero-script {
+.about-hero-script {
 
-    max-width: 100%;
+  max-width: 100%;
 
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    white-space: nowrap;
+  font-size: var(--hero-script-size-mobile);
 
-  }
+  line-height: var(--script-line-height);
 
+  white-space: nowrap;
+
+  transform: translateX(-8px);
+
+}
   @keyframes aboutScriptReveal {
 
     0% {
