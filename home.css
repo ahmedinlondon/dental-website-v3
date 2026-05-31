@@ -312,13 +312,13 @@ body.home-page {
 
   color: #d99a3e;
 
-  font-family: var(--script-font-family);
+  font-family: var(--script-font-family) !important;
 
   font-size: var(--section-script-size-desktop);
 
   line-height: var(--script-line-height);
 
-  font-weight: var(--script-font-weight);
+  font-weight: var(--script-font-weight) !important;
 
   letter-spacing: var(--script-letter-spacing);
 
@@ -2096,7 +2096,7 @@ body.home-page {
 
     transform:
 
-      translateX(0)
+      translateX(12px)
 
       scaleY(var(--script-scale-y))
 
