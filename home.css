@@ -540,7 +540,7 @@ body.home-page {
 
 .home-treatment-content p,
 
-.home-doctor-content p,
+.home-doctor-content p:not(.home-script-heading),
 
 .home-question-card p,
 
@@ -555,7 +555,6 @@ body.home-page {
   letter-spacing: var(--body-copy-letter-spacing);
 
 }
-
 .home-treatment-content p {
 
   margin: 0 0 28px;
