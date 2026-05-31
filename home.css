@@ -1868,11 +1868,21 @@ body.home-page {
 
   }
 
-  .home-hero.animate .home-hero-script {
+   .home-hero.animate .home-hero-script {
 
     opacity: 1;
 
-    transform: translateY(-36px);
+    transform:
+
+      translateY(-36px)
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
 
     transition-delay: 2.5s;
 
