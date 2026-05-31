@@ -1918,7 +1918,7 @@ body.home-page {
 
   }
 
-  /* Shared Mobile Script Headings */
+   /* Shared Mobile Script Headings */
 
   .home-page .home-script-heading {
 
@@ -1926,7 +1926,7 @@ body.home-page {
 
     font-size: var(--section-script-size-mobile) !important;
 
-    line-height: var(--script-line-height) !important;
+    line-height: var(--section-script-line-height) !important;
 
     font-weight: var(--script-font-weight) !important;
 
@@ -1935,6 +1935,8 @@ body.home-page {
     word-spacing: var(--script-word-spacing) !important;
 
     color: #d99a3e;
+
+    text-shadow: var(--section-script-text-shadow);
 
     transform:
 
