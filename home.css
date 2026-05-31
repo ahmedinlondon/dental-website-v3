@@ -2593,7 +2593,9 @@ body.home-page {
 
     margin-bottom: 8px;
 
-    transform:
+      transform:
+
+      translateX(var(--section-script-align-x-desktop))
 
       scaleY(var(--script-scale-y))
 
