@@ -148,13 +148,13 @@
 
   --script-font-family: 'FasthinScript', cursive;
 
-  --script-font-weight: 400;
+  --script-font-weight: 500;
 
   --script-line-height: 0.95;
 
-  --script-letter-spacing: 0.018em;
+  --script-letter-spacing: 0.03em;
 
-  --script-word-spacing: 0.03em;
+  --script-word-spacing: 0.05em;
 
   /* =====================================================
 
@@ -162,15 +162,14 @@
 
   ===================================================== */
 
-  --script-scale-y: 1.18;
+  --script-scale-y: 1.14;
 
-  --script-scale-x: 1.04;
+  --script-scale-x: 1.08;
 
   --script-skew-x: -14deg;
 
   --script-rotate: 0.6deg;
 
-   
   /* =====================================================
 
      HERO SCRIPT SIZES
@@ -189,14 +188,13 @@
 
   ===================================================== */
 
-  --section-script-size-desktop: 34px;
+  --section-script-size-desktop: 40px;
 
   --section-script-size-tablet: 34px;
 
-  --section-script-size-mobile:34px;
+  --section-script-size-mobile: 34px;
 
 }
-
 
 /* =========================================================
 
