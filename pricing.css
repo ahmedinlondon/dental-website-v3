@@ -1158,7 +1158,7 @@ body.pricing-page {
 
       transform:
 
-        translateX(var(--hero-script-align-x-mobile))
+        translateX(calc(var(--hero-script-align-x-mobile) + 10px))
 
         translateY(-28px)
 
