@@ -1,4 +1,1458 @@
+/* =========================================================
 
+   PRICING.CSS — FINAL CLEAN LOCKED VERSION
+
+   Uses design-system.css as master visual reference.
+
+   Page CSS controls Pricing-specific layout only.
+
+=========================================================
+
+01. Page Base
+
+02. Hero Section
+
+03. Hero Animation
+
+04. Main Pricing Body
+
+05. Introduction Section
+
+06. Pricing Cards
+
+07. Payment Strip
+
+08. Support Cards
+
+09. Pricing Popups
+
+10. Footer + Floating Button Refinements
+
+11. iPad / Tablet Layout
+
+12. Mobile Layout
+
+13. Laptop / Desktop Layout
+
+========================================================= */
+
+/* =========================================================
+
+   01. PAGE BASE
+
+========================================================= */
+
+body.pricing-page {
+
+  margin: 0;
+
+  padding: 0;
+
+  background: var(--brand-cream);
+
+  color: var(--brand-charcoal);
+
+  overflow-x: hidden;
+
+  font-family: var(--font-heading);
+
+}
+
+.pricing-page *,
+
+.pricing-page *::before,
+
+.pricing-page *::after {
+
+  box-sizing: border-box;
+
+}
+
+.pricing-page img {
+
+  max-width: 100%;
+
+  display: block;
+
+}
+
+.pricing-page a {
+
+  text-decoration: none;
+
+}
+
+/* =========================================================
+
+   02. HERO SECTION
+
+========================================================= */
+
+.pricing-hero {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 500px;
+
+  overflow: hidden;
+
+  background-image:
+
+    linear-gradient(
+
+      to right,
+
+      rgba(15,47,87,0.08),
+
+      rgba(15,47,87,0.01)
+
+    ),
+
+    url('/dental-website-v3/pricinghero.png');
+
+  background-size: cover;
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+}
+
+.pricing-hero-content {
+
+  position: absolute;
+
+  left: 5.5%;
+
+  top: 58%;
+
+  transform: translateY(-50%);
+
+  z-index: 2;
+
+  max-width: var(--container-narrow);
+
+}
+
+.pricing-hero-script {
+
+  margin: 0 0 var(--title-to-line-gap);
+
+  color: var(--brand-gold-script);
+
+  font-family: var(--script-font-family);
+
+  font-size: var(--hero-script-size-desktop);
+
+  line-height: var(--hero-script-line-height);
+
+  font-weight: var(--script-font-weight);
+
+  letter-spacing: var(--script-letter-spacing);
+
+  word-spacing: var(--script-word-spacing);
+
+  text-shadow: var(--hero-script-text-shadow);
+
+  opacity: 0;
+
+}
+
+.pricing-hero .hero-title {
+
+  margin: 0;
+
+  max-width: 720px;
+
+  color: var(--hero-title-color-navy);
+
+  font-family: var(--hero-title-font-family);
+
+  font-size: var(--hero-title-size-desktop);
+
+  line-height: var(--hero-title-line-height);
+
+  font-weight: var(--hero-title-font-weight);
+
+  letter-spacing: var(--hero-title-letter-spacing);
+
+  text-transform: var(--hero-title-text-transform);
+
+  opacity: 0;
+
+  text-shadow:
+
+    0 2px 14px rgba(255,255,255,0.06),
+
+    0 0 20px rgba(255,255,255,0.04);
+
+}
+
+/* =========================================================
+
+   03. HERO ANIMATION
+
+========================================================= */
+
+.pricing-hero.animate .pricing-hero-script {
+
+  animation: pricingScriptReveal 3.8s ease forwards;
+
+}
+
+.pricing-hero.animate .hero-title {
+
+  animation: pricingHeroDrop 2.8s ease forwards;
+
+  animation-delay: 2.2s;
+
+}
+
+@keyframes pricingScriptReveal {
+
+  0% {
+
+    opacity: 0;
+
+    transform:
+
+      translateX(var(--hero-script-align-x-desktop))
+
+      translateY(14px)
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
+
+    filter: blur(3px);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform:
+
+      translateX(var(--hero-script-align-x-desktop))
+
+      translateY(0)
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
+
+    filter: blur(0);
+
+  }
+
+}
+
+@keyframes pricingHeroDrop {
+
+  0% {
+
+    opacity: 0;
+
+    transform: translateY(55px);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+/* =========================================================
+
+   04. MAIN PRICING BODY
+
+========================================================= */
+
+.pricing-main {
+
+  background: var(--brand-cream);
+
+  color: var(--brand-charcoal);
+
+  padding: 64px 0 78px;
+
+}
+
+/* =========================================================
+
+   05. INTRODUCTION SECTION
+
+========================================================= */
+
+.pricing-intro-section {
+
+  max-width: var(--container-standard);
+
+  margin: 0 auto;
+
+  padding: 0 5.5% 44px;
+
+}
+
+.pricing-section-heading {
+
+  position: relative;
+
+  margin: 0 0 28px;
+
+  padding-bottom: 30px;
+
+}
+
+.pricing-section-heading::after {
+
+  content: "";
+
+  width: var(--underline-width-desktop);
+
+  height: var(--underline-height-desktop);
+
+  background: var(--underline-color);
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: 0;
+
+}
+
+.pricing-section-heading p {
+
+  margin: 0 0 var(--script-to-title-gap);
+
+  color: var(--brand-gold-script);
+
+  font-family: var(--script-font-family);
+
+  font-size: var(--section-script-size-desktop);
+
+  line-height: var(--section-script-line-height);
+
+  font-weight: var(--script-font-weight);
+
+  letter-spacing: var(--script-letter-spacing);
+
+  word-spacing: var(--script-word-spacing);
+
+  opacity: 0.94;
+
+  text-shadow: var(--section-script-text-shadow);
+
+  transform:
+
+    translateX(var(--section-script-align-x-desktop))
+
+    scaleY(var(--script-scale-y))
+
+    scaleX(var(--script-scale-x))
+
+    skewX(var(--script-skew-x))
+
+    rotate(var(--script-rotate));
+
+}
+
+.pricing-section-heading h2 {
+
+  margin: 0;
+
+  color: var(--section-title-color-navy);
+
+  font-family: var(--section-title-font-family);
+
+  font-size: var(--section-title-size-desktop);
+
+  line-height: var(--section-title-line-height);
+
+  font-weight: var(--section-title-font-weight);
+
+  letter-spacing: var(--section-title-letter-spacing);
+
+}
+
+.pricing-intro-copy {
+
+  max-width: var(--container-reading);
+
+}
+
+.pricing-intro-copy p {
+
+  margin: 0;
+
+  color: var(--body-copy-color-muted);
+
+  font-family: var(--body-copy-font-family);
+
+  font-size: var(--body-copy-font-size-desktop);
+
+  line-height: var(--body-copy-line-height-desktop);
+
+  font-weight: var(--body-copy-font-weight);
+
+  letter-spacing: var(--body-copy-letter-spacing);
+
+}
+
+/* =========================================================
+
+   06. PRICING CARDS
+
+========================================================= */
+
+.pricing-cards-section {
+
+  max-width: var(--container-standard);
+
+  margin: 0 auto;
+
+  padding: 0 5.5% 42px;
+
+}
+
+.pricing-cards-row {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: var(--card-gap-desktop);
+
+}
+
+.price-card {
+
+  position: relative;
+
+  min-height: 225px;
+
+  padding: var(--card-padding-desktop) 54px 28px 28px;
+
+  border: 1px solid rgba(185,150,87,0.28);
+
+  background: var(--brand-soft-cream);
+
+  color: var(--brand-charcoal);
+
+  cursor: pointer;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  text-align: left;
+
+  transition:
+
+    background 0.28s ease,
+
+    border-color 0.28s ease,
+
+    transform 0.28s ease;
+
+}
+
+.price-card:hover {
+
+  background: var(--brand-ivory);
+
+  border-color: rgba(185,150,87,0.46);
+
+  transform: translateY(-2px);
+
+}
+
+.price-card h3 {
+
+  margin: 0;
+
+  color: var(--card-title-color-navy);
+
+  font-family: var(--card-title-font-family);
+
+  font-size: var(--card-title-size-desktop);
+
+  line-height: var(--card-title-line-height);
+
+  font-weight: var(--card-title-font-weight);
+
+  letter-spacing: var(--card-title-letter-spacing);
+
+}
+
+.price-box {
+
+  margin-top: 28px;
+
+}
+
+.small-text {
+
+  display: block;
+
+  color: rgba(45,42,38,0.66);
+
+  font-family: var(--body-copy-font-family);
+
+  font-size: 12px;
+
+  line-height: 1.45;
+
+  font-weight: 300;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+}
+
+.price-box strong {
+
+  display: block;
+
+  margin: 7px 0;
+
+  color: var(--section-title-color-navy);
+
+  font-family: var(--font-heading);
+
+  font-size: 25px;
+
+  line-height: 1.1;
+
+  font-weight: 300;
+
+  letter-spacing: 0.02em;
+
+}
+
+.card-arrow {
+
+  position: absolute;
+
+  right: 26px;
+
+  top: 50%;
+
+  width: 18px;
+
+  height: 18px;
+
+  transform: translateY(-50%);
+
+}
+
+.card-arrow::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 10px;
+
+  height: 10px;
+
+  border-top: 1.5px solid var(--brand-gold-script);
+
+  border-right: 1.5px solid var(--brand-gold-script);
+
+  transform: rotate(45deg);
+
+  right: 3px;
+
+  top: 4px;
+
+}
+
+/* =========================================================
+
+   07. PAYMENT STRIP
+
+========================================================= */
+
+.payment-strip {
+
+  width: 100%;
+
+  margin: 14px 0 46px;
+
+  padding: 24px 5.5%;
+
+  background: var(--brand-steel-blue);
+
+  color: var(--footer-text-light);
+
+  display: grid;
+
+  grid-template-columns: 1.8fr 1fr;
+
+  align-items: center;
+
+  gap: 34px;
+
+}
+
+.payment-left,
+
+.payment-right {
+
+  max-width: var(--container-standard);
+
+}
+
+.payment-left h3 {
+
+  margin: 0 0 8px;
+
+  color: rgba(255,255,255,0.94);
+
+  font-family: var(--card-title-font-family);
+
+  font-size: var(--card-title-size-desktop);
+
+  line-height: var(--card-title-line-height);
+
+  font-weight: var(--card-title-font-weight);
+
+  letter-spacing: var(--card-title-letter-spacing);
+
+}
+
+.payment-left p {
+
+  margin: 0;
+
+  max-width: 760px;
+
+  color: rgba(255,255,255,0.82);
+
+  font-family: var(--body-copy-font-family);
+
+  font-size: 13px;
+
+  line-height: 1.65;
+
+  font-weight: 300;
+
+}
+
+.payment-right {
+
+  padding-left: 34px;
+
+  border-left: 1px solid rgba(239,233,220,0.38);
+
+}
+
+.payment-right p {
+
+  margin: 5px 0;
+
+  color: rgba(255,255,255,0.88);
+
+  font-family: var(--body-copy-font-family);
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  font-weight: 300;
+
+  letter-spacing: 0.04em;
+
+}
+
+/* =========================================================
+
+   08. SUPPORT CARDS
+
+========================================================= */
+
+.support-section {
+
+  max-width: var(--container-standard);
+
+  margin: 0 auto;
+
+  padding: 0 5.5%;
+
+}
+
+.support-cards-row {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: var(--card-gap-desktop);
+
+}
+
+.support-card {
+
+  min-height: 180px;
+
+  padding: var(--card-padding-desktop) 28px;
+
+  background: var(--brand-white);
+
+  border: 1px solid rgba(185,150,87,0.20);
+
+  box-shadow:
+
+    8px 8px 0 rgba(248,242,232,0.85),
+
+    0 18px 42px rgba(38,35,33,0.06);
+
+  text-align: left;
+
+}
+
+.support-card h3 {
+
+  margin: 0 0 14px;
+
+  color: var(--card-title-color-navy);
+
+  font-family: var(--card-title-font-family);
+
+  font-size: var(--card-title-size-desktop);
+
+  line-height: var(--card-title-line-height);
+
+  font-weight: var(--card-title-font-weight);
+
+  letter-spacing: var(--card-title-letter-spacing);
+
+}
+
+.support-card p {
+
+  margin: 0;
+
+  color: rgba(45,42,38,0.74);
+
+  font-family: var(--body-copy-font-family);
+
+  font-size: 14px;
+
+  line-height: 1.68;
+
+  font-weight: 300;
+
+}
+
+/* =========================================================
+
+   09. PRICING POPUPS
+
+========================================================= */
+
+.pricing-popup {
+
+  position: fixed;
+
+  inset: 0;
+
+  display: none;
+
+  align-items: center;
+
+  justify-content: center;
+
+  z-index: 20000;
+
+  padding: 24px;
+
+  background: var(--popup-overlay-bg);
+
+}
+
+.pricing-popup.show {
+
+  display: flex;
+
+}
+
+.pricing-popup-content {
+
+  position: relative;
+
+  width: 92%;
+
+  max-width: 680px;
+
+  max-height: 82vh;
+
+  overflow-y: auto;
+
+  padding: 34px;
+
+  background: rgba(248,242,232,0.98);
+
+  color: var(--popup-text);
+
+  border: 1px solid rgba(185,150,87,0.24);
+
+  box-shadow: var(--popup-shadow);
+
+}
+
+.pricing-popup-content h3 {
+
+  margin: 0 0 18px;
+
+  color: var(--popup-title-color-dark);
+
+  font-family: var(--popup-title-font-family);
+
+  font-size: var(--popup-title-size-desktop);
+
+  line-height: var(--popup-title-line-height);
+
+  font-weight: var(--popup-title-font-weight);
+
+  letter-spacing: var(--popup-title-letter-spacing);
+
+}
+
+.pricing-popup-content p {
+
+  margin: 0 0 14px;
+
+  color: var(--body-copy-color-muted);
+
+  font-family: var(--body-copy-font-family);
+
+  font-size: 14px;
+
+  line-height: 1.78;
+
+  font-weight: 300;
+
+}
+
+.pricing-popup-content button {
+
+  position: absolute;
+
+  top: 10px;
+
+  right: 16px;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--brand-charcoal);
+
+  font-size: 36px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+}
+
+/* =========================================================
+
+   10. FOOTER + FLOATING BUTTON REFINEMENTS
+
+========================================================= */
+
+.pricing-page .header-top {
+
+  background: var(--brand-cream) !important;
+
+}
+
+.pricing-page .footer-logo img {
+
+  width: 230px !important;
+
+  max-width: 78% !important;
+
+  height: auto !important;
+
+  margin: 0 0 24px 0 !important;
+
+  display: block !important;
+
+}
+
+.pricing-page .floating-contact {
+
+  border-radius: 50% !important;
+
+}
+
+.pricing-page .footer-socials .icon {
+
+  width: 42px !important;
+
+  height: 42px !important;
+
+  border-radius: 50% !important;
+
+  overflow: hidden;
+
+}
+
+/* =========================================================
+
+   11. iPAD / TABLET LAYOUT
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .pricing-hero {
+
+    height: 340px;
+
+  }
+
+  .pricing-hero-content {
+
+    left: 5%;
+
+    top: 56%;
+
+    max-width: 620px;
+
+  }
+
+  .pricing-hero-script {
+
+    font-size: var(--hero-script-size-tablet);
+
+  }
+
+  @keyframes pricingScriptReveal {
+
+    0% {
+
+      opacity: 0;
+
+      transform:
+
+        translateX(var(--hero-script-align-x-tablet))
+
+        translateY(14px)
+
+        scaleY(var(--script-scale-y))
+
+        scaleX(var(--script-scale-x))
+
+        skewX(var(--script-skew-x))
+
+        rotate(var(--script-rotate));
+
+      filter: blur(3px);
+
+    }
+
+    100% {
+
+      opacity: 1;
+
+      transform:
+
+        translateX(var(--hero-script-align-x-tablet))
+
+        translateY(0)
+
+        scaleY(var(--script-scale-y))
+
+        scaleX(var(--script-scale-x))
+
+        skewX(var(--script-skew-x))
+
+        rotate(var(--script-rotate));
+
+      filter: blur(0);
+
+    }
+
+  }
+
+  .pricing-hero .hero-title {
+
+    font-size: var(--hero-title-size-tablet);
+
+  }
+
+  .pricing-main {
+
+    padding: 56px 0 68px;
+
+  }
+
+  .pricing-intro-section,
+
+  .pricing-cards-section,
+
+  .support-section {
+
+    padding-left: 5%;
+
+    padding-right: 5%;
+
+  }
+
+  .pricing-section-heading p {
+
+    font-size: var(--section-script-size-tablet);
+
+    transform:
+
+      translateX(var(--section-script-align-x-tablet))
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
+
+  }
+
+  .pricing-section-heading h2 {
+
+    font-size: var(--section-title-size-tablet);
+
+  }
+
+  .pricing-section-heading::after {
+
+    width: var(--underline-width-tablet);
+
+    height: var(--underline-height-tablet);
+
+  }
+
+  .pricing-cards-row {
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: var(--card-gap-tablet);
+
+  }
+
+  .price-card {
+
+    min-height: 190px;
+
+  }
+
+  .payment-strip {
+
+    padding-left: 5%;
+
+    padding-right: 5%;
+
+  }
+
+  .pricing-page .footer-logo img {
+
+    width: 210px !important;
+
+    max-width: 72% !important;
+
+  }
+
+}
+
+/* =========================================================
+
+   12. MOBILE LAYOUT
+
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .pricing-hero {
+
+    height: 400px;
+
+    background-position: 67% center;
+
+  }
+
+  .pricing-hero-content {
+
+    left: 6%;
+
+    right: 6%;
+
+    top: 57%;
+
+    max-width: none;
+
+  }
+
+  .pricing-hero-script {
+
+    font-size: var(--hero-script-size-mobile);
+
+    margin-bottom: 0;
+
+    white-space: nowrap;
+
+  }
+
+  @keyframes pricingScriptReveal {
+
+    0% {
+
+      opacity: 0;
+
+      transform:
+
+        translateX(var(--hero-script-align-x-mobile))
+
+        translateY(-14px)
+
+        scaleY(var(--script-scale-y))
+
+        scaleX(var(--script-scale-x))
+
+        skewX(var(--script-skew-x))
+
+        rotate(var(--script-rotate));
+
+      filter: blur(3px);
+
+    }
+
+    100% {
+
+      opacity: 1;
+
+      transform:
+
+        translateX(var(--hero-script-align-x-mobile))
+
+        translateY(-28px)
+
+        scaleY(var(--script-scale-y))
+
+        scaleX(var(--script-scale-x))
+
+        skewX(var(--script-skew-x))
+
+        rotate(var(--script-rotate));
+
+      filter: blur(0);
+
+    }
+
+  }
+
+  .pricing-hero .hero-title {
+
+    margin-top: 30px;
+
+    max-width: none;
+
+    width: 92vw;
+
+    font-size: var(--hero-title-size-mobile);
+
+    line-height: var(--hero-title-line-height);
+
+    letter-spacing: var(--hero-title-letter-spacing);
+
+  }
+
+  .pricing-main {
+
+    padding: 48px 0 58px;
+
+  }
+
+  .pricing-intro-section {
+
+    padding: 18px var(--page-padding-mobile) 58px;
+
+  }
+
+  .pricing-section-heading {
+
+    padding-bottom: 0;
+
+    margin-bottom: 26px;
+
+  }
+
+  .pricing-section-heading::after {
+
+    display: block;
+
+    width: var(--underline-width-mobile);
+
+    height: var(--underline-height-mobile);
+
+    margin: var(--underline-gap-top) 0 26px;
+
+    position: relative;
+
+    left: 0;
+
+    bottom: auto;
+
+  }
+
+  .pricing-section-heading p {
+
+    font-size: var(--section-script-size-mobile);
+
+    line-height: var(--section-script-line-height);
+
+    margin-bottom: 6px;
+
+    white-space: nowrap;
+
+    transform:
+
+      translateX(var(--section-script-align-x-mobile))
+
+      scaleY(var(--script-scale-y))
+
+      scaleX(var(--script-scale-x))
+
+      skewX(var(--script-skew-x))
+
+      rotate(var(--script-rotate));
+
+  }
+
+  .pricing-section-heading h2 {
+
+    font-size: var(--section-title-size-mobile);
+
+    line-height: 1.3;
+
+  }
+
+  .pricing-intro-copy p {
+
+    font-size: var(--body-copy-font-size-mobile);
+
+    line-height: var(--body-copy-line-height-mobile);
+
+  }
+
+  .pricing-cards-section {
+
+    padding: 0 6% 36px;
+
+  }
+
+  .pricing-cards-row {
+
+    grid-template-columns: 1fr;
+
+    gap: var(--card-gap-mobile);
+
+  }
+
+  .price-card {
+
+    min-height: 128px;
+
+    padding: 24px 54px 22px 22px;
+
+  }
+
+  .price-card h3 {
+
+    font-size: var(--card-title-size-mobile);
+
+  }
+
+  .price-box {
+
+    margin-top: 18px;
+
+  }
+
+  .price-box strong {
+
+    font-size: 24px;
+
+  }
+
+  .card-arrow {
+
+    right: 22px;
+
+  }
+
+  .payment-strip {
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    margin: 8px 0 38px;
+
+    padding: 20px 6%;
+
+  }
+
+  .payment-left h3 {
+
+    font-size: var(--card-title-size-desktop);
+
+  }
+
+  .payment-right {
+
+    padding-left: 0;
+
+    border-left: none;
+
+    border-top: 1px solid rgba(239,233,220,0.38);
+
+    padding-top: 14px;
+
+  }
+
+  .support-section {
+
+    padding: 0 6%;
+
+  }
+
+  .support-cards-row {
+
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+  }
+
+  .support-card {
+
+    min-height: 150px;
+
+    padding: 26px 24px;
+
+  }
+
+  .support-card h3 {
+
+    font-size: 25px;
+
+  }
+
+  .pricing-popup-content {
+
+    width: 92%;
+
+    max-height: 82vh;
+
+    padding: 30px 24px;
+
+  }
+
+  .pricing-popup-content h3 {
+
+    font-size: var(--popup-title-size-mobile);
+
+  }
+
+  .pricing-popup-content p {
+
+    font-size: 13.4px;
+
+    line-height: 1.72;
+
+  }
+
+  .pricing-page .site-footer .footer-logo img {
+
+    width: 190px !important;
+
+    max-width: none !important;
+
+    margin: 0 auto 22px auto !important;
+
+  }
+
+  .pricing-page .site-footer .footer-brand {
+
+    max-width: 280px !important;
+
+    margin: 0 auto !important;
+
+    text-align: center !important;
+
+  }
+
+  .pricing-page .site-footer .footer-cta {
+
+    width: 76%;
+
+    max-width: 540px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+  }
+
+}
+
+/* =========================================================
+
+   13. LAPTOP / DESKTOP LAYOUT
+
+========================================================= */
+
+@media (min-width: 1181px) {
+
+  .pricing-hero {
+
+    height: 400px;
+
+  }
+
+  .pricing-main {
+
+    padding-top: 64px;
+
+    padding-bottom: 78px;
+
+  }
+
+}
 
 
 
