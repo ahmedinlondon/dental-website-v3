@@ -355,7 +355,7 @@ body.pricing-page {
 
   margin: 0 0 var(--script-to-title-gap);
 
-  color: #d99a3e;
+  color: var(--brand-gold-script);
 
   font-family: var(--script-font-family);
 
