@@ -1124,7 +1124,7 @@ body.pricing-page {
 
     white-space: nowrap;
 
-    transform: translateX(10px);
+    transform: translateX(15px);
 
   }
 
@@ -1136,7 +1136,7 @@ body.pricing-page {
 
       transform:
 
-        translateX(calc(var(--hero-script-align-x-mobile) + 10px))
+        translateX(calc(var(--hero-script-align-x-mobile) + 15px))
 
         translateY(-14px)
 
@@ -1158,7 +1158,7 @@ body.pricing-page {
 
       transform:
 
-        translateX(calc(var(--hero-script-align-x-mobile) + 10px))
+        translateX(calc(var(--hero-script-align-x-mobile) + 15px))
 
         translateY(-28px)
 
