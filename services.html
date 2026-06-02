@@ -12,7 +12,7 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
 03. Hero Section
 
-04. Our Approach Section.
+04. Our Approach Section
 
 05. Services Section
 
@@ -30,6 +30,10 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
 -->
 
+<!DOCTYPE html>
+
+<html lang="en">
+
 <head>
 
   <meta charset="UTF-8" />
@@ -40,14 +44,14 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
   <!-- ================= CSS FILES ================= -->
 
-  <link rel="stylesheet" href="design-system.css?v=9" />
+  <link rel="stylesheet" href="design-system.css?v=15" />
 
   <link rel="stylesheet" href="style.css?v=113" />
 
   <link rel="stylesheet" href="services.css?v=207" />
 
   <!-- ================= SITE DATA ================= -->
-  
+
   <script src="site-data.js?v=6"></script>
 
   <!-- ================= GOOGLE FONTS ================= -->
@@ -64,8 +68,9 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
 </head>
 
+<body class="services-page">
 
-<!-- ================= 02. GLOBAL HEADER ================= -->
+<!-- ================= 02. GLOBAL HEADER - BURGER MENU - FLOATING BUTTONS ================= -->
 
 <header class="site-header">
 
@@ -75,13 +80,13 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
     <div class="header-contact header-contact-stacked">
 
-     <a href="tel:+201280004688" class="header-phone-link" data-site-phone-link>
+      <a href="tel:+201280004688" class="header-phone-link" data-site-phone-link>
 
-  <i class="fa-solid fa-phone"></i>
+        <i class="fa-solid fa-phone"></i>
 
-  <span data-site-phone>+20 128 000 4688</span>
+        <span data-site-phone>+20 128 000 4688</span>
 
-</a>
+      </a>
 
       <span data-site-domain>WWW.EMBRACEORTHODONTIC.COM</span>
 
@@ -113,12 +118,6 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
 </header>
 
-<!-- =========================================================
-
-                 FULL SCREEN BURGER MENU
-
-========================================================= -->
-
 <div class="menu-overlay" id="menuOverlay">
 
   <div class="menu-orthodontic-line"></div>
@@ -129,7 +128,7 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
       <a href="index.html?v=3" class="menu-logo">
 
-       <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+        <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
 
       </a>
 
@@ -181,10 +180,6 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
 </div>
 
-
-
-  <!-- ================= FLOATING CONTACT BUTTONS ================= -->
-
 <a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" aria-label="WhatsApp" data-site-whatsapp-link>
 
   <i class="fa-brands fa-whatsapp"></i>
@@ -203,27 +198,27 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
   <div class="services-hero-content">
 
-    <p class="services-hero-script script-line">For a Confident Smile</p>
+    <p class="services-hero-script script-line global-hero-script">For a Confident Smile</p>
 
-    <h1 class="hero-title hero-title-line">Advanced Orthodontic Care</h1>
+    <h1 class="hero-title hero-title-line global-hero-title">Advanced Orthodontic Care</h1>
 
   </div>
 
 </section>
 
-  <!-- ================= 04.OUR APPROACH SECTION ================= -->
+<!-- ================= 04. OUR APPROACH SECTION ================= -->
 
 <section class="services-approach-section">
 
   <div class="services-approach-inner">
 
-    <p class="services-approach-script">Planned with Care</p>
+    <p class="services-approach-script global-section-script">Planned with Care</p>
 
-    <h2>Our Approach</h2>
+    <h2 class="global-section-title">Our Approach</h2>
 
-    <span class="services-approach-line"></span>
+    <span class="services-approach-line global-gold-line"></span>
 
-    <p class="services-approach-text">
+    <p class="services-approach-text global-body-copy">
 
       Orthodontic treatment is a carefully planned journey designed to create healthy, confident smiles at every age. At embrace, we provide a full range of bespoke orthodontic solutions tailored to your individual needs using advanced technology, clinically proven materials, and personalised care. From digital scanning and precision treatment planning to carefully monitored progress throughout your journey, every step is designed to achieve accurate, lasting, and natural-looking results. Explore our specialist orthodontic treatments to discover how each option can support your smile journey, with guidance and support from consultation through to your final result.
 
@@ -241,11 +236,11 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
     <div class="services-section-heading">
 
-      <p>Our Services</p>
+      <p class="global-section-script">Our Services</p>
 
-      <h2>Personalised Care for Every Smile</h2>
+      <h2 class="global-section-title">Personalised Care for Every Smile</h2>
 
-      <span class="services-heading-line"></span>
+      <span class="services-heading-line global-gold-line"></span>
 
     </div>
 
@@ -255,7 +250,7 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
         <button class="service-card" onclick="openService('consultation', event)">
 
-          <h3>Initial Consultation</h3>
+          <h3 class="global-card-title">Initial Consultation</h3>
 
           <span aria-hidden="true"></span>
 
@@ -263,7 +258,7 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
         <button class="service-card" onclick="openService('smiledesign', event)">
 
-          <h3>Smile Design</h3>
+          <h3 class="global-card-title">Smile Design</h3>
 
           <span aria-hidden="true"></span>
 
@@ -271,7 +266,7 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
         <button class="service-card" onclick="openService('metal', event)">
 
-          <h3>Metal Braces</h3>
+          <h3 class="global-card-title">Metal Braces</h3>
 
           <span aria-hidden="true"></span>
 
@@ -279,7 +274,7 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
         <button class="service-card" onclick="openService('ceramic', event)">
 
-          <h3>Ceramic Braces</h3>
+          <h3 class="global-card-title">Ceramic Braces</h3>
 
           <span aria-hidden="true"></span>
 
@@ -287,7 +282,7 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
         <button class="service-card" onclick="openService('aligners', event)">
 
-          <h3>Clear Aligners</h3>
+          <h3 class="global-card-title">Clear Aligners</h3>
 
           <span aria-hidden="true"></span>
 
@@ -295,7 +290,7 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
         <button class="service-card" onclick="openService('retainers', event)">
 
-          <h3>Aftercare</h3>
+          <h3 class="global-card-title">Aftercare</h3>
 
           <span aria-hidden="true"></span>
 
@@ -315,11 +310,11 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
     <div class="comparison-title">
 
-      <p>Your Options at a Glance</p>
+      <p class="global-section-script">Your Options at a Glance</p>
 
-      <h2>Braces vs Aligners</h2>
+      <h2 class="global-section-title">Braces vs Aligners</h2>
 
-      <span class="comparison-heading-line"></span>
+      <span class="comparison-heading-line global-gold-line"></span>
 
     </div>
 
@@ -327,7 +322,7 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
       <button class="mobile-comparison-card comparison-braces-card" onclick="openComparisonPopup('braces')">
 
-        <h3>Braces</h3>
+        <h3 class="global-card-title">Braces</h3>
 
         <span aria-hidden="true"></span>
 
@@ -335,7 +330,7 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
       <button class="mobile-comparison-card comparison-aligners-card" onclick="openComparisonPopup('aligners')">
 
-        <h3>Aligners</h3>
+        <h3 class="global-card-title">Aligners</h3>
 
         <span aria-hidden="true"></span>
 
@@ -351,7 +346,9 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
   </section>
 
-</section><!-- ================= 07. GLOBAL FOOTER ================= -->
+</section>
+
+<!-- ================= 07. GLOBAL FOOTER ================= -->
 
 <footer class="site-footer">
 
@@ -431,7 +428,7 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
   <div class="footer-bottom">
 
-   <span data-site-footer>© 2026 Embrace Bespoke Orthodontic. All rights reserved.</span>
+    <span data-site-footer>© 2026 Embrace Bespoke Orthodontic. All rights reserved.</span>
 
   </div>
 
