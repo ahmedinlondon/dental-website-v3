@@ -1081,6 +1081,16 @@ body.about-page {
 
 }
 
+.about-page .site-footer .footer-clinic:last-of-type {
+
+  padding-bottom: 34px !important;
+
+  margin-bottom: 30px !important;
+
+  border-bottom: 1px solid rgba(185,150,87,0.38) !important;
+
+}
+   
 }
 
 /* =========================================================
