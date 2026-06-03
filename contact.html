@@ -1,1 +1,630 @@
+<!--
+
+=========================================================
+
+CONTACT.HTML — LOCKED GLOBAL DESIGN
+
+=========================================================
+
+01. Document Head
+
+02. Global Header - Burger Menu - Floating Buttons
+
+03. Hero Section
+
+04. Message / Help Section
+
+05. Locations Section
+
+06. Contact Footer
+
+07. Final Strip
+
+08. Page Scripts
+
+09. Site Data
+
+=========================================================
+
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Dr. Yasmine Soliman</title>
+
+  <!-- ================= CSS FILES ================= -->
+
+  <link rel="stylesheet" href="design-system.css?v=10" />
+
+  <link rel="stylesheet" href="style.css?v=140" />
+
+  <link rel="stylesheet" href="contact.css?v=93" />
+
+  <!-- ================= SITE DATA ================= -->
+
+  <script src="site-data.js?v=11"></script>
+
+  <!-- ================= GOOGLE FONTS ================= -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ================= ICONS ================= -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body class="contact-page">
+
+<!-- ================= 02. GLOBAL HEADER - BURGER MENU - FLOATING BUTTONS ================= -->
+
+<header class="site-header">
+
+  <div class="header-top">
+
+    <a href="index.html?v=3" class="header-doctor-name">Dr. Yasmine Soliman</a>
+
+    <div class="header-contact header-contact-stacked">
+
+      <a href="tel:+201280004688" class="header-phone-link" data-site-phone-link>
+
+        <i class="fa-solid fa-phone"></i>
+
+        <span data-site-phone>+20 128 000 4688</span>
+
+      </a>
+
+      <span data-site-domain>www.embraceorthodontic.com</span>
+
+      <a href="contact.html?v=3" class="header-consultation">Book your consultation</a>
+
+    </div>
+
+  </div>
+
+  <div class="header-main">
+
+    <a href="index.html?v=3" class="site-logo" aria-label="Embrace Bespoke Orthodontic Home">
+
+      <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+
+    </a>
+
+    <button class="burger-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">
+
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+    </button>
+
+  </div>
+
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+
+  <div class="menu-orthodontic-line"></div>
+
+  <div class="menu-inner">
+
+    <div>
+
+      <a href="index.html?v=3" class="menu-logo">
+
+        <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+
+      </a>
+
+      <nav class="menu-nav">
+
+        <a href="index.html?v=3">Home</a>
+
+        <a href="about.html?v=3">About</a>
+
+        <a href="services.html?v=3">Services</a>
+
+        <a href="pricing.html?v=1">Pricing</a>
+
+        <a href="faq.html?v=60">FAQ</a>
+
+        <a href="contact.html?v=3">Contact</a>
+
+      </nav>
+
+    </div>
+
+    <div class="menu-bottom">
+
+      <div>
+
+        <strong>Contact</strong>
+
+        <p data-site-phone>+20 128 000 4688</p>
+
+        <p data-site-email>info@embraceorthodontic.com</p>
+
+        <p data-site-domain>embraceorthodontic.com</p>
+
+      </div>
+
+      <div>
+
+        <strong>Clinics</strong>
+
+        <p data-site-address>Twin Tower, Sheikh Zayed City, Cairo, Egypt</p>
+
+        <p>Polydent, Sheikh Zayed City, Cairo, Egypt</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" aria-label="WhatsApp" data-site-whatsapp-link>
+
+  <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call" data-site-phone-link>
+
+  <i class="fa-solid fa-phone"></i>
+
+</a>
+
+<!-- ================= 03. HERO SECTION ================= -->
+
+<section class="contact-hero">
+
+  <div class="contact-hero-overlay">
+
+    <h1 class="global-hero-title">CONTACT US</h1>
+
+  </div>
+
+</section>
+
+<!-- ================= 04. MESSAGE / HELP SECTION ================= -->
+
+<section class="contact-support-section">
+
+  <div class="contact-form-card">
+
+    <h2 class="global-section-title">Send Us a Message</h2>
+
+    <span class="small-line global-gold-line"></span>
+
+    <form action="mailto:info@embraceorthodontic.com" method="post" enctype="text/plain">
+
+      <div class="form-row">
+
+        <input type="text" name="Name" placeholder="Your Name" required>
+
+        <input type="email" name="Email" placeholder="Your Email" required>
+
+      </div>
+
+      <textarea name="Message" placeholder="Your Message" rows="5"></textarea>
+
+      <button type="submit">
+
+        <i class="fa-regular fa-paper-plane"></i>
+
+        Send Message
+
+      </button>
+
+    </form>
+
+    <p class="privacy-note">
+
+      <i class="fa-solid fa-shield-halved"></i>
+
+      We respect your privacy and your information is safe with us.
+
+    </p>
+
+  </div>
+
+  <div class="contact-help-card">
+
+    <h2 class="global-section-title">We are Here to Help</h2>
+
+    <span class="small-line global-gold-line"></span>
+
+    <p class="help-intro">
+
+      Whether you have a question, need more information, or want to book an appointment, our team is ready to assist you.
+
+    </p>
+
+    <div class="help-item">
+
+      <i class="fa-solid fa-phone-volume"></i>
+
+      <div>
+
+        <strong>Call Us</strong>
+
+        <span>We are available during working hours.</span>
+
+      </div>
+
+    </div>
+
+    <div class="help-item">
+
+      <i class="fa-regular fa-clock"></i>
+
+      <div>
+
+        <strong>Working Hours</strong>
+
+        <span>Saturday to Thursday: 4:00 PM to 8.00 PM</span>
+
+      </div>
+
+    </div>
+
+    <div class="help-item">
+
+      <i class="fa-regular fa-envelope"></i>
+
+      <div>
+
+        <strong>Email Us</strong>
+
+        <a href="mailto:info@embraceorthodontic.com" data-site-email>Info@embraceorthodontic.com</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= 05. LOCATIONS SECTION ================= -->
+
+<section class="contact-locations-section">
+
+  <div class="contact-section-heading">
+
+    <span class="global-section-title">OUR LOCATIONS</span>
+
+    <span class="contact-section-line global-gold-line"></span>
+
+  </div>
+
+  <div class="location-grid">
+
+    <div class="location-card">
+
+      <div class="location-image-area">
+
+        <div class="location-image">
+
+          <img src="twintower.png" alt="Twin Towers Medical Center">
+
+        </div>
+
+        <div class="location-buttons">
+
+          <a href="https://www.google.com/maps?q=Twin+Towers+Sheikh+Zayed+Cairo" target="_blank" rel="noopener" class="location-btn dark">
+
+            <i class="fa-regular fa-compass"></i> Get Directions
+
+          </a>
+
+          <a href="https://wa.me/201280004688" target="_blank" rel="noopener" class="location-btn light" data-site-whatsapp-link>
+
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="location-info">
+
+        <h2>Twin Towers<br>Medical Center</h2>
+
+        <div class="location-details">
+
+          <p><i class="fa-solid fa-location-dot"></i> <span data-site-address>Twin Tower, Sheikh Zayed City, Cairo, Egypt</span></p>
+
+          <p><i class="fa-regular fa-envelope"></i> <a href="mailto:info@embraceorthodontic.com" data-site-email>Info@embraceorthodontic.com</a></p>
+
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:+201280004688" data-site-phone-link><span data-site-phone>+20 128 000 4688</span></a></p>
+
+        </div>
+
+        <div class="location-map">
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3454.4307551971683!2d31.0095327!3d30.0244976!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585a6b61b3a6b3%3A0x7d0b71070e0b6645!2sTwin%20Towers!5e0!3m2!1sen!2suk!4v1777241336907!5m2!1sen!2suk"
+
+            allowfullscreen=""
+
+            loading="lazy"
+
+            referrerpolicy="no-referrer-when-downgrade">
+
+          </iframe>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="location-card">
+
+      <div class="location-image-area">
+
+        <div class="location-image">
+
+          <img src="polygon.png" alt="PolyDent">
+
+        </div>
+
+        <div class="location-buttons">
+
+          <a href="https://maps.app.goo.gl/KwoF2sYUzkKgD4gw7?g_st=ic" target="_blank" rel="noopener" class="location-btn dark">
+
+            <i class="fa-regular fa-compass"></i> Get Directions
+
+          </a>
+
+          <a href="https://wa.me/201225590941" target="_blank" rel="noopener" class="location-btn light">
+
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="location-info">
+
+        <h2>PolyDent</h2>
+
+        <div class="location-details">
+
+          <p><i class="fa-solid fa-location-dot"></i> Sodic West, Polygon Building, 6 Beverly Hills, Giza Governorate, Egypt</p>
+
+          <p><i class="fa-regular fa-envelope"></i> <a href="mailto:info@embraceorthodontic.com" data-site-email>Info@embraceorthodontic.com</a></p>
+
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:+201225590941">+20 122 559 0941</a></p>
+
+        </div>
+
+        <div class="location-map">
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d249.3636450214468!2d0!3d0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145859de6856dbf3%3A0x733c6e385ee4bdfb!2sPolyDent!5e0!3m2!1sen!2suk!4v1778114849319!5m2!1sen!2suk"
+
+            allowfullscreen=""
+
+            loading="lazy"
+
+            referrerpolicy="no-referrer-when-downgrade">
+
+          </iframe>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= 06. CONTACT FOOTER ================= -->
+
+<footer class="contact-footer">
+
+  <div class="contact-footer-inner">
+
+    <div class="contact-footer-column contact-footer-contact">
+
+      <h3>Contact</h3>
+
+      <p><i class="fa-regular fa-envelope"></i> <a href="mailto:info@embraceorthodontic.com" data-site-email>Info@embraceorthodontic.com</a></p>
+
+      <p><i class="fa-solid fa-phone"></i> <a href="tel:+201280004688" data-site-phone-link><span data-site-phone>+20 128 000 4688</span></a></p>
+
+      <p><i class="fa-solid fa-globe"></i> <span data-site-domain>www.embraceorthodontic.com</span></p>
+
+      <div class="contact-footer-socials">
+
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+        <a href="https://x.com/" target="_blank" rel="noopener" class="icon twitter" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="icon youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+
+      </div>
+
+    </div>
+
+    <div class="contact-footer-column contact-footer-links">
+
+      <h3>Quick Links</h3>
+
+      <a href="index.html?v=3">Home</a>
+
+      <a href="about.html?v=3">About Us</a>
+
+      <a href="services.html?v=3">Treatments</a>
+
+      <a href="pricing.html?v=1">Pricing</a>
+
+      <a href="faq.html?v=60">FAQ</a>
+
+      <a href="contact.html?v=3">Contact Us</a>
+
+    </div>
+
+    <div class="contact-footer-column contact-footer-brand">
+
+      <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+
+      <p>
+
+        Bespoke orthodontic care,<br>
+
+        designed around you.
+
+      </p>
+
+      <a href="tel:+201280004688" class="contact-footer-cta" data-site-phone-link>
+
+        <i class="fa-solid fa-phone"></i>
+
+        Call Us
+
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- ================= 07. FINAL STRIP ================= -->
+
+<div class="contact-final-strip">
+
+  <span data-site-footer>© 2026 Dr. Yasmine Soliman. All rights reserved.</span>
+
+  <span class="contact-strip-links">Privacy Policy&nbsp;&nbsp; | &nbsp;&nbsp;Terms & Conditions</span>
+
+</div>
+
+<!-- ================= 08. PAGE SCRIPTS ================= -->
+
+<script>
+
+function toggleMenu() {
+
+  const body = document.body;
+
+  const burger = document.querySelector(".burger-btn");
+
+  body.classList.toggle("menu-open");
+
+  const isOpen = body.classList.contains("menu-open");
+
+  if (burger) {
+
+    burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+  }
+
+}
+
+window.addEventListener("scroll", function () {
+
+  if (window.scrollY > 80) {
+
+    document.body.classList.add("is-scrolled");
+
+  } else {
+
+    document.body.classList.remove("is-scrolled");
+
+  }
+
+});
+
+</script>
+
+<!-- ================= 09. SITE DATA ================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (typeof SITE_DATA === "undefined") return;
+
+  document.querySelectorAll("[data-site-email]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.email;
+
+    if (el.tagName.toLowerCase() === "a") {
+
+      el.href = "mailto:" + SITE_DATA.contact.email;
+
+    }
+
+  });
+
+  document.querySelectorAll("[data-site-phone]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.phoneDisplay;
+
+  });
+
+  document.querySelectorAll("[data-site-phone-link]").forEach(function (el) {
+
+    el.href = "tel:" + SITE_DATA.contact.phoneRaw;
+
+  });
+
+  document.querySelectorAll("[data-site-whatsapp-link]").forEach(function (el) {
+
+    el.href = SITE_DATA.contact.whatsappUrl;
+
+  });
+
+  document.querySelectorAll("[data-site-domain]").forEach(function (el) {
+
+    el.textContent = "www." + SITE_DATA.website.domain;
+
+  });
+
+  document.querySelectorAll("[data-site-address]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.location.fullAddress;
+
+  });
+
+  document.querySelectorAll("[data-site-footer]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.footer.copyrightText;
+
+  });
+
+});
+
+</script>
+
+</body>
+
+</html>
+
+
 
