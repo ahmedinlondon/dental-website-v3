@@ -550,6 +550,26 @@ document.querySelectorAll("[data-site-youtube-link]").forEach(function (el) {
 
 });
 
+  document.querySelectorAll("[data-site-primary-map-link]").forEach(function (el) {
+
+  el.href = SITE_DATA.locations.primary.googleMapsUrl;
+
+  el.target = "_blank";
+
+  el.rel = "noopener";
+
+});
+
+document.querySelectorAll("[data-site-secondary-map-link]").forEach(function (el) {
+
+  el.href = SITE_DATA.locations.secondary.googleMapsUrl;
+
+  el.target = "_blank";
+
+  el.rel = "noopener";
+
+});
+
   document.querySelectorAll("[data-site-domain]").forEach(function (el) {
 
     el.textContent = SITE_DATA.website.domain;
