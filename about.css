@@ -1110,6 +1110,12 @@ body.about-page {
 
 }
 
+   .about-page .site-footer .footer-column:last-child::before {
+
+  display: none !important;
+
+}
+
    
 }
 
