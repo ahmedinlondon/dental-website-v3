@@ -790,6 +790,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
 
+  document.querySelectorAll("[data-site-instagram-link]").forEach(function (el) {
+
+  el.href = SITE_DATA.social.instagram;
+
+  });
+
+  document.querySelectorAll("[data-site-facebook-link]").forEach(function (el) {
+
+  el.href = SITE_DATA.social.facebook;
+
+  });
+
+  document.querySelectorAll("[data-site-x-link]").forEach(function (el) {
+
+  el.href = SITE_DATA.social.x || SITE_DATA.social.twitter;
+
+  });
+
+  document.querySelectorAll("[data-site-youtube-link]").forEach(function (el) {
+
+  el.href = SITE_DATA.social.youtube;
+
+  });
+
   document.querySelectorAll("[data-site-domain]").forEach(function (el) {
 
     el.textContent = SITE_DATA.website.domain;
