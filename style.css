@@ -2141,3 +2141,52 @@ html body .floating-contact.float-whatsapp {
 
 
 
+
+
+/* =========================================================
+
+   FINAL GLOBAL FOOTER iPAD FORCE FIX
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  body:not(.home-page):not(.contact-page) .site-footer .footer-inner {
+
+    display: grid !important;
+
+    grid-template-columns: 32% 32% 32% !important;
+
+    column-gap: 2% !important;
+
+    row-gap: 0 !important;
+
+    width: 100% !important;
+
+  }
+
+  body:not(.home-page):not(.contact-page) .site-footer .footer-brand,
+
+  body:not(.home-page):not(.contact-page) .site-footer .footer-column {
+
+    width: auto !important;
+
+    max-width: none !important;
+
+    min-width: 0 !important;
+
+  }
+
+  body:not(.home-page):not(.contact-page) .site-footer {
+
+    padding-left: 4.5% !important;
+
+    padding-right: 4.5% !important;
+
+  }
+
+}
+
+
+
+
