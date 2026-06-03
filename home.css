@@ -1050,6 +1050,36 @@ body.home-page {
 
 }
 
+.home-footer-map {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  color: var(--brand-gold-soft) !important;
+
+  font-size: 13px !important;
+
+  line-height: 1.4;
+
+  margin-bottom: 12px;
+
+}
+
+.home-footer-map::after {
+
+  content: "›";
+
+  margin-left: 8px;
+
+  font-size: 18px;
+
+  line-height: 1;
+
+}
+
+
+
 .home-footer-brand p {
 
   margin-bottom: 28px;
