@@ -1455,7 +1455,57 @@ body.menu-open .menu-overlay {
 
 }
 
+/* =========================================================
 
+   GLOBAL FOOTER iPAD WIDTH FIX
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .site-footer {
+
+    padding-left: 5% !important;
+
+    padding-right: 5% !important;
+
+  }
+
+  .site-footer .footer-inner {
+
+    grid-template-columns: 0.95fr 1fr 0.95fr !important;
+
+    gap: 28px !important;
+
+  }
+
+  .site-footer .footer-brand::after,
+
+  .site-footer .footer-column:nth-child(2)::after {
+
+    right: -14px !important;
+
+  }
+
+  .site-footer .footer-logo img {
+
+    width: 190px !important;
+
+    max-width: 100% !important;
+
+  }
+
+  .site-footer .footer-cta {
+
+    min-width: 220px !important;
+
+    padding-left: 18px !important;
+
+    padding-right: 18px !important;
+
+  }
+
+}
 
 /* =========================================================
 
