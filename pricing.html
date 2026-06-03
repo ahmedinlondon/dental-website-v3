@@ -466,15 +466,15 @@ PRICING.HTML — FINAL LOCKED VERSION
 
       <div class="footer-socials">
 
-        <a href="#" class="icon instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="icon instagram" aria-label="Instagram" data-site-instagram-link><i class="fab fa-instagram"></i></a>
 
-        <a href="#" class="icon facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="icon facebook" aria-label="Facebook" data-site-facebook-link><i class="fab fa-facebook-f"></i></a>
 
-        <a href="#" class="icon twitter" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+  <a href="https://x.com/" target="_blank" rel="noopener" class="icon twitter" aria-label="X" data-site-x-link><i class="fab fa-x-twitter"></i></a>
 
-        <a href="#" class="icon youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="icon youtube" aria-label="YouTube" data-site-youtube-link><i class="fab fa-youtube"></i></a>
 
-      </div>
+</div>
 
     </div>
 
@@ -699,6 +699,31 @@ document.addEventListener("DOMContentLoaded", function () {
     el.href = SITE_DATA.contact.whatsappUrl;
 
   });
+
+
+  document.querySelectorAll("[data-site-instagram-link]").forEach(function (el) {
+
+  el.href = SITE_DATA.social.instagram;
+
+});
+
+document.querySelectorAll("[data-site-facebook-link]").forEach(function (el) {
+
+  el.href = SITE_DATA.social.facebook;
+
+});
+
+document.querySelectorAll("[data-site-x-link]").forEach(function (el) {
+
+  el.href = SITE_DATA.social.x || SITE_DATA.social.twitter;
+
+});
+
+document.querySelectorAll("[data-site-youtube-link]").forEach(function (el) {
+
+  el.href = SITE_DATA.social.youtube;
+
+});
 
   document.querySelectorAll("[data-site-domain]").forEach(function (el) {
 
