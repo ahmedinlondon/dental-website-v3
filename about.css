@@ -841,6 +841,24 @@ body.about-page {
     rotate(var(--script-rotate));
 
 }
+
+.about-page .site-footer .footer-inner {
+
+  display: grid !important;
+
+  grid-template-columns: 1fr 1fr 1fr !important;
+
+  gap: 42px !important;
+
+  align-items: start !important;
+
+}
+
+.about-page .site-footer .footer-column {
+
+  min-width: 0 !important;
+
+}
    
 }
 
