@@ -1100,9 +1100,13 @@ body.about-page {
 }
 
 
-   .about-page .site-footer .footer-column:last-child::before {
+ .about-page .site-footer .footer-clinic:last-child {
 
-  margin: 8px 0 26px !important;
+  padding-bottom: 24px !important;
+
+  margin-bottom: 24px !important;
+
+  border-bottom: 1px solid rgba(198,161,91,0.42) !important;
 
 }
 
