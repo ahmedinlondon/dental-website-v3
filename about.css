@@ -1179,7 +1179,27 @@ body.about-page {
 
 }
 
+@media (min-width: 701px) and (max-width: 1180px) {
 
+  .about-page .site-footer .footer-inner {
+
+    grid-template-columns: 1fr 1fr 1fr !important;
+
+    column-gap: 34px !important;
+
+  }
+
+  .about-page .site-footer .footer-brand,
+
+  .about-page .site-footer .footer-column {
+
+    width: auto !important;
+
+    max-width: none !important;
+
+  }
+
+}
 
 
      
