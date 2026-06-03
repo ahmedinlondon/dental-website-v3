@@ -1099,21 +1099,13 @@ body.about-page {
 
 }
 
-.about-page .site-footer .footer-clinic {
+.about-page .site-footer .footer-column:nth-child(2) {
 
-  padding-bottom: 28px !important;
-
-  margin-bottom: 28px !important;
-
-  border-bottom: 1px solid rgba(185,150,87,0.38) !important;
-
-}
-
-.about-page .site-footer .footer-clinic:last-of-type {
-
-  padding-bottom: 28px !important;
+  padding-bottom: 34px !important;
 
   margin-bottom: 34px !important;
+
+  border-bottom: 1px solid rgba(185,150,87,0.38) !important;
 
 }
    
