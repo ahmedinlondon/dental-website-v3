@@ -732,23 +732,23 @@ body.faq-page .site-header {
 
   }
 
-  .faq-hero-text {
+.faq-hero-text {
 
-    position: absolute;
+  position: absolute;
 
-    width: 56%;
+  width: 62%;
 
-    max-width: 650px;
+  max-width: 720px;
 
-    padding-left: 6%;
+  padding-left: 6%;
 
-    top: 58%;
+  top: 58%;
 
-    left: 0;
+  left: 0;
 
-    transform: translateY(-50%);
+  transform: translateY(-50%);
 
-  }
+}
 
   .faq-hero .script-line {
 
@@ -1175,5 +1175,14 @@ body.faq-page .site-header {
     transform: translateY(2%);
 
   }
+
+   .faq-hero .faq-hero-text {
+
+  width: 58%;
+
+  max-width: 780px;
+
+}
+   
 
 }
