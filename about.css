@@ -1098,6 +1098,14 @@ body.about-page {
   text-align: center !important;
 
 }
+
+
+   .about-page .site-footer .footer-column:last-child::before {
+
+  margin: 8px 0 26px !important;
+
+}
+
    
 }
 
