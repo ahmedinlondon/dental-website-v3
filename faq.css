@@ -122,7 +122,7 @@ body.faq-page .site-header {
 
   align-items: center;
 
-  background-image: url('/dental-website-v3/faqhero.png');
+ background-image: url('faqhero.png');
 
   background-repeat: no-repeat;
 
@@ -900,7 +900,7 @@ body.faq-page .site-header {
 
     align-items: center;
 
-    background-image: url('/dental-website-v3/faq-hero-mobile.png');
+    background-image: url('faq-hero-mobile.png');
 
     background-size: 145%;
 
