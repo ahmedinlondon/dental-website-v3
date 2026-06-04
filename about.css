@@ -106,7 +106,7 @@ body.about-page {
 
   overflow: hidden;
 
-  background-image: url('/dental-website-v3/about-hero.png');
+  background-image: url('about-hero.png');
 
   background-size: cover;
 
