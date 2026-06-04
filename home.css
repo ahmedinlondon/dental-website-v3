@@ -70,7 +70,7 @@ body.home-page {
 
   overflow: hidden;
 
-  background-image: url('/dental-website-v3/homehero.png');
+  background-image: url('homehero.png');
 
   background-size: cover;
 
