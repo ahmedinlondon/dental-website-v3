@@ -46,25 +46,25 @@ const SITE_DATA = {
 
   },
 
-  contact: {
+contact: {
 
-    email: "info@embraceorthodontic.com",
+  email: "info@embraceorthodontic.com",
 
-    emailHref: "mailto:info@embraceorthodontic.com",
+  emailHref: "mailto:info@embraceorthodontic.com",
 
-    phoneDisplay: "+20 128 000 4688",
+  phoneDisplay: "+20 151 533 9971",
 
-    phoneRaw: "+201280004688",
+  phoneRaw: "+201515339971",
 
-    phoneHref: "tel:+201280004688",
+  phoneHref: "tel:+201515339971",
 
-    whatsappDisplay: "+20 128 000 4688",
+  whatsappDisplay: "+20 151 533 9971",
 
-    whatsappRaw: "201280004688",
+  whatsappRaw: "201515339971",
 
-    whatsappUrl: "https://wa.me/201280004688"
+  whatsappUrl: "https://wa.me/201515339971"
 
-  },
+},
 
   locations: {
 
@@ -154,7 +154,7 @@ const SITE_DATA = {
 
     instagram: "https://www.instagram.com/",
 
-    facebook: "https://www.facebook.com/",
+    facebook: "https://www.facebook.com/EmbraceOrthodontic",
 
     youtube: "https://www.youtube.com/",
 
