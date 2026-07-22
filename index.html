@@ -781,11 +781,17 @@ window.addEventListener("load", function() {
 
   }
 
-});
+  });
 
-document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
 
   if (typeof SITE_DATA === "undefined") return;
+
+  document.querySelectorAll("[data-site-doctor-name]").forEach(function (el) {
+
+  el.textContent = SITE_DATA.brand.doctorName;
+
+  });
 
   document.querySelectorAll("[data-site-email]").forEach(function (el) {
 
