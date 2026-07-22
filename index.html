@@ -166,13 +166,21 @@ INDEX.HTML — LOCKED HOMEPAGE DESIGN
 
       <div>
 
-        <strong>Clinics</strong>
+  <strong>Clinics</strong>
 
-        <p data-site-address>Twin Tower, Sheikh Zayed City, Cairo, Egypt</p>
+  <p data-site-primary-address>
 
-        <p>Polydent, Sheikh Zayed City, Cairo, Egypt</p>
+    Twin Tower, Sheikh Zayed City, Cairo, Egypt
 
-      </div>
+  </p>
+
+  <p data-site-secondary-address>
+
+    Polydent, Sheikh Zayed City, Cairo, Egypt
+
+  </p>
+
+</div>
 
     </div>
 
@@ -806,6 +814,18 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("[data-site-whatsapp-link]").forEach(function (el) {
 
     el.href = SITE_DATA.contact.whatsappUrl;
+
+  });
+
+  document.querySelectorAll("[data-site-primary-address]").forEach(function (el) {
+
+  el.textContent = SITE_DATA.locations.primary.fullAddress;
+
+  });
+
+  document.querySelectorAll("[data-site-secondary-address]").forEach(function (el) {
+
+  el.textContent = SITE_DATA.locations.secondary.fullAddress;
 
   });
 
