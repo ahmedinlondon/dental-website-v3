@@ -837,6 +837,12 @@ window.addEventListener("load", function() {
 
   });
 
+    document.querySelectorAll("[data-site-primary-map-link]").forEach(function (el) {
+
+  el.href = SITE_DATA.locations.primary.googleMapsUrl;
+
+  });
+
   document.querySelectorAll("[data-site-instagram-link]").forEach(function (el) {
 
   el.href = SITE_DATA.social.instagram;
