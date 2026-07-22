@@ -857,6 +857,12 @@ window.addEventListener("load", function() {
 
   });
 
+      document.querySelectorAll("[data-site-tiktok-link]").forEach(function (el) {
+
+  el.href = SITE_DATA.social.tiktok;
+
+  });
+
   document.querySelectorAll("[data-site-facebook-link]").forEach(function (el) {
 
   el.href = SITE_DATA.social.facebook;
