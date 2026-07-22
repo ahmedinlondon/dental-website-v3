@@ -92,9 +92,9 @@ contact: {
 
     secondary: {
 
-      name: "PolyDent",
+      name: "Polygon",
 
-      clinicName: "PolyDent",
+      clinicName: "Polygon",
 
       addressLine1: "Sodic West, Polygon Building",
 
