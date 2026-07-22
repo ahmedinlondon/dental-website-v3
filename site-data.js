@@ -92,25 +92,25 @@ contact: {
 
     secondary: {
 
-      name: "Polygon",
+  name: "Polygon",
 
-      clinicName: "Polygon",
+  clinicName: "Polygon",
 
-      addressLine1: "Sodic West, Polygon Building",
+  addressLine1: "Polygon Building",
 
-      addressLine2: "6 Beverly Hills",
+  addressLine2: "6 Beverly Hills, Sodic West",
 
-      city: "Giza Governorate",
+  city: "Giza Governorate",
 
-      country: "Egypt",
+  country: "Egypt",
 
-      fullAddress: "Sodic West, Polygon Building, 6 Beverly Hills, Giza Governorate, Egypt",
+  fullAddress: "Polygon Building, 6 Beverly Hills, Sodic West, Giza Governorate, Egypt",
 
-      googleMapsUrl: "https://maps.app.goo.gl/KwoF2sYUzkKgD4gw7?g_st=ic",
+  googleMapsUrl: "https://maps.app.goo.gl/KwoF2sYUzkKgD4gw7?g_st=ic",
 
-      googleMapsEmbedUrl: ""
+  googleMapsEmbedUrl: ""
 
-    }
+}
 
   },
 
